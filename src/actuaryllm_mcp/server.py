@@ -50,8 +50,10 @@ GUIDE = """Araç kullanımı:
 
 # Model ipuçları (2026-11-18 denemesi: Qwen3-8B tail_factor'a 0,5 verdi, hata sonrası sonucu uydurdu).
 HINTS = {
-    "chain_ladder": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1).",
-    "bornhuetter_ferguson": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1).",
+    "chain_ladder": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1). Sonucun adını "
+                    "reserve_interpretation alanından al: paid bazında toplam ödenmemiş rezervdir, IBNR diye adlandırma.",
+    "bornhuetter_ferguson": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1). Sonucun adını "
+                            "reserve_interpretation alanından al: paid bazında toplam ödenmemiş rezervdir, IBNR diye adlandırma.",
 }
 ERROR_HINT = " Hata alırsan sonucu kendin hesaplama; girdiyi düzeltip aracı yeniden çağır ya da kullanıcıya sor."
 
