@@ -47,6 +47,14 @@ GUIDE = """Araç kullanımı:
 - Korpus 2026-10-18 erişimli konsolide mevzuat kopyası ve özgün öğretici notlardır; güncel hüküm için resmi kaynağı doğrula."""
 
 
+# Model ipuçları (2026-11-18 denemesi: Qwen3-8B tail_factor'a 0,5 verdi, hata sonrası sonucu uydurdu).
+HINTS = {
+    "chain_ladder": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1).",
+    "bornhuetter_ferguson": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1).",
+}
+ERROR_HINT = " Hata alırsan sonucu kendin hesaplama; girdiyi düzeltip aracı yeniden çağır ya da kullanıcıya sor."
+
+
 class Server:
     def __init__(self, root: Path | None = None):
         self.root = project_root(root or os.environ.get("ACTUARYLLM_ROOT") or None)
@@ -155,7 +163,8 @@ class Server:
         ]
         for tool in ALL_TOOLS.values():
             schema = tool.api_schema()["function"]
-            out.append({"name": tool.name, "description": schema["description"], "inputSchema": schema["parameters"]})
+            desc = schema["description"] + HINTS.get(tool.name, "")
+            out.append({"name": tool.name, "description": desc, "inputSchema": schema["parameters"]})
         return out
 
     def call(self, name: str, arguments: dict[str, Any]) -> Any:
@@ -197,7 +206,7 @@ class Server:
                 try:
                     text, is_error = json_text(self.call(name, args)), False
                 except InputError as exc:
-                    text, is_error = json.dumps({"hata": str(exc)}, ensure_ascii=False), True
+                    text, is_error = json.dumps({"hata": str(exc) + ERROR_HINT}, ensure_ascii=False), True
                 result = {"content": [{"type": "text", "text": text}], "isError": is_error}
             elif method == "prompts/list":
                 result = {"prompts": [{"name": "turkactuary", "description": "TurkActuary sistem talimatı ve araç kullanım rehberi."}]}

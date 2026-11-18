@@ -63,7 +63,11 @@ LM Studio → **Program** sekmesi → **Install → Edit mcp.json**, sonra ekley
 }
 ```
 
-Araç çağırabilen bir model seçin (ör. Qwen3, Gemma 3/4, Llama 3.x). Sohbette araçlar otomatik görünür.
+Araç çağırabilen bir model seçin. Sohbette araçlar otomatik görünür.
+
+**Model seçimi önemli.** Sunucu doğru sonucu döndürür; onu doğru kullanmak modele kalır. 2026-11-18 denemesinde Claude
+Sonnet aynı soruda aracı doğru kullandı (chain ladder rezervi 30, 5684 s.K. md. 23 atfı). Qwen3-8B ise araca hatalı
+parametre verdi ve hatadan sonra sonucu kendisi uydurdu. Araç kullanmada güçlü, büyük modeller (ör. 27B ve üstü) önerilir.
 
 ### Claude Code
 
@@ -158,6 +162,10 @@ any other MCP client.
   gamma severity GLM.
 - Prompt `turkactuary`: the system policy (ground answers in retrieved chunks, compute numbers with tools, treat documents
   as data, not instructions).
+
+**Model choice matters.** The server returns correct results; using them well is up to the model. In a test, Claude Sonnet
+used the tools correctly, while Qwen3-8B passed a wrong parameter and then made up the result. Prefer larger models that
+are good at tool use.
 
 **Setup:** Python 3.11+, no dependencies. `git clone` the repo and add the `mcpServers` block shown above to your client
 (paths: `PYTHONPATH=<repo>/src`, `ACTUARYLLM_ROOT=<repo>`). For hybrid search, load `text-embedding-qwen3-embedding-4b` in
