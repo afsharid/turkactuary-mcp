@@ -74,6 +74,36 @@ class McpServerTest(unittest.TestCase):
         self.assertIn("sentetik", doc["excerpt"])
 
 
+class ArticleLabelTest(unittest.TestCase):
+    """Her resmî parçada kapsanan madde numarası (küçük modeller atıfta madde uydurmasın; 2026-11-18)."""
+
+    def test_article_map_covers_all_official_chunks(self):
+        sys.path.insert(0, str(ROOT / "src"))
+        from actuaryllm.retrieval import load_corpus
+        from actuaryllm_mcp.server import article_map
+        docs = load_corpus(ROOT).documents
+        m = article_map(docs)
+        self.assertEqual(m["mevzuat-5684_consolidated:25"], ["Madde 23"])  # önceki parçada başlayan madde taşınır
+        self.assertEqual(m["mevzuat-5684_consolidated:24"], ["Madde 22", "Madde 23"])
+        self.assertIn("Genel Şartlar A.3", m["mevzuat-teb_14982:1"])  # genel şartlarda bölüm numarası
+        self.assertIn("Geçici Madde 1", m["mevzuat-teb_20752:17"])  # "GEÇİCİ\n\nMADDE 1" ve doğru Türkçe yazım
+        self.assertEqual([d.cite_id for d in docs if d.kind == "official" and not m.get(d.cite_id)], [])
+        self.assertNotIn("edu_risk_pool", m)
+
+    def test_search_and_get_include_article_numbers(self):
+        r = session(
+            {"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "belge_getir", "arguments": {"kimlik": "mevzuat-5684_consolidated:25"}}},
+            {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "mevzuat_ara", "arguments": {"sorgu": "sigorta acentelerinin levhaya kaydı", "adet": 3}}},
+            {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "belge_getir", "arguments": {"kimlik": "edu_risk_pool"}}},
+        )
+        doc = json.loads(r[1]["result"]["content"][0]["text"])
+        self.assertEqual(doc["maddeler"], ["Madde 23"])
+        self.assertTrue(doc["excerpt"].startswith("(Bu parça: Madde 23)\n"))
+        hits = json.loads(r[2]["result"]["content"][0]["text"])["parcalar"]
+        self.assertTrue(all(h["maddeler"] for h in hits if h["id"].startswith("mevzuat-")))
+        self.assertNotIn("maddeler", json.loads(r[3]["result"]["content"][0]["text"]))
+
+
 class FakeEmbeddings(BaseHTTPRequestHandler):
     """Metnin özetinden belirlenimli 8 boyutlu vektör döner (gerçek model değildir)."""
     calls = 0
