@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "turkactuary-mcp"
+version = "0.1.0"
+description = "Türkiye sigortacılık mevzuatı araması ve aktüeryal hesap araçları için MCP sunucusu"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSE-DATA"]
+dependencies = []
+
+[project.scripts]
+turkactuary-mcp = "actuaryllm_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/actuaryllm", "src/actuaryllm_mcp"]

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "document_id": "mevzuat-reg_21103",
+  "source_id": "mevzuat_reg_21103",
+  "title": "Sigortacılık Destek Hizmetleri Hakkında Yönetmelik",
+  "domain": "operations_reinsurance",
+  "kind": "official",
+  "input_path": "data/official/mevzuat/mevzuat_reg_21103.txt",
+  "input_sha256": "8936cfd171dd44c3766bd6bbbd92c68cf52954c0b0cefe6e2cd907934ff754d4",
+  "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 5436a3e7994baa35)",
+  "effective_from": "2026-10-18",
+  "effective_until": null,
+  "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=21103&MevzuatTur=7&MevzuatTertip=5",
+  "chunk_chars": 2000,
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "afsharid",
+    "reviewed_at": "2026-10-18T12:23:17+03:00",
+    "evidence_path": "artifacts/reviews/evidence/mevzuat-material-review-001.json",
+    "evidence_sha256": "5ad31ada54ef6a41fa289d6c6112ed19cdfa1200a93016064225f6944df3a71a",
+    "no_personal_data": true
+  }
+}

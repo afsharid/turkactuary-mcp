@@ -1,0 +1,190 @@
+{
+  "schema": "actuaryllm.material-review.v1",
+  "review_id": "mevzuat-material-review-001",
+  "reviewer": "afsharid",
+  "reviewer_role_claim": "aktüer (beyan; doğrulanmadı)",
+  "reviewed_at": "2026-10-18T12:23:17+03:00",
+  "decision": "approved",
+  "statement_presented": "Bu metinler mevzuat.gov.tr'deki konsolide metnin 18 Ekim 2026 erişimli kopyasıdır; RAG, eğitim ve yayın için kullanılabilir; kişisel veri içermez. Bu onay içeriğin hukuki yorumunu ya da güncelliğini garanti etmez; sürüm 'erişim tarihi' ile sınırlı.",
+  "user_answer": "16'sını da onayla (Önerilen)",
+  "activation_decision": {
+    "question": "Aktif korpusa ne zaman alınsın?",
+    "answer": "Şimdi ayrı korpus dosyası olarak (Önerilen)",
+    "note": "Önceki araçlı mod ölçümleri eski (16 sentetik not) korpusla yapıldı; sonraki ölçümler yeni korpusla yapılır ve doğrudan karşılaştırılmaz."
+  },
+  "scope": {
+    "uses": [
+      "rag",
+      "training",
+      "publication"
+    ],
+    "no_personal_data": true,
+    "content_expert_review": "yapılmadı; üretilen parçalar review_status=draft kalır"
+  },
+  "extraction_checks": "13 PDF'li belgede HTML metninden çıkarılan MADDE/GEÇİCİ MADDE/EK MADDE kümeleri PDF ile birebir aynı, kelime oranı ≈1.0. 39016, 36076, 11581 için PDF yok; yalnız HTML.",
+  "permission_evidence": "artifacts/reviews/evidence/mevzuat-permission-001.json",
+  "download_evidence": "artifacts/reviews/evidence/mevzuat-download-001.json",
+  "documents": [
+    {
+      "document_id": "mevzuat-5684_consolidated",
+      "source_id": "mevzuat_5684_consolidated",
+      "title": "5684 sayılı Sigortacılık Kanunu — güncel konsolide metin",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 c38022893abc5f1d)",
+      "input_path": "data/official/mevzuat/mevzuat_5684_consolidated.txt",
+      "input_sha256": "7869a6eb111ec7793ab31d9d8149815cda4b9e5636219e89172b56b8520c2bbb",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5684&MevzuatTur=1&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_11443",
+      "source_id": "mevzuat_reg_11443",
+      "title": "Sigorta ve Reasürans Şirketleri ile Emeklilik Şirketlerinin Finansal Raporlamaları Hakkında Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 4da28734e5bc2069)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_11443.txt",
+      "input_sha256": "c3f126607d4d526a23a51fcc42946a67953d6e4fda600078e12914e4d345666c",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=11443&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_11493",
+      "source_id": "mevzuat_reg_11493",
+      "title": "Sigorta ve Reasürans ile Emeklilik Şirketlerinin Teknik Karşılıklarına ve Bu Karşılıkların Yatırılacağı Varlıklara İlişkin Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 4ce650441cd5270e)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_11493.txt",
+      "input_sha256": "43cc1721574abd2891b8a19aaf9c90f4a34713fde3876b52ce70de718cdbbe02",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=11493&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "reserving"
+    },
+    {
+      "document_id": "mevzuat-reg_11581",
+      "source_id": "mevzuat_reg_11581",
+      "title": "Sigorta Şirketleri ve Reasürans Şirketlerinin Kuruluş ve Çalışma Esaslarına İlişkin Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 518291e09dbab5e8)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_11581.txt",
+      "input_sha256": "ebf42edcfbdf91c8f92a8e7d5db7f94ca019213e197af654a5eb1d2aea749019",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=11581&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_12342",
+      "source_id": "mevzuat_reg_12342",
+      "title": "Sigorta Bilgi ve Gözetim Merkezi Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 da4799bf4e31e515)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_12342.txt",
+      "input_sha256": "831f9a7d92a3b649c8ea5ad3efd5040f126acb2787c9089910560b2c09b5cbe0",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=12342&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "operations_reinsurance"
+    },
+    {
+      "document_id": "mevzuat-reg_16496",
+      "source_id": "mevzuat_reg_16496",
+      "title": "Doğal Afet Sigortaları Kurumu Çalışma Esasları Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 5b114ac0dce9e4e1)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_16496.txt",
+      "input_sha256": "a298ded5c55ba30a113c4edbcef2e921ab7f2033266f9564451eab811149b80f",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=16496&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "non_life"
+    },
+    {
+      "document_id": "mevzuat-reg_19610",
+      "source_id": "mevzuat_reg_19610",
+      "title": "Sigorta Acenteleri Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 be145dfdae3e1a9c)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_19610.txt",
+      "input_sha256": "2c8632713ab59e4e18777d7e92145687ad9f0da4aa29e27c30964730fa6b0723",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=19610&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "operations_reinsurance"
+    },
+    {
+      "document_id": "mevzuat-reg_20786",
+      "source_id": "mevzuat_reg_20786",
+      "title": "Sigorta ve Reasürans Brokerleri Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 2767660817203495)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_20786.txt",
+      "input_sha256": "a66304440a08cf3f6df7a7308d5a6c46d4f89b605de3b3ebf5fbe3e7911c3a14",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=20786&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "operations_reinsurance"
+    },
+    {
+      "document_id": "mevzuat-reg_21069",
+      "source_id": "mevzuat_reg_21069",
+      "title": "Sigorta ve Reasürans ile Emeklilik Şirketlerinin Sermaye Yeterliliklerinin Ölçülmesine ve Değerlendirilmesine İlişkin Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 d24feb53a6a07632)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_21069.txt",
+      "input_sha256": "a587103577a120ea5b33afed18ff7651d0b9f659d79eddcaeef6e78ba661a7b9",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=21069&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_21103",
+      "source_id": "mevzuat_reg_21103",
+      "title": "Sigortacılık Destek Hizmetleri Hakkında Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 5436a3e7994baa35)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_21103.txt",
+      "input_sha256": "8936cfd171dd44c3766bd6bbbd92c68cf52954c0b0cefe6e2cd907934ff754d4",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=21103&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "operations_reinsurance"
+    },
+    {
+      "document_id": "mevzuat-reg_33728",
+      "source_id": "mevzuat_reg_33728",
+      "title": "Sigorta Tahkim Komisyonu Bilirkişilik Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 8ad6c45e81327f00)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_33728.txt",
+      "input_sha256": "d54ca5c8974b42943c83ceca35af92e82d72a6b2191e0af6b431bbe711f95307",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=33728&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_36076",
+      "source_id": "mevzuat_reg_36076",
+      "title": "Katılım Esasları Çerçevesinde Sigortacılık ve Bireysel Emeklilik Faaliyetlerine İlişkin Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 732f27ac901ff14c)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_36076.txt",
+      "input_sha256": "47f4df70e325843513d0208a587b68eb838d7dc6c83d31a61babb94afd6246db",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=36076&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "insurance_basics"
+    },
+    {
+      "document_id": "mevzuat-reg_39016",
+      "source_id": "mevzuat_reg_39016",
+      "title": "Özel Riskler Yönetim Merkezi Çalışma Usul ve Esasları Yönetmeliği",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 5eb518317f7ab98f)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_39016.txt",
+      "input_sha256": "dac8eaceac84aaa2fa6965248c1d269ff77e40de38bcf921c796cf7d68cd1b54",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39016&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "non_life"
+    },
+    {
+      "document_id": "mevzuat-reg_39063",
+      "source_id": "mevzuat_reg_39063",
+      "title": "Sigortacılık ve Özel Emeklilik Sektörlerinde İç Sistemlere Dair Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 0f0ecec71084198b)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_39063.txt",
+      "input_sha256": "c5275f37811919492e798e4f1a21a320ce5a9776b93a79a59a8593ba8a322acb",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39063&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "regulation_reporting"
+    },
+    {
+      "document_id": "mevzuat-reg_40369",
+      "source_id": "mevzuat_reg_40369",
+      "title": "Nükleer Risklere İlişkin Sorumluluk Sigortasına ve Teminatına Dair Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 b2a519cf25aacb37)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_40369.txt",
+      "input_sha256": "3c06a810982e1485521ddd5c28da85db9f15a683284d8c11302fb821f2c46066",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40369&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "non_life"
+    },
+    {
+      "document_id": "mevzuat-reg_40370",
+      "source_id": "mevzuat_reg_40370",
+      "title": "Nükleer Sigorta Havuzunun Çalışma Usul ve Esasları Hakkında Yönetmelik",
+      "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 fcaea09812c456f1)",
+      "input_path": "data/official/mevzuat/mevzuat_reg_40370.txt",
+      "input_sha256": "efd07e4925bc46b1a1d70016d6322f193782b320566036744d9a2d2db649082e",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=40370&MevzuatTur=7&MevzuatTertip=5",
+      "domain": "non_life"
+    }
+  ],
+  "correction": "reviewed_at ilk yazımda yanlışlıkla 23:30 girildi; oturum kaydındaki onay zamanı (09:23:17Z) ile düzeltildi."
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "document_id": "mevzuat-6102_sigorta",
+  "source_id": "mevzuat_6102_sigorta",
+  "title": "Türk Ticaret Kanunu — Altıncı Kitap: Sigorta Hukuku (m.1401–1520)",
+  "domain": "insurance_basics",
+  "kind": "official",
+  "input_path": "data/official/mevzuat/mevzuat_6102_sigorta.txt",
+  "input_sha256": "085ab6ee7b44b30462d429400313ca655eb5516ab1a2296900492c05f7d5a7f6",
+  "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-23 (html sha256 414215680b6c5856); yalnız m.1401–1520",
+  "effective_from": "2026-10-23",
+  "effective_until": null,
+  "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6102&MevzuatTur=1&MevzuatTertip=5",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-10-23T08:02:06.518991+00:00",
+    "consolidated_as_of": "2026-09-23",
+    "consolidated_as_of_basis": "tam metindeki en geç tarih (değişiklik notları ve değişiklik listesi); yaklaşık, mevzuat.gov.tr güncellik tarihi göstermiyor",
+    "official_status": "konsolide metnin resmî niteliği doğrulanmadı",
+    "rg_first_publication": "14.02.2011 / 27846",
+    "mevzuat_no": "6102",
+    "mevzuat_tur": 1,
+    "scope": {
+      "first_article": 1401,
+      "last_article": 1520,
+      "first_paragraph": "MADDE 1401 - (1) Sigorta sözleşmesi,",
+      "last_paragraph": "uygulanır.",
+      "next_excluded": "SON HÜKÜMLER"
+    },
+    "genel_sartlar": false
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "afsharid",
+    "reviewed_at": "2026-10-23T12:09:44+03:00",
+    "evidence_path": "artifacts/reviews/evidence/mevzuat-material-review-002.json",
+    "evidence_sha256": "3cb28bc7b3530cf98e8cc86711f562616ff26bbf648debd748f96e7669922e9f",
+    "no_personal_data": true
+  }
+}

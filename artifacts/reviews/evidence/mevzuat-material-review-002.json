@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "report_kind": "material_review_decision",
+  "recorded_at": "2026-10-23T09:09:44.152851+00:00",
+  "reviewer": {
+    "handle": "afsharid",
+    "self_declared_role": "aktüer",
+    "identity_authenticated": false
+  },
+  "user_statements": [
+    {
+      "speaker": "afsharid",
+      "text": "14 metnin materyal incelemesi ve aktif korpusa alınması: Onay; şimdi ayrı dosya (Önerilen) (2026-10-23)"
+    }
+  ],
+  "scope": "mevzuat.gov.tr konsolide metninin 2026-10-23 erişimli kopyası; RAG/eğitim/yayın; kişisel veri yok. Hukuki yorum veya güncellik garantisi değildir; konsolide metnin resmî niteliği doğrulanmadı.",
+  "documents": [
+    {
+      "source_id": "mevzuat_2918_zmss",
+      "manifest": "data/ingestion/mevzuat/mevzuat_2918_zmss.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_2918_zmss.txt",
+      "input_sha256": "1cd2939b34d353ac84bd6b53554f5942600fe06db17c7f4220b30482883f6455"
+    },
+    {
+      "source_id": "mevzuat_4632_consolidated",
+      "manifest": "data/ingestion/mevzuat/mevzuat_4632_consolidated.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_4632_consolidated.txt",
+      "input_sha256": "35ab1733d25119b0e611f8dec59e21898582240a5248873139ee51d9a4d5472b"
+    },
+    {
+      "source_id": "mevzuat_6102_sigorta",
+      "manifest": "data/ingestion/mevzuat/mevzuat_6102_sigorta.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_6102_sigorta.txt",
+      "input_sha256": "085ab6ee7b44b30462d429400313ca655eb5516ab1a2296900492c05f7d5a7f6"
+    },
+    {
+      "source_id": "mevzuat_6305_consolidated",
+      "manifest": "data/ingestion/mevzuat/mevzuat_6305_consolidated.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_6305_consolidated.txt",
+      "input_sha256": "21b6f88dda5f32757daed6d677391ef2ccdc7aae90a3abffb05ad31a24f95e8e"
+    },
+    {
+      "source_id": "mevzuat_reg_11508",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_11508.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_11508.txt",
+      "input_sha256": "e76768ec3099d5a44e18af0341955028dd6ee86f3a575ab0846b95ffd0e0e977"
+    },
+    {
+      "source_id": "mevzuat_reg_11514",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_11514.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_11514.txt",
+      "input_sha256": "3786a8b37030ddafea465ae53adf53070b66c6402dd8bccbf578a1f2e215827d"
+    },
+    {
+      "source_id": "mevzuat_reg_16674",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_16674.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_16674.txt",
+      "input_sha256": "794428518407a5163d7a551f088b132ca20c0cde48b635b81e1c259af499fa35"
+    },
+    {
+      "source_id": "mevzuat_reg_16748",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_16748.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_16748.txt",
+      "input_sha256": "7a60e9b8ef91673fef74e97b09a0e64b05cfca3aa2e4bc1ad6c0ceebf4c64183"
+    },
+    {
+      "source_id": "mevzuat_reg_18962",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_18962.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_18962.txt",
+      "input_sha256": "d73d8520b663c875d2a8b764d81b52b3dde9bcdc223301d6de5a9e8ce2ffb4ca"
+    },
+    {
+      "source_id": "mevzuat_reg_34276",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_34276.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_34276.txt",
+      "input_sha256": "0bab56eaa115ed31fe62a85461dfc1ec3ec10114f90d3e14e026c1598e5e7ca8"
+    },
+    {
+      "source_id": "mevzuat_reg_39939",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_39939.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_39939.txt",
+      "input_sha256": "eb2f976c8e0b4183af39e5f734b7659786d66309747fdcd84384be7cd45ad2e8"
+    },
+    {
+      "source_id": "mevzuat_reg_45086",
+      "manifest": "data/ingestion/mevzuat/mevzuat_reg_45086.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_reg_45086.txt",
+      "input_sha256": "351de8826d2495c977a3052d5de559adb077e978db53e8d38d1bbc2055de39b2"
+    },
+    {
+      "source_id": "mevzuat_teb_14982",
+      "manifest": "data/ingestion/mevzuat/mevzuat_teb_14982.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_teb_14982.txt",
+      "input_sha256": "2b3b4933a8fab131f0bbaf85477e18ae4ac5c243885ec093347d46bd213ccc0c"
+    },
+    {
+      "source_id": "mevzuat_teb_20752",
+      "manifest": "data/ingestion/mevzuat/mevzuat_teb_20752.manifest.json",
+      "input_path": "data/official/mevzuat/mevzuat_teb_20752.txt",
+      "input_sha256": "ae5d2e98824206bd3ebd4c7bfaac5441a186fca851a26d4de045592a6ea17f2a"
+    }
+  ],
+  "download_evidence": {
+    "path": "artifacts/reviews/evidence/mevzuat-download-002.json",
+    "sha256": "3ee3a7534c229ac98f96beddf6863001e5491eacbd713f9122315b8386274579"
+  },
+  "activation": "data/corpus/<source_id>.jsonl ayrı dosyalar; mevcut 16 mevzuat dosyası ve parça kimlikleri değişmez."
+}

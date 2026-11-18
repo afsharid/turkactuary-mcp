@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "document_id": "mevzuat-teb_20752",
+  "source_id": "mevzuat_teb_20752",
+  "title": "Karayolları Motorlu Araçlar Zorunlu Mali Sorumluluk Sigortası Genel Şartları",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/mevzuat/mevzuat_teb_20752.txt",
+  "input_sha256": "ae5d2e98824206bd3ebd4c7bfaac5441a186fca851a26d4de045592a6ea17f2a",
+  "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-23 (html sha256 0f4b1c20bb716618)",
+  "effective_from": "2026-10-23",
+  "effective_until": null,
+  "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=20752&MevzuatTur=9&MevzuatTertip=5",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-10-23T08:03:05.437632+00:00",
+    "consolidated_as_of": "2026-07-01",
+    "consolidated_as_of_basis": "tam metindeki en geç tarih (değişiklik notları ve değişiklik listesi); yaklaşık, mevzuat.gov.tr güncellik tarihi göstermiyor",
+    "official_status": "konsolide metnin resmî niteliği doğrulanmadı",
+    "rg_first_publication": "14.05.2015 / 29355",
+    "mevzuat_no": "20752",
+    "mevzuat_tur": 9,
+    "scope": null,
+    "genel_sartlar": true
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "afsharid",
+    "reviewed_at": "2026-10-23T12:09:44+03:00",
+    "evidence_path": "artifacts/reviews/evidence/mevzuat-material-review-002.json",
+    "evidence_sha256": "3cb28bc7b3530cf98e8cc86711f562616ff26bbf648debd748f96e7669922e9f",
+    "no_personal_data": true
+  }
+}

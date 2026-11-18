@@ -1,0 +1,2217 @@
+TÜRK TİCARET KANUNU [1]
+
+Sigorta Hukuku
+
+BİRİNCİ KISIM
+
+Genel Hükümler
+
+A) Sigorta sözleşmesi
+
+I - Temel kavramlar
+
+1. Tanım
+
+MADDE 1401 - (1) Sigorta sözleşmesi,
+
+sigortacının bir prim karşılığında, kişinin para ile ölçülebilir bir menfaatini
+
+zarara uğratan tehlikenin, rizikonun, meydana gelmesi hâlinde bunu tazmin etmeyi
+
+ya da bir veya birkaç kişinin hayat süreleri sebebiyle ya da hayatlarında gerçekleşen
+
+bazı olaylar dolayısıyla bir para ödemeyi veya diğer edimlerde bulunmayı yükümlendiği
+
+sözleşmedir.
+
+(2) Ruhsatsız bir şirket ile onun bu durumunu bilerek
+
+yapılan sigorta sözleşmeleri hakkında Türk Borçlar Kanununun 604 ve 605 inci maddeleri
+
+uygulanır. Türkiye’de yerleşik olmayan sigorta şirketleriyle kurulan sigorta sözleşmelerinde
+
+bu hüküm uygulanmaz.
+
+2. Karşılıklı sigorta
+
+MADDE 1402 - (1) Birden çok kişinin
+
+birleşerek, içlerinden herhangi birinin, belli bir rizikonun gerçekleşmesi durumunda
+
+doğacak zararlarını tazmin etmeyi borçlanmaları karşılıklı sigortadır. Karşılıklı
+
+sigorta faaliyeti ancak kooperatif şirket şeklinde yürütülebilir.
+
+3. Reasürans
+
+MADDE 1403 - (1) Sigortacı, sigorta ettiği
+
+menfaati, dilediği şartlarla, tekrar sigorta ettirebilir.
+
+(2) Reasürans, sigortacının, sigorta ettirene karşı
+
+borç ve yükümlülüklerini ortadan kaldırmaz; sigorta ettirene, tekrar sigorta yapana
+
+karşı, doğrudan dava açmak ve istemde bulunma haklarını vermez.
+
+4. Geçerli olmayan sigorta
+
+MADDE 1404 - (1) Sigorta ettirenin veya sigortalının,
+
+kanunun emredici hükümlerine, ahlâka, kamu düzenine, kişilik haklarına aykırı bir
+
+fiilinden doğabilecek bir zararını teminat altına almak amacıyla sigorta yapılamaz.
+
+II - Hükümler
+
+1. Sözleşmenin yapılması sırasında susma
+
+MADDE 1405 - (1) Sigortacı ile sigorta sözleşmesi
+
+yapmak isteyen kişinin, sözleşmenin yapılması için verdiği teklifname, teklifname
+
+tarihinden itibaren otuz gün içinde reddedilmemişse sigorta sözleşmesi kurulmuş
+
+sayılır.
+
+(2) Teklifnamenin verilmesi sırasında yapılmış ödemeler,
+
+sözleşmenin yapılmasından sonra prim olarak kabul edilir veya ilk prime sayılır.
+
+Bu ödemeler, sözleşme yapılmadığı takdirde, kesinti yapılmadan, faiziyle birlikte
+
+geri verilir.
+
+(3) 1483 üncü madde hükmü saklıdır.
+
+2. Temsil
+
+a) Genel olarak
+
+MADDE 1406 - (1) Bir kişi, diğer bir
+
+kişinin adına onu temsilen sigorta sözleşmesi yapabilir; temsilci yetkisiz ise ilk
+
+sigorta döneminin primlerinden sorumlu olur.
+
+(2) Adına sigorta sözleşmesi yapılan kişi, rizikonun
+
+gerçekleşmesinden önce veya 1458 inci madde hükmü saklı kalmak üzere, riziko gerçekleşince
+
+de sözleşmeye sonradan icazet verebilir.
+
+(3) Başkasının adına yapıldığı anlaşılmayan veya
+
+yetkisiz yapılan sözleşme, menfaati bulunması şartıyla, temsilci adına yapılmış
+
+sayılır.
+
+b) Talimat bulunmaması
+
+MADDE 1407 - (1) Temsilci, sigorta
+
+ettiren tarafından, sigorta şartlarıyla ilgili herhangi bir talimat verilmemişse,
+
+sigorta sözleşmesini, sözleşmenin yapıldığı yerdeki mutat şartlara göre yapar.
+
+3. Sigorta menfaatinin yokluğu
+
+MADDE 1408 - (1) Sigorta sözleşmesinin
+
+yapılması anında, sigortalanan menfaat mevcut değilse, sigorta sözleşmesi geçersizdir.
+
+Sözleşmenin yapıldığı anda varolan menfaat, sözleşmenin süresi içinde ortadan kalkarsa,
+
+sözleşme o anda geçersiz olur.
+
+(2) 1470 inci madde hükmü saklıdır.
+
+4. Sigortanın kapsamı
+
+MADDE 1409 - (1) Sigortacı, sözleşmede
+
+öngörülen rizikonun gerçekleşmesinden doğan zarardan veya bedelden sorumludur.
+
+(2) Sözleşmede öngörülen rizikolardan herhangi birinin
+
+veya bazılarının sigorta teminatı dışında kaldığını ispat yükü sigortacıya aittir.
+
+5. Sigorta süresi
+
+MADDE 1410 - (1) Süre, sözleşmeyle
+
+kararlaştırılmamış ise, taraf iradeleri, yerel teamül ile hâl ve şartlar göz önünde
+
+bulundurularak, mahkemece belirlenir.
+
+6. Sigorta dönemi
+
+MADDE 1411 - (1) Prim daha kısa zaman
+
+dilimlerine göre hesaplanmamış ise bu Kanuna göre sigorta dönemi bir yıldır.
+
+7. Sigorta ettiren dışındakilerin bilgisi
+
+ve davranışı
+
+MADDE 1412 - (1) Kanunda sigorta ettirenin
+
+bilgisine ve davranışına hukuki sonuç bağlanan durumlarda, sigortadan haberi olması
+
+şartı ile sigortalının, temsilci söz konusu ise temsilcinin, can sigortalarında
+
+da lehtarın bilgisi ve davranışı da dikkate alınır.
+
+8. Fesih ve cayma
+
+a) Olağanüstü durumlarda fesih
+
+MADDE 1413 - (1) Sigortacının, konkordato
+
+ilan etmesi, ilgili sigorta dalına ilişkin ruhsatının iptâl edilmesi veya sözleşme
+
+yapma yetkisinin kaldırılması gibi hâllerde; sigorta ettiren, bu olguları öğrendiği
+
+tarihten itibaren bir ay içinde sigorta sözleşmesini feshedebilir.
+
+(2) Primlerin tamamını ödememişken sigorta
+
+ettiren konkordato ilan etmişse, sigortacı, bunu öğrendiği tarihten itibaren, bir
+
+aylık bildirim süresine uyarak, sigorta sözleşmesini feshedebilir.
+
+(3) Zorunlu sigortalar ile prim ödemesinden muaf
+
+hâle gelmiş can sigortalarına ikinci fıkra uygulanmaz.
+
+b) Sigorta priminin artırılmasında fesih
+
+MADDE 1414 - (1) Sigortacı, sigorta
+
+teminatının kapsamında değişiklik yapmadan, ayarlama şartına dayanarak primi yükseltirse,
+
+sigorta ettiren, sigortacının bildirimini aldığı tarihten itibaren bir ay içinde
+
+sözleşmeyi feshedebilir.
+
+c) Kısmi fesih ve cayma
+
+MADDE 1415 - (1) Sigortacının sigorta
+
+sözleşmesini, bazı hükümlerine ilişkin olarak feshetmesi veya ondan cayması haklı
+
+sebeplere dayanıyorsa ve sigortacının sözleşmeyi geri kalan hükümlerle, aynı şartlarla
+
+yapmayacağı durumdan anlaşılıyorsa, sigortacı sözleşmenin tamamını feshedebilir
+
+veya ondan cayabilir.
+
+(2) Sigortacı, sözleşmeyi kısmen feshetmiş veya
+
+ondan caymışsa, sigorta ettiren sözleşmenin tamamını feshedebilir veya ondan cayabilir.
+
+9. Tebliğler ve bildirimler
+
+MADDE 1416 - (1) Sigorta ettiren tarafından
+
+yapılacak tebliğler ve bildirimler sigortacıya veya sözleşmeyi yapan ya da yapılmasına
+
+aracılık eden acenteye; sigortacı tarafından yapılan tebliğler ve bildirimler ise,
+
+sigorta ettirenin veya gerektiğinde sigortalının ya da lehtarın sigortacıya bildirilmiş
+
+son adreslerine yapılır.
+
+10. Olağanüstü durumlar
+
+a) Tarafların aczi, takibin semeresiz
+
+kalması
+
+MADDE 1417 - (1) Sigorta
+
+ettiren, aciz hâline düşen veya hakkında yapılan takip semeresiz kalan sigortacıdan,
+
+taahhüdünün yerine getirileceğine ilişkin teminat isteyebilir. Bu istemden itibaren
+
+bir hafta içinde teminat verilmemiş ise sigorta ettiren sözleşmeyi feshedebilir.
+
+(2) Primin ödenmesinden önce acze düşen, iflas eden
+
+veya hakkında yapılan takip semeresiz kalan sigorta ettirene, sigortacının istemiyle,
+
+aynı şartlarla, birinci fıkra hükmü uygulanır.
+
+b) Sigortacının iflası
+
+MADDE 1418 - (1) Sigortacının iflası
+
+hâlinde sigorta sözleşmesi sona erer. Sigortacının iflasından önce ödenmeyen tazminatlar,
+
+özel hükümler saklı kalmak kaydıyla, önce 3/6/2007 tarihli ve 5684 sayılı Sigortacılık
+
+Kanunu gereğince sigortacı tarafından ayrılması gereken teminatlardan, sonra iflas
+
+masasından karşılanır.
+
+(2) Hak sahipleri iflas masasına İcra ve İflas Kanununun
+
+206 ncı maddesinin dördüncü fıkrasında düzenlenen üçüncü sırada katılır.
+
+11. Prim iadesi
+
+MADDE 1419 - (1) Sigorta sözleşmesi sona erdiği
+
+takdirde, Kanunda aksi öngörülmemişse, işlemeyen günlere ait ödenmiş primler sigorta
+
+ettirene geri verilir.
+
+12. Zamanaşımı
+
+MADDE 1420 - (1) Sigorta sözleşmesinden doğan
+
+bütün istemler, alacağın muaccel olduğu tarihten başlayarak iki yıl ve 1482 nci
+
+madde hükmü saklı kalmak üzere, sigorta tazminatına ve sigorta bedeline ilişkin
+
+istemler her hâlde rizikonun gerçekleştiği tarihten itibaren altı yıl geçmekle zamanaşımına
+
+uğrar.
+
+(2) Diğer kanunlardaki hükümler saklıdır.
+
+III - Tarafların borç ve yükümlülükleri
+
+1. Sigortacının borç ve yükümlülükleri
+
+a) Rizikoyu taşıma yükümlülüğü
+
+aa) Genel olarak
+
+MADDE 1421 - (1) Aksine sözleşme yoksa,
+
+sigortacının sorumluluğu primin veya ilk taksidinin ödenmesi ile başlar; kara ve
+
+denizde eşya taşıma işlerine ilişkin sigortalarda, sigortacı, sözleşmenin yapılmasıyla
+
+sorumlu olur.
+
+(2) 1430 uncu madde hükmü saklıdır.
+
+bb) İmkânsızlık
+
+MADDE 1422 - (1) Sigortacının sorumluluğu
+
+başlamadan, sigorta ettirenin, sigortalının ve can sigortalarında ayrıca lehtarın,
+
+fiilleri ve etkileri olmaksızın rizikonun gerçekleşmesi imkânsızlaşmışsa, sigortacı
+
+prime hak kazanamaz.
+
+b) Aydınlatma yükümlülüğü
+
+MADDE 1423 - (1) Sigortacı ve acentesi,
+
+sigorta sözleşmesinin kurulmasından önce, gerekli inceleme süresi de tanınmak şartıyla
+
+kurulacak sigorta sözleşmesine ilişkin tüm bilgileri, sigortalının haklarını, sigortalının
+
+özel olarak dikkat etmesi gereken hükümleri, gelişmelere bağlı bildirim yükümlülüklerini
+
+sigorta ettirene yazılı olarak bildirir. Ayrıca,
+
+poliçeden bağımsız olarak sözleşme süresince sigorta ilişkisi
+
+bakımından önemli sayılabilecek olayları ve gelişmeleri sigortalıya yazılı olarak
+
+açıklar.
+
+(2) Aydınlatma açıklamasının verilmemesi hâlinde,
+
+sigorta ettiren, sözleşmenin yapılmasına ondört gün içinde itiraz etmemişse, sözleşme
+
+poliçede yazılı şartlarla yapılmış olur. Aydınlatma açıklamasının verildiğinin ispatı
+
+sigortacıya aittir.
+
+(3) Hazine Müsteşarlığı, çeşitli
+
+ülkelerin ve özellikle Avrupa Birliğinin düzenlemelerini dikkate alarak, tüketiciyi
+
+aydınlatma açıklamasının şeklini ve içeriğini belirler.
+
+c) Sigorta poliçesi verme yükümlülüğü
+
+aa) Genel olarak
+
+MADDE 1424 - (1) Sigortacı; sigorta
+
+sözleşmesi kendisi veya acentesi tarafından yapılmışsa, sözleşmenin yapılmasından
+
+itibaren yirmidört saat, diğer hâllerde onbeş gün içinde, yetkililerce imzalanmış
+
+bir poliçeyi sigorta ettirene vermekle yükümlüdür. Sigortacı poliçenin geç verilmesinden
+
+doğan zarardan sorumludur.
+
+(2) Sigorta ettiren poliçesini kaybederse, gideri
+
+kendisine ait olmak üzere, yeni bir poliçe verilmesini sigortacıdan isteyebilir.
+
+(3) Poliçenin verilmediği hâllerde, sözleşmenin
+
+ispatı genel hükümlere tabidir.
+
+bb) İçerik
+
+MADDE 1425 - (1) Sigorta poliçesi,
+
+tarafların haklarını, temerrüde ilişkin hükümler ile genel ve varsa özel şartları
+
+içerir, rahat ve kolay okunacak biçimde düzenlenir.
+
+(2) Poliçenin ve zeyilnâmenin eklerinin içeriği
+
+teklifnameden veya kararlaştırılan hükümlerden farklıysa, anılan belgelerde yer
+
+alıp teklifnameden değişik olan ve sigorta ettirenin, sigortalının ve lehtarın aleyhine
+
+öngörülmüş bulunan hükümler geçersizdir.
+
+(3) Kanunlarda aksine hüküm bulunmadıkça, genel
+
+şartlarda sigorta ettirenin, sigortalının veya lehtarın lehine olan bir değişiklik
+
+hemen ve doğrudan uygulanır. Ancak, bu değişiklik ek prim alınmasını gerektiriyorsa,
+
+sigortacı değişiklikten itibaren sekiz gün içinde prim farkı isteyebilir. İstenilen
+
+prim farkının sekiz gün içinde kabul edilmemesi hâlinde sözleşme eski genel şartlarla
+
+devam eder.
+
+d) Giderleri ödeme borcu
+
+MADDE 1426 - (1) Sigortacı, sigorta
+
+ettiren, sigortalı ve lehtar tarafından, rizikonun, tazminatın veya bedel ödeme
+
+borcunun kapsamının belirlenmesi amacıyla yapılan makul giderleri, bunlar faydasız
+
+kalmış olsalar bile, ödemek zorundadır.
+
+(2) Eksik sigortanın yapıldığı
+
+hâllerde 1462 nci madde hükmü kıyas yolu ile uygulanır.
+
+e) Tazminat ödeme borcu
+
+aa) Genel olarak
+
+MADDE 1427 - (1) Aynen tazmine ilişkin
+
+sözleşme yoksa sigorta tazminatı nakden ödenir.
+
+(2) Sigorta tazminatı veya bedeli, rizikonun gerçekleşmesini
+
+müteakip ve rizikoyla ilgili belgelerin sigortacıya verilmesinden sonra sigortacının
+
+edimine ilişkin araştırmaları bitince ve her hâlde 1446 ncı maddeye göre yapılacak
+
+ihbardan kırkbeş gün sonra muaccel olur. Can sigortaları için bu süre onbeş gündür.
+
+Sigortacıya yüklenemeyen bir kusurdan dolayı inceleme gecikmiş ise süre işlemez.
+
+(3) Araştırmalar, 1446 ncı maddeye göre yapılacak
+
+ihbardan başlayarak üç ay içinde tamamlanamamışsa; sigortacı, tazminattan veya bedelden
+
+mahsup edilmek üzere, tarafların mutabakatı veya anlaşmazlık hâlinde mahkemece yaptırılacak
+
+ön ekspertiz sonucuna göre süratle tespit edilecek hasar miktarının veya bedelin
+
+en az yüzde ellisini avans olarak öder.
+
+(4) Borç muaccel olunca, sigortacı ihtara gerek
+
+kalmaksızın temerrüde düşer.
+
+(5) Sigortacının temerrüt faizi ödeme borcundan
+
+kurtulmasını öngören sözleşme hükümleri geçersizdir.
+
+bb) Kısmi tazminat ödemeleri
+
+MADDE 1428 - (1) Sorumluluk sigortası dışındaki
+
+sigortalarda, aksine sözleşme yoksa, sigorta süresi içinde yapılan kısmi tazminat
+
+ödemeleri sigorta bedelinden düşülür.
+
+(2) Kısmi zarar hâllerinde taraflar sigorta sözleşmesini
+
+feshedebilirler. Ancak, sigortacı fesih hakkını, kısmi tazminat ödemesinden sonra
+
+kullanabilir.
+
+cc) Rizikonun gerçekleşmesinde kusur
+
+MADDE 1429 - (1) Sigortacı, aksine
+
+sözleşme yoksa, sigorta ettirenin, sigortalının, lehtarın ve bunların hukuken fiillerinden
+
+sorumlu bulundukları kişilerin ihmallerinden kaynaklanan zararları tazmin ile yükümlüdür.
+
+Sigorta ettiren, sigortalı ve tazminat ödenmesini sağlamak amacıyla bunların hukuken
+
+fiillerinden sorumlu oldukları kişiler, rizikonun gerçekleşmesine kasten sebep oldukları
+
+takdirde, sigortacı tazminat borcundan kurtulur ve aldığı primleri geri vermez.
+
+(2) 1495, 1503 ve 1504 üncü maddenin ikinci fıkrası hükmü
+
+saklıdır.
+
+2. Sigorta ettirenin borç ve yükümlülükleri
+
+a) Prim ödeme borcu
+
+aa) Genel olarak
+
+MADDE 1430 - (1) Sigorta ettiren, sözleşmeyle
+
+kararlaştırılan primi ödemekle yükümlüdür. Aksine sözleşme yoksa sigorta primi peşin
+
+ödenir. Özel kanunlardaki hükümler saklıdır.
+
+(2) Sigorta primi nakden ödenir. İlk taksidin nakden
+
+ödenmesi şartıyla, sonraki primler için kambiyo senedi verilebilir; bu hâlde, ödeme
+
+kambiyo senedinin tahsili ile gerçekleşir.
+
+(3) Sigorta ettiren, sigortacının sorumluluğu başlamadan
+
+önce, kararlaştırılmış primin yarısını ödeyerek sözleşmeden cayabilir. Sözleşmeden
+
+kısmi cayma hâlinde, sigorta ettirenin ödemekle yükümlü olduğu prim, cayılan kısma
+
+ilişkin primin yarısıdır.
+
+bb) Ödeme zamanı
+
+MADDE 1431 - (1) Sigorta priminin tamamının,
+
+taksitle ödenmesi kararlaştırılmışsa ilk taksidin, sözleşme yapılır yapılmaz ve
+
+poliçenin teslimi karşılığında ödenmesi gerekir. Karada ve denizde eşya taşıma işlerine
+
+ilişkin sigortalarda sigorta primi, poliçe henüz düzenlenmemiş olsa bile, sözleşmenin
+
+yapıldığı anda ödenir.
+
+(2) İzleyen taksitlerin ödeme zamanı, miktarı ve
+
+priminin vadesinde ödenmemesinin sonuçları, poliçe ile birlikte yazılı olarak sigorta
+
+ettirene bildirilir veya bu şartlar poliçe üzerine yazılır.
+
+(3) Sigorta priminin taksitle
+
+ödenmesinin kararlaştırıldığı hâllerde, riziko gerçekleşince, ödenecek tazminata
+
+veya bedele ilişkin primlerin tümü muaccel olur.
+
+(4) Başkası lehine yapılan sigortada, prim borcu
+
+için sigorta ettirenin aleyhine yapılan takip semeresiz kalmışsa, zarar sigortalarında
+
+sigortalı, can sigortalarında lehtar, bu durumun sigortacı tarafından kendilerine
+
+bildirilmesi hâlinde, primi ödemeyi üstlenirlerse sözleşme bu kişilerle devam eder;
+
+aksi hâlde, sigortacı sigorta ettirene karşı sahip olduğu hakları kullanır.
+
+(5) Sigortacı prim alacağını, 1480 inci madde hükmü
+
+saklı kalmak üzere ödenecek tazminattan veya bedelden düşebilir. Bu hâlde, Türk
+
+Borçlar Kanununun 129 uncu maddesi hükmü sigorta sözleşmeleri hakkında uygulanmaz.
+
+cc) Ödeme yeri
+
+MADDE 1432 - (1) Sigorta primi, sigorta
+
+ettirenin, sözleşmede gösterilen adresinde ödenir. Sözleşmede başka bir ödeme yeri
+
+gösterilmiş olmasına rağmen, sigorta primi fiilen sigorta ettirenin gösterdiği adreste
+
+ödenegelmekte ise, bu ödeme yerine ilişkin söz konusu şart yok sayılır.
+
+dd) Primin indirilmesi
+
+MADDE 1433 - (1) Primi etkileyen sebeplerde,
+
+rizikonun hafiflemesini gerektiren değişiklikler meydana gelmişse, prim indirilir
+
+ve gereğinde geri verilir.
+
+(2) Sözleşmede öngörülen yüksek primin, sigorta
+
+ettirenin, rizikoyu ağırlaştıran sebeplere ilişkin olarak bildirdiği hususlardaki
+
+yanılmalardan kaynaklanması hâlinde birinci fıkra hükmü geçerlidir.
+
+ee) Temerrüt
+
+MADDE 1434 - (1) 1431 inci maddeye
+
+uygun olarak istenilen sigorta primini ödemeyen sigorta ettiren mütemerrit olur.
+
+(2) İlk taksidi veya tamamı bir defada ödenmesi
+
+gereken prim, zamanında ödenmemişse, sigortacı, ödeme yapılmadığı sürece, sözleşmeden
+
+üç ay içinde cayabilir. Bu süre, vadeden başlar. Prim alacağının, muacceliyet gününden
+
+itibaren üç ay içinde dava veya takip yoluyla istenmemiş olması hâlinde, sözleşmeden
+
+cayılmış olunur.
+
+(3) İzleyen primlerden herhangi biri zamanında ödenmez
+
+ise, sigortacı sigorta ettirene, noter aracılığı veya iadeli taahhütlü mektupla
+
+on günlük süre vererek borcunu yerine getirmesini, aksi hâlde, süre sonunda, sözleşmenin
+
+feshedilmiş sayılacağını ihtar eder. Bu sürenin bitiminde borç ödenmemiş ise sigorta
+
+sözleşmesi feshedilmiş olur. Sigortacının, sigorta ettirenin temerrüdü nedeniyle
+
+Türk Borçlar Kanunundan doğan diğer hakları saklıdır.
+
+(4) Bir sigorta dönemi içinde sigorta ettirene iki
+
+defa ihtar gönderilmişse sigortacı, sigorta döneminin sonunda hüküm doğurmak üzere
+
+sözleşmeyi feshedebilir. Can sigortalarında indirime ilişkin hükümler saklıdır.
+
+b) Beyan yükümlülüğü
+
+aa) Sözleşmenin yapılmasında
+
+aaa) Genel olarak
+
+MADDE 1435 - (1) Sigorta ettiren sözleşmenin
+
+yapılması sırasında bildiği veya bilmesi gereken tüm önemli hususları sigortacıya
+
+bildirmekle yükümlüdür. Sigortacıya bildirilmeyen, eksik veya yanlış bildirilen
+
+hususlar, sözleşmenin yapılmamasını veya değişik şartlarda yapılmasını gerektirecek
+
+nitelikte ise, önemli kabul edilir. Sigortacı tarafından yazılı veya sözlü olarak
+
+sorulan hususlar, aksi ispat edilinceye kadar önemli sayılır.
+
+bbb) Yazılı sorular
+
+MADDE 1436 - (1) Sigortacı sigorta
+
+ettirene, cevaplaması için sorular içeren bir liste vermişse, sunulan listede yer
+
+alan sorular dışında kalan hususlara ilişkin olarak sigorta ettirene hiçbir sorumluluk
+
+yüklenemez; meğerki, sigorta ettiren önemli bir hususu kötüniyetle saklamış olsun.
+
+(2) Sigortacı, liste dışında öğrenmek istediği hususlar
+
+varsa bunlar hakkında da soru sorabilir. Söz konusu soruların da yazılı ve açık
+
+olması gerekir. Sigorta ettiren bu soruları cevaplamakla yükümlüdür.
+
+ccc) Bağlantı
+
+MADDE 1437 - (1) Tazminat ve bedel
+
+ödemelerinde, bildirilmeyen veya yanlış bildirilen bir husus ile rizikonun gerçekleşmesi
+
+arasındaki bağlantı, 1439 uncu maddede öngörülen kurallar uyarınca dikkate alınır.
+
+ddd) Sigortacı tarafından gerçek durumun
+
+bilinmesi
+
+MADDE 1438 - (1) Bildirilmeyen veya
+
+yanlış bildirilen bir hususun ya da olgunun gerçek durumu sigortacı tarafından biliniyorsa,
+
+sigortacı beyan yükümlülüğünün ihlal edilmiş olduğunu ileri sürerek sözleşmeden
+
+cayamaz. İspat yükü sigorta ettirene aittir.
+
+eee) Yaptırım
+
+MADDE 1439 - (1) Sigortacı için önemli
+
+olan bir husus bildirilmemiş veya yanlış bildirilmiş olduğu takdirde, sigortacı
+
+1440 ıncı maddede belirtilen süre içinde sözleşmeden cayabilir veya prim farkı isteyebilir.
+
+İstenilen prim farkının on gün içinde kabul edilmemesi hâlinde, sözleşmeden cayılmış
+
+kabul olunur. Önemli olan bir hususun sigorta ettirenin kusuru sonucu öğrenilememiş
+
+olması veya sigorta ettiren tarafından önemli sayılmaması durumu değiştirmez.
+
+(2) Rizikonun gerçekleşmesinden sonra, sigorta ettirenin
+
+ihmali ile beyan yükümlülüğü ihlal edildiği takdirde, bu ihlal tazminatın veya bedelin
+
+miktarına yahut rizikonun gerçekleşmesine etki edebilecek nitelikte ise, ihmalin
+
+derecesine göre tazminattan indirim yapılır. Sigorta ettirenin kusuru kast derecesinde
+
+ise beyan yükümlülüğünün ihlali ile gerçekleşen riziko arasında bağlantı varsa,
+
+sigortacının tazminat veya bedel ödeme borcu ortadan kalkar; bağlantı yoksa, sigortacı
+
+ödenen primle ödenmesi gereken prim arasındaki oranı dikkate alarak sigorta tazminatını
+
+veya bedelini öder.
+
+fff) Caymanın şekli ve süresi
+
+MADDE 1440 - (1) Caymanın, sigorta
+
+ettirene bir beyanla yöneltilmesi şarttır.
+
+(2) Cayma, onbeş gün içinde sigorta ettirene bildirilir.
+
+Bu süre sigortacının bildirim yükümlülüğünün ihlal edilmiş olduğunu öğrendiği tarihten
+
+itibaren başlar.
+
+ggg) Caymanın hükümleri
+
+MADDE 1441 - (1) Cayma hâlinde, sigorta
+
+ettiren kasıtlı ise, sigortacı rizikoyu taşıdığı süreye ait primlere hak kazanır.
+
+hhh) Cayma hakkının düşmesi
+
+MADDE 1442 - (1) Cayma hakkı aşağıdaki
+
+hâllerde kullanılamaz:
+
+a) Cayma hakkının kullanılmasından açıkça veya zımnen vazgeçilmişse.
+
+b) Caymaya yol açan ihlale sigortacı sebebiyet vermişse.
+
+c) Sigortacı, sorularından bazıları cevapsız bırakıldığı
+
+hâlde sözleşmeyi yapmışsa.
+
+bb) Teklifin yapılması ile kabulü arasındaki
+
+değişiklikleri beyan yükümlülüğü
+
+MADDE 1443 - (1) Teklifin
+
+yapılması ile kabulü arasındaki değişiklikler hakkında sözleşmenin yapılması sırasındaki
+
+beyan yükümlülüğüne ilişkin madde hükümleri kıyas yoluyla uygulanır.
+
+cc) Sözleşme süresi içinde
+
+aaa) Genel olarak
+
+MADDE 1444 - (1) Sigorta ettiren, sözleşmenin
+
+yapılmasından sonra, sigortacının izni olmadan rizikoyu veya mevcut durumu ağırlaştırarak
+
+tazminat tutarının artmasını etkileyici davranış ve işlemlerde bulunamaz.
+
+(2) Sigorta ettiren veya onun izniyle başkası, rizikonun
+
+gerçekleşme ihtimalini artırıcı veya mevcut durumu ağırlaştırıcı işlemlerde bulunursa
+
+yahut sözleşme yapılırken açıkça riziko ağırlaşması olarak kabul edilmiş bulunan
+
+hususlardan biri gerçekleşirse derhâl; bu işlemler bilgisi dışında yapılmışsa, bu
+
+hususu öğrendiği tarihten itibaren en geç on gün içinde durumu sigortacıya bildirir.
+
+bbb) Sigortacının hakları
+
+MADDE 1445 - (1) Sigortacı sözleşmenin
+
+süresi içinde, rizikonun gerçekleşmesi veya mevcut durumun ağırlaşması ihtimalini
+
+ya da sözleşmede riziko ağırlaşması olarak kabul edilebilecek olayların varlığını
+
+öğrendiği takdirde, bu tarihten itibaren bir ay içinde sözleşmeyi feshedebilir veya
+
+prim farkı isteyebilir. Farkın on gün içinde kabul edilmemesi hâlinde sözleşme feshedilmiş
+
+sayılır.
+
+(2) Değişikliklerin yapılmasından önceki duruma
+
+dönüldüğü takdirde fesih hakkı kullanılamaz.
+
+(3) Süresinde kullanılmayan fesih ve prim farkını
+
+isteme hakkı düşer.
+
+(4) Rizikonun artmasına, sigortacının menfaati ile
+
+ilişkili bir husus, sigortacının sorumlu olduğu bir olay veya insanî bir görevin
+
+yerine getirilmesi ve hayat sigortalarında da sigortalının sağlık durumunda meydana
+
+gelen değişiklikler sebep olmuşsa, birinci ilâ üçüncü fıkra hükümleri uygulanmaz.
+
+(5) Rizikonun gerçekleşmesinden sonra sigorta ettirenin
+
+ihmali belirlendiği ve değişikliklere ilişkin beyan yükümlülüğünün ihlal edildiği
+
+saptandığı takdirde, söz konusu ihlal tazminat miktarına veya bedele ya da rizikonun
+
+gerçekleşmesine etki edebilecek nitelikte ise, ihmalin derecesine göre, tazminattan
+
+veya bedelden indirim yapılır. Sigorta ettirenin kastı hâlinde ise meydana gelen
+
+değişiklik ile gerçekleşen riziko arasında bağlantı varsa, sigortacı sözleşmeyi
+
+feshedebilir; bu durumda sigorta tazminatı veya bedeli ödenmez. Bağlantı yoksa,
+
+sigortacı ödenen primle ödenmesi gereken prim arasındaki oranı dikkate alarak sigorta
+
+tazminatını veya bedelini öder.
+
+(6) Sigortacı, rizikonun gerçekleşmesinden önce,
+
+sigorta ettirenin beyan yükümlülüğünü kasıtlı olarak ihlal ettiğini öğrenince, birinci
+
+fıkraya göre sözleşmeyi feshetse bile, değişikliğin meydana geldiği sigorta dönemine
+
+ait prime hak kazanır.
+
+(7) Sigortacıya tanınan feshin bildirim süresi veya
+
+feshin hüküm ifade etmesi için verilen süre içinde, yapılan değişiklikle bağlantılı
+
+olarak rizikonun gerçekleşmesi hâlinde, sigorta tazminatı veya bedeli ödenen primle
+
+ödenmesi gereken prim arasındaki oran dikkate alınarak hesaplanır.
+
+dd) Riziko gerçekleştiğinde
+
+MADDE 1446 - (1) Sigorta ettiren, rizikonun
+
+gerçekleştiğini öğrenince durumu gecikmeksizin sigortacıya bildirir.
+
+(2) Rizikonun gerçekleştiğine ilişkin bildirimin
+
+yapılmaması veya geç yapılması, ödenecek tazminatta veya bedelde artışa neden olmuşsa,
+
+kusurun ağırlığına göre, tazminattan veya bedelden indirim yoluna gidilir.
+
+(3) Sigortacı rizikonun gerçekleştiğini daha önce
+
+fiilen öğrenmişse, ikinci fıkra hükmünden yararlanamaz.
+
+c) Bilgi verme ve araştırma yapılmasına
+
+izin verme yükümlülüğü
+
+MADDE 1447 - (1) Sigorta
+
+ettiren, rizikonun gerçekleşmesinden sonra, sözleşme uyarınca veya sigortacının
+
+istemi üzerine, rizikonun veya tazminatın kapsamının belirlenmesinde gerekli ve
+
+sigorta ettirenden beklenebilecek olan her türlü bilgi ile belgeyi sigortacıya makul
+
+bir süre içinde sağlamak zorundadır. Ayrıca, sigorta ettiren, aldığı bilgi ve belgenin
+
+niteliğine göre, rizikonun gerçekleştiği veya diğer ilgili yerlerde sigortacının
+
+inceleme yapmasına izin vermekle ve kendisinden beklenen uygun önlemleri almakla
+
+yükümlüdür.
+
+(2) Bu yükümlülüğün ihlal edilmesi sebebiyle ödenecek
+
+tutar artarsa, kusurun ağırlığına göre tazminattan indirim yapılır.
+
+d) Zararı önleme, azaltma ve sigortacının
+
+rücu haklarını koruma yükümlülüğü
+
+MADDE 1448 - (1) Sigorta ettiren, rizikonun
+
+gerçekleştiği veya gerçekleşme ihtimalinin yüksek olduğu durumlarda, zararın önlenmesi,
+
+azaltılması, artmasına engel olunması veya sigortacının üçüncü kişilere olan rücu
+
+haklarının korunabilmesi için, imkânlar ölçüsünde önlemler almakla yükümlüdür. Sigorta
+
+ettiren, sigortacının bu konudaki talimatlarına olabildiğince uymak zorundadır.
+
+Birden çok sigortacının varlığı ve bunların birbirlerine aykırı talimatlar vermeleri
+
+hâlinde, sigorta ettiren, bu talimatlardan zararın azaltılması ve rücu haklarının
+
+korunması bakımından en uygun olanını dikkate alır.
+
+(2) Bu yükümlülüğe aykırılık sigortacı aleyhine
+
+bir durum yaratmışsa, kusurun ağırlığına göre tazminattan indirim yapılır.
+
+(3) Sigortacı sigorta ettirenin birinci fıkra gereğince
+
+yaptığı makul giderleri, bunlar faydasız kalmış olsalar bile, sigorta tazminatından
+
+veya bedelinden ayrı olarak tazmin etmekle yükümlüdür. Eksik sigortanın yapıldığı
+
+hâllerde 1462 nci madde hükmü kıyas yoluyla uygulanır.
+
+(4) Sigortacı, sigorta ettirenin istemi üzerine
+
+giderlerin karşılanması amacıyla gerekli tutarı avans olarak ödemek zorundadır.
+
+e) Sözleşmede öngörülen yükümlülüklerin
+
+ihlali
+
+MADDE 1449 - (1) Sigortacıya karşı
+
+yerine getirilmesi gereken ve sözleşmeden doğan bir yükümlülüğün ihlali hâlinde,
+
+bu Kanunda ve diğer kanunlarda yer alan özel düzenlemeler hariç olmak üzere, sigortacının
+
+sözleşmeyi kısmen veya tamamen feshederek ifadan kurtulabileceğine ilişkin hükümler,
+
+ihlalde kusur bulunmaması hâlinde sonuç doğurmaz.
+
+(2) İhlal kusura dayandığı takdirde, durumun öğrenildiği
+
+tarihten itibaren bir ay içinde kullanılmayan fesih hakkı düşer; meğerki, Kanun
+
+farklı bir süre öngörmüş olsun.
+
+(3) Sigortacı ihlalin, rizikonun gerçekleşmesine
+
+ve sigortacının yerine getirmesi gereken edimin kapsamına etki etmediği durumlarda,
+
+sözleşmeyi feshedemez.
+
+B) Kanun hükümlerinin uygulama alanı
+
+MADDE 1450 - (1) Sosyal güvenlik kurumları
+
+ile yapılan sözleşmeler hakkında, kendi kanunlarında aksine hüküm bulunmadıkça,
+
+bu Kanun hükümleri uygulanmaz.
+
+C) Sigorta sözleşmeleri hakkında uygulanacak
+
+hükümler
+
+MADDE 1451 - (1) Bu Kanunda hüküm bulunmayan
+
+hâllerde sigorta sözleşmesi hakkında Türk Borçlar Kanunu hükümleri uygulanır.
+
+D) Koruyucu hükümler
+
+MADDE 1452 - (1) 1404 ve 1408 inci
+
+madde hükümleriyle 1429 uncu maddenin birinci fıkrasının ikinci cümlesine aykırı
+
+sözleşmeler geçersizdir.
+
+(2) 1418 ve 1420 nci maddeler ile 1430 uncu maddenin
+
+ikinci fıkrası hükmüne aykırı sözleşme şartları geçersizdir.
+
+(3) 1405, 1409, 1413 ilâ 1417, 1419, 1421, 1422
+
+ilâ 1426 ncı maddeler, 1427 nci maddenin ikinci ilâ beşinci fıkraları, 1428 inci
+
+madde, 1430 uncu maddenin birinci ve üçüncü fıkraları, 1431 inci maddenin birinci,
+
+ikinci ve dördüncü fıkraları ve 1433 ilâ 1449 uncu madde hükümleri, sigorta
+
+ettiren, sigortalı ve lehtar aleyhine değiştirilemez; değiştirilirse bu Kanun hükümleri
+
+uygulanır.
+
+İKİNCİ KISIM
+
+Sigorta Türlerine İlişkin Özel Hükümler
+
+BİRİNCİ BÖLÜM
+
+Zarar Sigortaları
+
+A) Mal sigortaları
+
+I - Menfaat ve kapsam
+
+1. Genel olarak
+
+MADDE 1453 - (1) Rizikonun gerçekleşmemesinde
+
+menfaati bulunanlar, bu menfaatlerini mal sigortası ile teminat altına alabilirler.
+
+(2) Rizikonun gerçekleşmesi
+
+sonucu doğan kazanç kaybı ile sigorta edilen malın ayıbından doğan hasarlar, aksine
+
+sözleşme yoksa, sigorta kapsamında değildir. Mal bağlamında kazancın, makul sınırı
+
+aşan kısmı sigorta edilemez.
+
+(3) Mal sigortası niteliğindeki grup sigortalarında;
+
+mal girmesi veya çıkması sebebiyle mal topluluğunda değişiklikler meydana gelmiş
+
+olsa bile, sözleşme bütün hükümleriyle geçerlidir.
+
+(4) Mal topluluğu için yapılan mal sigortası, topluluğa
+
+dâhil münferit parçaları da kapsar.
+
+2. Başkası lehine sigorta
+
+MADDE 1454 - (1) Sigorta ettiren, üçüncü
+
+bir kişinin menfaatini, onun adını belirterek veya belirtmeyerek, sigorta ettirebilir.
+
+Sigorta sözleşmesinden doğan haklar sigortalıya aittir. Sigortalı, aksine sözleşme
+
+yoksa, sigorta tazminatının ödenmesini sigortacıdan isteyebilir ve onu dava edebilir.
+
+(2) Üçüncü kişinin adının belirtildiği durumlarda,
+
+tereddüt hâlinde, sigorta ettirenin, üçüncü kişinin temsilcisi olarak değil, kendi
+
+adına fakat üçüncü kişi lehine hareket ettiği kabul edilir.
+
+(3) Sözleşmede, sigortanın kimin menfaati için yaptırıldığı
+
+açık da bırakılabilir. “Kimin olacaksa onun lehine” yapılan böyle bir sigortanın,
+
+üçüncü kişi lehine yaptırıldığı anlaşılırsa, ikinci fıkra hükmü uygulanır.
+
+3. Müşterek menfaatlerin sigortası
+
+MADDE 1455 - (1) Bir malın veya o mala
+
+ilişkin bir hakkın yalnız bir kısmında menfaat sahibi olan kişi, kendisine ait kısımdan
+
+fazlasını da sigorta ettirmişse, sigortanın bu fazlaya ilişkin kısmı, sigorta ettirenle
+
+aynı menfaati olanlar lehine yapılmış sayılır.
+
+4. Menfaat üzerinde sınırlamalar
+
+a) Sınırlı ayni hak
+
+MADDE 1456 - (1) Sınırlı ayni hak ile
+
+takyit edilmiş bir mal üzerindeki, malike ait menfaat sigortalandığı takdirde, kanunda
+
+aksi öngörülmemişse, sınırlı ayni hak sahibinin hakkı sigorta tazminatı üzerinde
+
+de devam eder.
+
+(2) Sigortacıya, mal üzerinde sınırlı ayni hak bulunduğu
+
+bildirildiği takdirde, ayni hak sahiplerinin izni bulunmadıkça, sigortacı sigorta
+
+tazminatını sigortalıya ödeyemez. Ayni hakkın sicille alenileştiği veya sigortacının
+
+bunu bildiği durumlarda bildirime gerek yoktur. Sigortalı menfaate konu malın tamiri
+
+veya eski hâline getirilmesi amacıyla ve teminat gösterilmesi şartıyla, tazminat
+
+sigortalıya ödenebilir.
+
+(3) İkinci fıkra hükmüne aykırı hareket eden sigortacı,
+
+sınırlı ayni hak sahipleri ödemeye sonradan yazılı onay verdikleri takdirde, bunlara
+
+karşı sorumluluktan kurtulur.
+
+(4) Sigortacı, sigorta ettirenin prim ödeme borcunda
+
+temerrüde düştüğünü ve prim farkı istemi dolayısıyla sigorta ettirene ihtarda bulunduğunu,
+
+ayni hakkını kendisine bildirmiş olan ve kendisi tarafından bilinen ayni hak sahiplerine
+
+de bildirir.
+
+(5) Sigorta ettiren veya sigortacı
+
+tarafından sözleşme feshedildiğinde veya sözleşmeden cayıldığında; sigortacı, fesih
+
+veya cayma bildirimi kendisi tarafından yapılmışsa, söz konusu bildirim tarihinden,
+
+diğer hâllerde sözleşmenin sona ermesinden itibaren, onbeş gün içinde, durumu sınırlı
+
+ayni hak sahiplerine bildirir. Sigorta sözleşmesi, ayni hak sahipleri yönünden sözleşmenin
+
+sona ermesinden itibaren onbeş gün süre ile geçerli olur. Durumu öğrenen ayni hak
+
+sahibi, bu onbeş gün içinde sözleşmeye devam edeceğini sigortacıya bildirmediği
+
+takdirde, sigorta sözleşmesi, ayni hak sahibi için de geçersiz hâle gelir. Ayni
+
+hak sahibi sözleşmeye devam etmek isterse, sigortacı haklı bir neden olmadığı sürece
+
+bu istemi reddedemez.
+
+(6) Sigortacı, istem üzerine, sınırlı ayni hak sahibi
+
+olduğunu bildiren kişiye sigorta koruması ile sigorta bedelinin miktarı hakkında
+
+bilgi verir.
+
+(7) Hak sahipliğini sigortacıya bildiren sınırlı ayni hak
+
+sahibi hakkında da 1416 ncı madde uygulanır.
+
+(8) Bu madde hükümleri sigorta ettiren lehine kurulmuş
+
+sınırlı ayni haklar için uygulanmaz.
+
+b) Haciz
+
+MADDE 1457 - (1) Sigortalı mal haczedilirse,
+
+sigortacı, zamanında bilgilendirilmek şartıyla, sigorta tazminatını icra müdürlüğüne
+
+ödeyerek borcundan kurtulur. Bir malın haczinde, icra memuru, borçludan söz konusu
+
+malların sigortalı olup olmadığını, sigortalı ise, hangi sigortacı tarafından sigorta
+
+edildiğini sorar; haczedilen malın sigortalı olduğunu öğrendikten sonra, sigorta
+
+tazminatının diğer bir bildirime kadar ancak icra müdürlüğüne ödenilmesiyle borçtan
+
+kurtulacağını sigortacıya ihtar eder.
+
+II - Geçmişe etkili sigorta
+
+MADDE 1458 - (1) Sigorta, sigorta koruması
+
+sözleşmenin yapılmasından önceki bir tarihten itibaren sağlanacak şekilde yapılabilir.
+
+Ancak, rizikonun gerçekleştiği veya gerçekleşme ihtimalinin ortadan kalkmış olduğu,
+
+sözleşmenin yapılması sırasında, sigortacı ile sigorta ettiren ve sigortadan haberi
+
+olmak şartıyla, sigortalı tarafından biliniyorsa sözleşme geçersizdir. Rizikonun
+
+gerçekleştiği veya gerçekleşme ihtimalinin ortadan kalktığının sigorta ettiren veya
+
+sigortalı tarafından bilinip sigortacı tarafından bilinmediği durumlarda, sigortacı
+
+sözleşme ile bağlı olmamakla birlikte, ödenmesi gereken primin tamamına hak kazanır.
+
+III - Tazminat ilkesi
+
+1. Genel olarak
+
+MADDE 1459 - (1) Sigortacı, sigortalının
+
+uğradığı zararı tazmin eder.
+
+2. Sigorta değeri
+
+MADDE 1460 - (1) Sigorta değeri sigorta
+
+olunan menfaatin tam değeridir.
+
+3. Sigorta bedeli
+
+MADDE 1461 - (1) Sigortacının sorumluluğu
+
+sigorta bedeli ile sınırlıdır. Sigorta bedeli, rizikonun gerçekleştiği andaki sigortalı
+
+menfaatin değerini aşsa bile, sigortacı uğranılan zarardan fazlasını ödemez.
+
+(2) Aynen tazmini öngören yeni değer sigortaları
+
+hakkında birinci fıkra hükmü uygulanmaz.
+
+4. Hükümleri
+
+a) Eksik sigorta
+
+MADDE 1462 - (1) Sigorta bedeli, sigorta
+
+değerinden az olduğu takdirde, sigorta edilmiş menfaatin bir kısmının zarara uğraması
+
+hâlinde sigortacı, aksine sözleşme yoksa, sigorta bedelinin sigorta değerine olan
+
+oranına göre tazminat öder.
+
+b) Aşkın sigorta
+
+MADDE 1463 - (1) Sigorta bedeli sigorta
+
+olunan menfaatin değerinin üstünde ise, aşan kısım geçersizdir. Bu sebeple, sigorta
+
+bedeli ile sigorta priminin onu karşılayan kısmı indirilir ve tahsil edilmiş fazla
+
+prim geri verilir.
+
+(2) Sigorta ettirenin, mali çıkar sağlamak amacıyla
+
+kötüniyetle yaptığı aşkın sigorta sözleşmesi geçersizdir. Sözleşme yapılırken geçersizliği
+
+bilmeyen sigortacı, durumu öğrendiği sigorta döneminin sonuna kadar prime hak kazanır.
+
+c) Takseli sigorta
+
+MADDE 1464 - (1) Taraflar sözleşme
+
+ile sigorta değerini belirli bir para olarak belirlemişlerse, bu para taraflar arasında,
+
+sigorta değeri için esas olur.
+
+(2) Takse esaslı şekilde fahiş ise, sigortacı taksenin
+
+indirilmesini isteyebilir. Umulan kazanç takselenmiş ise, taksenin sözleşme yapıldığı
+
+sırada ticari tahminlere göre elde edilmesi mümkün görülen kazancı aşması hâlinde
+
+sigortacı bunun indirilmesini isteyebilir.
+
+d) Birden çok sigorta
+
+aa) Kural
+
+MADDE 1465 - (1) Aynı menfaatin, aynı
+
+rizikolara karşı, aynı süre için, birden çok sigortacıya, aynı veya farklı tarihlerde
+
+sigorta ettirilmesi hâlinde sigorta ettirene sigorta bedelinden daha fazlası ödenmez.
+
+(2) Birden çok sigortada, sigorta ettiren, sigortacılardan
+
+herbirine hem rizikonun gerçekleştiğini hem de aynı menfaat için yapılan diğer sigortaları
+
+bildirir. Bu hükme aykırılık hâlinde 1446 ncı madde hükmü uygulanır.
+
+bb) Müşterek sigorta
+
+MADDE 1466 - (1) Bir menfaat birden
+
+çok sigortacı tarafından aynı zamanda, aynı süreler için ve aynı rizikolara karşı
+
+sigorta edilmişse, yapılan birden çok sigorta sözleşmesinin hepsi, ancak sigorta
+
+olunan menfaatin değerine kadar geçerli sayılır. Bu takdirde sigortacılardan her
+
+biri, sigorta bedellerinin toplamına göre, sigorta ettiği bedel oranında sorumlu
+
+olur.
+
+(2) Sözleşmelere göre sigortacılar müteselsilen
+
+sorumlu oldukları takdirde, sigortalı, uğradığı zarardan fazla bir para isteyemeyeceği
+
+gibi, sigortacılardan her biri yalnız kendi sözleşmesine göre ödemekle yükümlü olduğu
+
+bedele kadar sorumlu olur. Bu hâlde ödemede bulunan sigortacının diğer sigortacılara
+
+karşı haiz olduğu rücu hakkı, sigortacıların sigortalıya sözleşme hükümlerine göre
+
+ödemek zorunda oldukları bedeller oranındadır.
+
+cc) Çifte sigorta
+
+MADDE 1467 - (1) Değerinin tamamı sigorta
+
+olunan bir menfaat, sonradan aynı veya farklı kişiler tarafından, aynı rizikolara
+
+karşı, aynı süreler için sigorta ettirilemez; sigorta ettirilmişse, sigorta ancak
+
+aşağıdaki hâl ve şartlarda geçerli sayılır:
+
+a) Sonraki ve önceki sigortacılar onay verirlerse; bu takdirde,
+
+sigorta sözleşmeleri aynı zamanda yapılmış sayılarak riziko gerçekleştiğinde sigorta
+
+bedeli, 1466 ncı maddede gösterilen oranda sigortacılar tarafından ödenir.
+
+b) Sigorta ettiren, önceki sigortadan doğan haklarını ikinci
+
+sigortacıya devir veya o haklardan feragat etmişse; bu takdirde, devir veya feragatin
+
+ikinci sigorta poliçesine yazılması şarttır; yazılmazsa ikinci sigorta sözleşmesi
+
+geçersiz sayılır.
+
+c) Sonraki sigortacının, ancak önceki sigortacının ödemediği
+
+tazminattan sorumluluğu şart kılınmış ise; bu hâlde önceden yapılmış olan sigortanın
+
+ikinci sigorta poliçesine yazılması gerekir; yazılmazsa, ikinci sigorta sözleşmesi
+
+geçersiz sayılır.
+
+dd) Kısmi sigorta
+
+MADDE 1468 - (1) Sigorta olunan menfaatin
+
+değeri önceki sözleşmeyle tamamen teminat altına alınamamışsa bu menfaat, geri kalan
+
+değerine kadar bir veya birkaç defa daha sigorta ettirilebilir. Bu takdirde, o menfaati
+
+sonradan sigorta eden sigortacılar, bakiyeden dolayı sözleşmenin yapılış tarihleri
+
+sırasıyla sorumlu olurlar. Aynı günde yapılmış olan sözleşmeler, aynı anda yapılmış
+
+sayılır.
+
+e) Sigortacının sigortalanan menfaati
+
+inceleyebilmesi
+
+MADDE 1469 - (1) Sigortacı, sigorta
+
+süresi içinde sigortalı menfaatin değerini inceleyebilir.
+
+IV - Sigorta edilen menfaatin sahibinin
+
+değişmesi
+
+MADDE 1470 - (1) Sigorta edilen menfaatin
+
+sahibinin değişmesi hâlinde, aksine sözleşme yoksa, sigorta ilişkisi sona erer.
+
+V - Zarar gören mal ve zararın gerçekleştiği
+
+yerde değişiklik yapmama
+
+MADDE 1471 - (1) Sigorta ettiren, hasarın
+
+saptanmasından önce, hasar konusu yerde ve malda, hasar sebebinin veya zarar miktarının
+
+belirlenmesini güçleştirecek veya engelleyecek bir değişiklik yapamaz; meğerki,
+
+bu değişiklik sigortacının onayı veya zararı azaltma amacı ile yapılmış olsun.
+
+(2) Bu yükümlülüğün kusurlu ihlalinde, ihlal ile
+
+zarar arasında illiyet bulunması şartıyla, kusurun ağırlığına göre tazminattan indirime
+
+gidilir.
+
+VI – Halefiyet
+
+MADDE 1472 - (1) Sigortacı, sigorta
+
+tazminatını ödediğinde, hukuken sigortalının yerine geçer. Sigortalının, gerçekleşen
+
+zarardan dolayı sorumlulara karşı dava hakkı varsa bu hak, tazmin ettiği bedel kadar,
+
+sigortacıya intikal eder. Sorumlulara karşı bir dava veya takip başlatılmışsa, sigortacı,
+
+mahkemenin veya diğer tarafın onayı gerekmeksizin, halefiyet kuralı uyarınca, sigortalısına
+
+yaptığı ödemeyi ispat ederek, dava veya takibi kaldığı yerden devam ettirebilir.
+
+(2) Sigortalı, birinci fıkraya göre sigortacıya
+
+geçen haklarını ihlal edici şekilde davranırsa, sigortacıya karşı sorumlu olur.
+
+Sigortacı zararı kısmen tazmin etmişse, sigortalı kalan kısımdan dolayı sorumlulara
+
+karşı sahip olduğu başvurma hakkını korur.
+
+B) Sorumluluk sigortaları
+
+I - Genel hükümler
+
+1. Sözleşmenin konusu ve kapsamı
+
+MADDE 1473 - (1) Sigortacı sorumluluk
+
+sigortası ile, sözleşmede aksine hüküm yoksa, sigortalının sözleşmede öngörülen
+
+ve zarar daha sonra doğsa bile, sigorta süresi içinde gerçekleşen bir olaydan kaynaklanan
+
+sorumluluğu nedeniyle zarar görene, sigorta sözleşmesinde öngörülen miktara kadar
+
+tazminat öder.
+
+(2) Sigorta, sigortalının işletmesi ile ilgili sorumluluğu
+
+için yaptırılmışsa, sözleşmede aksine hüküm yoksa bu sigorta, sigortalının temsilcisi
+
+ile işletmenin veya işletmenin bir kısmının yönetiminde, denetiminde ve işletmede
+
+çalıştırılan kişilerin sorumluluğunu da karşılar. Bu durumda sigorta bu kişilerin
+
+lehine yapılmış sayılır.
+
+2. Hukuki koruma
+
+MADDE 1474 - (1) Sigortalı aleyhine
+
+bir istem ileri sürüldüğünde, isteme ilişkin makul giderler sigortacı tarafından
+
+karşılanır; sigorta bedelini aşan giderlerin ödenebilmesi için sözleşmede hüküm
+
+bulunmalıdır.
+
+(2) Sigortacı, sigortalının istemi üzerine, giderler
+
+için avans vermek zorundadır.
+
+3. Bildirim yükümlülüğü
+
+MADDE 1475 - (1) Sigortalı sorumluluğunu
+
+gerektirecek olayları, on gün içinde, sigortacıya bildirir.
+
+(2) Sigortalı kendisine yöneltilen istemi, aksi
+
+kararlaştırılmamışsa derhâl sigortacıya bildirir. Bu bildirim üzerine veya zarar
+
+görenin sigortacıya doğrudan başvurması hâlinde 1427 nci madde uygulanır.
+
+(3) Bildirim yükümlülüğünün ihlali hâlinde, 1446
+
+ncı maddenin ikinci ve üçüncü fıkra hükümleri kıyas yolu ile uygulanır.
+
+4. Sigortacının yardımları
+
+MADDE 1476 - (1) Sigortacı,
+
+1475 inci maddeye uygun olarak bildirimde bulunulması tarihinden itibaren beş gün
+
+içinde, zarara uğrayanın istemleriyle ilgili olarak ve sigortalının adına, fakat
+
+sorumluluk ve tüm giderler kendisine ait olmak üzere, gerekli hukuki işlemlerin
+
+gerçekleştirilip, kararların alınmasını ve ayrıca savunmaya yardımda bulunmayı üstlenip
+
+üstlenmeyeceğini sigortalıya bildirir; aksi hâlde bu maddenin dördüncü fıkrası uygulanır.
+
+(2) Birinci fıkrada belirlenen sürenin sonuna kadar
+
+yapılması zorunlu işlemleri sigortalı yürütür.
+
+(3) Sigortacı birinci fıkra anlamında üstlenmede
+
+bulunmuşsa, sigortalının hak ve menfaatlerini gözetir.
+
+(4) Sigortacı bildirimde bulunmamışsa, sigortalı
+
+aleyhine kesinleşen tazminatı öder. Ancak, sigortalının sigortacının onayını almadan
+
+yaptığı sulh sözleşmesi, bildirimden itibaren onbeş gün içinde onay verilmemişse,
+
+sigortacıya karşı geçersizdir; sigortacı haklı olmayan sebeplerle sulhe onay vermekten
+
+kaçınamaz.
+
+5. Kasten neden olma
+
+MADDE 1477 - (1) Sigortacı, sigortalının,
+
+sorumluluk konusu olayı kasten gerçekleştirmesinden doğan zararlardan sorumlu olmaz.
+
+6. Doğrudan dava hakkı
+
+MADDE 1478 - (1) Zarar gören, uğradığı
+
+zararın sigorta bedeline kadar olan kısmının tazminini, sigorta sözleşmesi için
+
+geçerli zamanaşımı süresi içinde kalmak şartıyla, doğrudan sigortacıdan isteyebilir.
+
+7. Sigortacının zarar görenden bilgi alma
+
+hakkı
+
+MADDE 1479 - (1) Sigortacı, zarara
+
+sebep olan olayın ve zarar miktarının belirlenmesi amacıyla, zarar görenden bilgi
+
+isteyebilir. Zarar gören, sağlanması ihtimali bulunan ve istenilmesi haklı görülebilecek
+
+ilgili tüm belgeleri sigortacıya vermek zorundadır. Zarar görenin bu zorunluluğa
+
+uymaması hâlinde, durumun zarar görene yazılı bildirilmiş olması kaydıyla, sigortacının
+
+sorumluluğu, zorunluluk yerine getirilmiş olsaydı ödemek zorunda kalacağı miktarla
+
+sınırlıdır.
+
+8. Takas
+
+MADDE 1480 - (1) Sigortacı, zarar görene
+
+ödeyeceği sigorta tazminatını, sigorta sözleşmesinden doğan alacakları ile takas
+
+edemez.
+
+9. Halefiyet
+
+MADDE 1481 - (1) Sigortacı, sigorta
+
+tazminatını ödedikten sonra hukuken sigortalı yerine geçer. Sigortalının gerçekleşen
+
+zarardan dolayı sorumlulara karşı dava hakkı varsa bu hak, tazmin ettiği bedel tutarında
+
+sigortacıya ait olur.
+
+(2) Sorumlulara karşı bir dava veya takip başlatılmışsa,
+
+sigortacı, mahkemenin veya diğer tarafın onayı gerekmeksizin, halefiyet kuralı gereğince,
+
+sigortalısına yaptığı ödemeyi ispat ederek, dava veya takibi kaldığı yerden devam
+
+ettirebilir.
+
+(3) Sigortalı veya zarar gören, birinci fıkra gereğince
+
+sigortacıya geçen haklarını ihlal edici şekilde davranırsa, sigortacıya karşı sorumlu
+
+olur.
+
+10. Zamanaşımı
+
+MADDE 1482 - (1) Sigortacıya yöneltilecek
+
+tazminat istemleri, sigorta konusu olaydan itibaren on yılda zamanaşımına
+
+uğrar.
+
+II - Zorunlu sorumluluk sigortaları
+
+1. Sözleşme yapma zorunluluğu
+
+MADDE 1483 - (1) Sigortacılar,
+
+diğer kanunlardaki hükümler saklı kalmak üzere, faaliyet gösterdikleri dalların
+
+kapsamında bulunan zorunlu sigortaları yapmaktan kaçınamazlar.
+
+2. Zarar görenle ilişkide ifa yükümlülüğü
+
+MADDE 1484 - (1) Sigortacı, sigortalıya
+
+karşı ifa borcundan tamamen veya kısmen kurtulmuş olsa da, zarar gören bakımından
+
+ifa borcu, zorunlu sigorta miktarına kadar devam eder.
+
+(2) Sigorta ilişkisinin sona ermesi, zarar görene
+
+karşı ancak, sigortacının sözleşmenin sona erdiğini veya ereceğini yetkili mercilere
+
+bildirmesinden bir ay sonra hüküm doğurur.
+
+(3) Zarar, sosyal güvenlik kurumları tarafından
+
+karşılandığı ölçüde sigortacının sorumluluğu sona erer.
+
+III - Sorumluluk sigortalarına uygulanacak
+
+hükümler
+
+MADDE 1485 - (1) Sorumluluk sigortalarına
+
+genel hükümlerle birlikte, 1454 üncü ve 1458 inci maddeler, 1466 ncı maddenin birinci
+
+fıkrası ve 1471 inci madde de uygulanır.
+
+C) Koruyucu hükümler
+
+MADDE 1486 - (1) 1453 üncü maddenin
+
+ikinci fıkrasının ikinci cümlesi, 1458 inci maddenin birinci fıkrasının ikinci cümlesi,
+
+1459 ve 1461 inci maddeler, 1463 üncü maddenin birinci fıkrası, 1472 ve 1477 nci
+
+madde hükümlerine aykırı yapılan sözleşmeler geçersizdir.
+
+(2) 1456 ncı maddenin birinci fıkrası, 1465 ilâ
+
+1468, 1479, 1480, 1482, 1484 ve 1485 inci madde hükümlerine aykırı sözleşme şartları
+
+geçersizdir.
+
+(3) 1471 inci maddenin ikinci fıkrası, 1474 ilâ
+
+1476 ncı madde hükümleri sigortalı aleyhine değiştirilemez; değiştirilirse bu Kanun
+
+hükümleri uygulanır.
+
+İKİNCİ BÖLÜM
+
+Can Sigortaları
+
+A) Hayat sigortası
+
+I - Tanım
+
+MADDE 1487 - (1) Hayat sigortası ile
+
+sigortacı, belli bir prim karşılığında, sigorta ettirene veya onun belirlediği kişiye,
+
+sigortalının ölümü veya hayatta kalması hâlinde, sigorta bedelini ödemeyi üstlenir.
+
+(2) Hayatı sigorta edilen kimse, ilk primin ödenmesinden
+
+önce ölmüşse sigorta sözleşmesi geçersizdir.
+
+II - Tontin
+
+MADDE 1488 - (1) Birden çok kişi tarafından
+
+verilen katkı payları ile oluşturulan varlıkların, belirli bir tarihte hayatta kalanlar
+
+ve ölenin önceden belirlemiş olması hâlinde, lehtarlar arasında paylaştırılması
+
+ilkesi uyarınca tontinler kurulabilir.
+
+III - Sözleşmeden cayma
+
+MADDE 1489 - (1) Sigorta
+
+ettiren, sigortacının kendisine cayma hakkını kullanabileceğini bildirmesinden itibaren
+
+onbeş gün içinde sözleşmeden cayabilir. Bilgilendirmenin yapıldığı sigortacı tarafından
+
+ispatlanır. Bilgilendirme yapılmamışsa cayma hakkı ilk primin ödenmesinden bir ay
+
+sonra sona erer.
+
+(2) 1430 uncu madde hükmü saklıdır.
+
+IV - Hayatı sigorta edilecek kişi
+
+MADDE 1490 - (1) Sigorta ettiren, kendisinin
+
+veya başkasının hayatını, ölüm veya hayatta kalma ihtimallerine karşı sigorta ettirebilir.
+
+(2) Başkasının hayatı üzerine
+
+sigorta yapılabilmesi için, o kişinin hayatının devamında lehtarın menfaatinin bulunması
+
+şarttır. Ayrıca, ölüm ihtimaline karşı yapılan sigortalarda, sigorta bedelinin mutat
+
+cenaze giderlerini aşması hâlinde sigortalının veya varsa kanuni temsilcisinin yazılı
+
+izni gerekir. Sigortalı onbeş yaşından büyükse kanuni temsilcinin dışında ayrıca
+
+onun da izni alınır. İzin olmadan yapılan sözleşme, icazet verilmediği takdirde
+
+geçersizdir.
+
+(3) Kanuni temsilcinin lehtar olarak atadığı veya
+
+kendisinin sigorta ettiren olduğu durumlarda, kanuni temsilcinin iznin verilmesinde
+
+sigortalıyı temsil yetkisi yoktur.
+
+(4) Menfaat şartının sözleşmenin yapılmasından sonra
+
+ortadan kalkması hâlinde sözleşme o andan itibaren geçersiz hâle gelir; ancak, sigorta
+
+ettirene iştira değeri ödenir.
+
+V - Sigorta değeri
+
+MADDE 1491 - (1) Bir kimsenin hayatı
+
+bir veya birkaç sigortacı tarafından çeşitli bedeller üzerine sigorta ettirilebilir.
+
+(2) Ödenecek bedelin lehtarın maddi menfaatinden
+
+daha fazla olduğu durumlarda, aşan kısım sigortalının lehine yapılmış sayılır.
+
+(3) 1472 nci madde hükmü hayat sigortalarında uygulanmaz.
+
+Hayat sigortası sözleşmesi gereği, sigorta şirketinden kararlaştırılan sigorta bedelini
+
+tahsil eden sigorta ettiren ve mirasçıları ile rizikoya muhatap olan kişilerin mirasçılarının,
+
+rizikonun gerçekleşmesine neden olan üçüncü kişiye karşı sahip olduğu tazminat alacağını
+
+sigorta şirketine temlik etmeleri geçersizdir.
+
+VI - Doktor incelemesi
+
+MADDE 1492 - (1) Sigorta ettiren ile
+
+sigortacı arasında, sigorta edilecek kişinin doktor incelemesinden geçmesi kararlaştırılmış
+
+olsa bile, sigortacı sigortalanacak kişiyi bu incelemeyi yaptırmaya zorlayamaz.
+
+VII - Lehtar
+
+1. Atanması ve değiştirilmesi
+
+MADDE 1493 - (1) Sigorta ettiren, 1490
+
+ıncı maddenin ikinci ve üçüncü fıkraları saklı kalmak üzere, gerçek ya da tüzel
+
+kişi lehine sigorta sözleşmesi yapabilir.
+
+(2) Sigorta ettiren, atadığı lehtarı sigortacıya
+
+bildirir.
+
+(3) Lehtarın sigortacıya bildirilmemiş olması hâlinde,
+
+sigortacı iyiniyetle yaptığı ödeme ile borcundan kurtulur.
+
+(4) Sigorta ettiren, değiştirme hakkından vazgeçtiğini
+
+sigorta poliçesine yazdırmakla beraber sigorta poliçesini lehtara teslim etmişse,
+
+o kişiyi değiştiremez. Tereddüt hâlinde, sigorta ettirenin lehtarı değiştirme hakkını
+
+saklı tuttuğu kabul edilir. Sigorta ettirenin lehtarı değiştirme hakkından açıkça
+
+vazgeçtiği ve sigorta poliçesinin lehtara verildiği hâllerde bile, mirasçılıktan
+
+çıkarma veya hibeden rücu hâlleri gerçekleşmiş yahut ilgililer arasında o kişinin
+
+lehtar olarak atanmasına ilişkin sebep ortadan kalkmış ise lehtar değiştirilebilir.
+
+(5) Lehtar atanması ve lehtar değişiklikleri sigortacının
+
+iznine bağlı değildir.
+
+(6) Lehtarın değiştirilemeyeceği durumlarda, sigorta
+
+ettiren tarafından ayrılma ve ödünç alma hakları kullanıldığı takdirde, ödenecek
+
+tutar üzerinde lehtar hak sahibi olduğu gibi, rizikonun gerçekleşmesinden önce sigortacının
+
+iflası sonucu ödenecek miktar üzerinde de, aksi kararlaştırılmadıkça, lehtar hak
+
+sahibidir.
+
+(7) Sigortacıdan edimi istem ve tahsil yetkisi,
+
+aksi kararlaştırılmadıkça, lehtara aittir.
+
+2. Lehtar atanmasına ilişkin yorum kuralı
+
+MADDE 1494 - (1) Ölüm rizikosuna karşı
+
+yapılmış sigortalarda, birden fazla kişi payları belirtilmeksizin lehtar olarak
+
+atanmışsa, sigorta bedeli üzerinde hepsi eşit oranda hak sahibidir. Hak sahiplerinden
+
+biri tarafından alınmayan pay, diğerlerinin payına eklenir. Mirasın reddi veya mirastan
+
+vazgeçme lehtarın hakkı üzerinde etkili olmaz.
+
+(2) Ölüm rizikosuna karşı yapılan sigortalarda lehtar
+
+belirtilmemişse, sözleşmenin sigorta ettirenin mirasçıları lehine, yaşama ihtimaline
+
+karşı yapılmış sigortalarda ise sigortalı lehine yapıldığı kabul olunur.
+
+VIII - Sigorta ettiren lehine hak
+
+MADDE 1495 - (1) Lehtarın, sigortacıya
+
+karşı, istem hakkını kazanamaması hâlinde, bu hak sigorta ettirene, onun da ölmüş
+
+olması hâlinde, mirasçılarına geçer.
+
+IX - Grup sigortaları
+
+MADDE 1496 - (1) En az on kişiden oluşan,
+
+sigorta ettiren tarafından, belirli kıstaslara göre kimlerden oluştuğunun belirlenebilmesi
+
+imkânı bulunan bir gruba dâhil kişiler lehine, tek bir sözleşme ile sigorta yapılabilir.
+
+Sözleşmenin devamı sırasında gruba dâhil herkes sigortadan, grup sigortası sözleşmesi
+
+sonuna kadar yararlanır. Sözleşmenin yapılmasından sonra grubun on kişinin altına
+
+düşmesi sözleşmenin geçerliliğini etkilemez.
+
+(2) Grupta yer alan her kişiye poliçe içeriğini
+
+özetleyen bir belge verilir.
+
+(3) Grup sigortalarında lehtarı atama hakkı, aksi
+
+kararlaştırılmamışsa, grupta yer alan kişiye aittir.
+
+(4) Sözleşme süresi içinde gruptan ayrılma hâlinde
+
+grup sigortası ile sağlanan teminat, aksi kararlaştırılmamışsa, sigorta ettiren,
+
+sigortalı veya lehtar tarafından bireysel olarak devam ettirilebilir. Sigortalı
+
+veya lehtarın sözleşmeye bireysel olarak devam etmesi ancak sigorta ettiren sıfatıyla
+
+olur. Bu kişiler geçmiş günlere ait kendilerine düşen prim borçlarından, önceki
+
+sigorta ettirenle birlikte sorumludur.
+
+(5) Grup sigortalarında ayrılma,
+
+ödünç alma, indirme, bildirim yükümlülüğü ve ilgili diğer konular Hazine Müsteşarlığının
+
+bağlı olduğu Bakanlık tarafından çıkartılacak yönetmelikle düzenlenir.
+
+X - Beyanlar
+
+1. Yanlış yaş beyanı
+
+MADDE 1497 - (1) Sigortalının sözleşmenin
+
+yapılması sırasında yaşının yanlış bildirilmesi sonucu prim düşük belirlenmişse,
+
+sigorta bedeli, gerçek yaşa göre alınması gereken primin, belirlenen prime olan
+
+oranına göre ödenir. İndirimden önce riziko gerçekleşip sigorta bedeli ödenmiş ise
+
+sigortacı ödediği fazla kısmın geriye verilmesini faiziyle birlikte isteyebilir.
+
+(2) Gerçek yaşa göre fazla prim ödenmesi hâlinde,
+
+sigorta bedeli ödenen prime göre artırılır. Artırımdan önce sigorta bedeli ödenmiş
+
+ise eksik kısım sigortacı tarafından tamamlanır.
+
+(3) Sigortacı, yanlış yaş bildirimi sebebiyle sadece
+
+gerçek yaşın, sözleşmenin yapıldığı sırada teknik esaslara göre belirlenen sınırlar
+
+dışında kalması hâlinde, sözleşmeden cayabilir.
+
+2. Sözleşmenin yapılması sırasındaki beyan
+
+yükümlülüğünün ihlali
+
+MADDE 1498 - (1) Sigortacı, yenilemeler
+
+de dâhil olmak üzere, sözleşmenin yapılmasından itibaren beş yıl geçmişse, sigorta
+
+ettirenin sözleşmenin yapılması sırasında beyan yükümlülüğünü ihlal etmiş olması
+
+nedeniyle sözleşmeden cayamaz, sadece prim farkı isteyebilir; meğerki, beyan yükümlülüğü
+
+kasıtlı bir şekilde ihlal edilmiş olsun. Sigorta ettiren, prim farkını ödemeyi kabul
+
+etmezse sigortacı, riziko gerçekleştiğinde ödenen primle ödenmesi gereken prim arasındaki
+
+oranı dikkate alarak sigorta bedelini öder. Ancak, risk artışı beyan yükümlülüğünün
+
+ihlali nedeniyle sigortacının teknik esaslarına göre saptanan sınırlarının dışında
+
+kalmışsa, sigortacı sözleşmeden cayabilir. Yenilenen sözleşmelerde bu süre, ilk
+
+sözleşmenin yapıldığı tarihten başlar.
+
+3. Sözleşmenin devamı sırasındaki beyan
+
+yükümlülüğünün ihlali
+
+MADDE 1499 - (1) Sigortacı,
+
+rizikonun artmasından itibaren, yenilemeler de dâhil olmak üzere beş yıl geçmişse,
+
+sigorta ettirenin beyan yükümlülüğünün ihlal edilmiş olması nedeniyle sözleşmeyi
+
+feshedemez; sadece prim farkı isteyebilir; meğerki, beyan yükümlülüğü kasıtlı bir
+
+şekilde ihlal edilmiş olsun. Sigorta ettiren prim farkını ödemeyi kabul etmezse,
+
+riziko gerçekleştiğinde sigortacı ödenen primle ödenmesi gereken prim arasındaki
+
+oranı dikkate alarak, sigorta bedelini öder. Ancak, beyan yükümlülüğünün ihlali
+
+nedeniyle riziko artışı, teknik esaslara göre tespit edilen sınırlar dışında kalmış
+
+ise, sigortacı sözleşmeyi feshedebilir.
+
+XI - Sigortadan ayrılma
+
+MADDE 1500 - (1) Sigorta ettiren, en az bir
+
+yıldan beri yürürlükte bulunan ve bir yıllık primi ödenmiş olan sigorta sözleşmelerinde,
+
+istediği zaman sözleşmeyi sona erdirerek sigortadan ayrılabilir. Ayrılma değeri,
+
+ayrılmanın istenildiği andaki genel kabul görmüş aktüerya kurallarına uygun bir
+
+biçimde hesaplanan değerdir.
+
+(2) Yaşama ihtimaline karşı yapılan sigortalarda,
+
+sigortacıdan ayrılma değerinin istenilebilmesi için sigortalının sağlıklı olduğunu
+
+ispat etmesi gerekir.
+
+XII - Ödünç verme
+
+MADDE 1501 - (1) En az bir yıldan beri
+
+yürürlükte bulunan ve bir yıllık primi ödenmiş olan sigorta sözleşmelerinde, sigorta
+
+ettirenin istemesi hâlinde sigortacı, istem anındaki, genel kabul görmüş aktüerya
+
+kurallarına uygun bir biçimde hesaplanan değer üzerinden sigortalıya ödünç para
+
+vermek zorundadır.
+
+XIII - Prim ödenmesinden muaf sigorta
+
+MADDE 1502 - (1) En az bir yıldan beri
+
+yürürlükte bulunan ve bir yıllık primi ödenmiş olan sigorta sözleşmelerinde, sigorta
+
+ettiren daha sonra prim ödeme borcunu yerine getirmezse, sigortacı bu sebeple sözleşmeyi
+
+feshedemez ve prim isteyemez. Bu hâlde sigorta, prim ödenmesinden muaf sigortaya
+
+dönüşür. Prim ödenmesinden muaf sigortada, sigorta bedeli ödenen primle sözleşme
+
+uyarınca ödenmesi gereken prim arasındaki orana göre ödenir.
+
+XIV - İntihar
+
+MADDE 1503 - (1) Sigortalı, yenilemeler de
+
+dâhil olmak üzere, en az üç yıldan beri devam eden ve ölüm ihtimaline karşı yapılan
+
+bir sözleşmede, bu süre geçtikten sonra intihar ederse veya intihara teşebbüs sonucu
+
+ölürse, sigortacı sigorta bedelini ödemekle yükümlüdür.
+
+(2) Sigortalının intiharı veya intihara teşebbüsü
+
+sonucu ölümü, akli melekelerindeki bir rahatsızlık sebebiyle üç yıldan önce gerçekleşmiş
+
+ise sigortacı sigorta bedelini ödemek zorundadır.
+
+XV - Sigorta ettiren veya lehtarın sigortalıyı
+
+öldürmesi
+
+MADDE 1504 - (1) Sigorta ettiren, sigorta
+
+bedelini ödeme borcunun doğmasını sağlamak amacıyla sigortalıyı öldürür veya öldürülmesinde
+
+suç ortaklığı ederse, sigortacı bedel ödeme borcundan kurtulur.
+
+(2) Lehtar, sigortalıyı öldürmüş veya onun öldürülmesinde
+
+herhangi bir şekilde suç ortaklığı etmişse, sigorta bedelinden mahrum kalır ve bu
+
+bedel ölenin mirasçılarına ödenir.
+
+XVI - Lehtarın sigorta ettirenin yerine
+
+geçmesi
+
+MADDE 1505 - (1) Sigorta ettiren lehine sigorta
+
+sözleşmesinden doğan alacaklar ihtiyaten veya kesin olarak haczedilirse ya da sigorta
+
+ettiren hakkında iflasın açılmasına karar verilirse, adı belirtilerek gösterilmiş
+
+olan lehtar, sigorta sözleşmesine sigorta ettirenin onayı ile onun yerine taraf
+
+olabilir.
+
+(2) Lehtar, sözleşmeye taraf olursa, sözleşmenin
+
+sigortacı tarafından feshi hâlinde, haczi uygulatan alacaklının veya iflas masasının
+
+alacaklarını, sigorta ettirenin sigortacıdan isteyebileceği miktara kadar karşılamakla
+
+yükümlüdür.
+
+(3) Sözleşmede lehtar hiç veya adı belirtilerek
+
+gösterilmemişse, birinci fıkrada açıklanan hak, sigorta ettirenin eşine ve çocuklarına
+
+geçer.
+
+(4) Lehtarın veya eş ve çocuklarının, sigorta ettirenin
+
+yerine sözleşmeye taraf olabilmeleri için, sigortacıya bildirimde bulunmaları şarttır.
+
+Lehtarın veya eş ve çocuklarının haczi öğrendikleri veya iflasın açıldığı tarihten
+
+başlayarak, bir ay içinde bildirim yapmamaları hâlinde, birinci fıkrada açıklanan
+
+hak düşer.
+
+XVII - Sigortacının iflası
+
+MADDE 1506 - (1) Sigortacının iflasının
+
+açıldığı tarihte, bir yıldan uzun süreli sigortalarda, riziko gerçekleşmemiş veya
+
+gerçekleşmiş fakat bedel ödenmemişse, ilk hâlde iflasın açıldığı, ikincisinde ise
+
+rizikonun gerçekleştiği andaki matematik karşılıklar hak sahiplerine ödenir. Rizikonun
+
+gerçekleştiği durumlarda, matematik karşılıkları aşan kısım, sigortacının teminatından
+
+karşılanır; açık kalan miktar garameye girer.
+
+B) Kaza sigortası
+
+I - Genel olarak
+
+MADDE 1507 - (1) Kaza sigortası, belli
+
+bir prim karşılığında, sigortalının uğrayacağı kaza sonucu ölüm, geçici veya sürekli
+
+engellilik ya da işgöremezlik hâlleri için sigorta teminatı sağlar. Ölüm, ani olarak
+
+veya kaza tarihinden itibaren en çok bir yıl içinde gerçekleşmiş ise sigorta bedeli
+
+sigorta ettirene yahut onun tarafından belirlenmiş kişiye; geçici ve sürekli engellilik
+
+veya işgöremezlik hâllerinde ise sigortalıya ödenir. [106]
+
+(2) Geçici olarak çalışma gücünden mahrum kalan
+
+sigortalıya, poliçede yazılı süre ile sınırlı olmak üzere, mahrumiyetin devam ettiği
+
+süre için günlük hesabıyla tazminat verilir.
+
+II – Tedavi giderleri
+
+MADDE 1508 - (1) Sigortacı, aksi kararlaştırılmamışsa,
+
+poliçede yazılı bedelden başka, sigortalının yaptığı tedavi giderlerini de ödemekle
+
+yükümlüdür.
+
+III - Sigortalı
+
+MADDE 1509 - (1) Kazaya
+
+karşı sigorta, sigorta ettirenin veya başkasının uğrayabileceği kazalara karşı yapılabilir.
+
+IV - Uygulanacak hükümler
+
+MADDE 1510 - (1) Hayat sigortalarında sigortalıyı
+
+düzenleyen 1490 ıncı maddenin ikinci ilâ dördüncü fıkraları, kaza sonucu ölüm rizikosu
+
+için yapılan sigortalarda da uygulanır.
+
+(2) Hayat sigortalarına ilişkin diğer hükümler,
+
+kaza sigortası hakkında da kıyas yoluyla uygulanır.
+
+(3) Gerçek zararın sigortacı tarafından karşılanması
+
+öngörülmüş ise, zarar sigortalarına ilişkin hükümler, kıyas yoluyla kaza sigortası
+
+hakkında da uygulanır.
+
+C) Hastalık ve sağlık sigortası
+
+I - Sigortanın yaptırılması
+
+MADDE 1511 - (1) Hastalık ve sağlık
+
+sigortaları, sigortalı lehine yapılabilir; hastalık sigortalarında lehtar da belirlenebilir.
+
+II - Teminatlar
+
+1. Sigorta teminatı
+
+MADDE 1512 - (1) Sigortacı, hastalık sigortası
+
+ile sözleşmede öngörülen hastalıklardan birinin veya birkaçının, sözleşme süresi
+
+içinde gerçekleşmesi veya ortaya çıkması hâli için sigorta teminatı sağlar. Sözleşmede
+
+birden çok hastalık sigorta teminatına bağlanmışsa, hastalıklardan birinin gerçekleşmesi
+
+veya ortaya çıkması hâlinde bedel ödenir ve sözleşme sona erer. Teminatın, aksi
+
+kararlaştırılmamışsa, hastalıklardan sadece birinin gerçekleşmesi hâli için verildiği
+
+kabul edilir.
+
+2. Sağlık sigortası teminatları
+
+MADDE 1513 - (1) Sağlık sigortası ile sigortacı;
+
+a) Hastalık sonucu gerekli hâle gelen ilaç dâhil, her türlü
+
+tıbbi bakım, gebelik ve doğum, hastalıkların erken tanısına yönelik, ayaktaki incelemeler
+
+de içinde olmak üzere, sözleşmede kararlaştırılan giderleri,
+
+b) Tedavinin tıbben yatarak yapılmasının gerekli olduğu
+
+durumlarda günlük hastane giderleri,
+
+c) Sigortalının, hastalık sonucu çalışamaması nedeniyle
+
+elde edemediği kazançlar için kararlaştırılan günlük iş görememe parası,
+
+d) Sigortalı, bakıma ihtiyaç duyar duruma geldiği takdirde,
+
+bakım nedeniyle doğan giderler veya kararlaştırılan gündelik bakım parası,
+
+için teminat verir.
+
+(2) Teminat, aksi kararlaştırılmamışsa, birinci
+
+fıkradaki tutarların tümünü kapsar.
+
+III - Sigorta değeri
+
+MADDE 1514 - (1) Sigortalının sağlığı,
+
+hastalık sigortaları ile meblağ sigortası şeklinde düzenlenen sağlık sigortalarında
+
+bir veya birkaç sigortacı tarafından, çeşitli bedellerle sigorta ettirilebilir.
+
+(2) Ödenecek bedelin menfaatten fazla olduğu durumlarda,
+
+aşan kısım sigortalının lehine yapılmış sayılır.
+
+IV - Hastalık sigortasında lehtar
+
+MADDE 1515 - (1) Lehtarı belirleyerek başkasının
+
+hastalığı üzerine sigorta yapılabilmesi için, o kimse ile lehtar arasında bir menfaat
+
+ilişkisinin bulunması şarttır. Ayrıca sigortalının yazılı izni gerekir. Sigortalının
+
+kanuni temsilcisinin bulunduğu durumlarda, yazılı izin kanuni temsilci tarafından
+
+verilir. Sigortalı onbeş yaşını doldurmuşsa, ayrıca onun da izni alınır; aksi takdirde
+
+yapılan sözleşme geçersizdir.
+
+(2) Kanuni temsilcinin, lehtar olarak belirlendiği
+
+veya sigorta ettiren olduğu hâllerde, iznin verilmesinde sigortalıyı temsil yetkisi
+
+yoktur.
+
+(3) Sigorta ettiren, belirlediği lehtarı sigortacıya
+
+bildirmekle yükümlüdür. Bu yükümlülük yerine getirilmediği takdirde, sigortacı iyiniyetle
+
+yaptığı ödeme ile borcundan kurtulur.
+
+(4) Lehtarın belirtilmediği hâllerde, sigortanın
+
+sigortalı lehine yapıldığı kabul edilir.
+
+V - Bekleme süresi
+
+MADDE 1516 - (1) Bekleme sürelerini
+
+öngören sigorta sözleşmelerinde, bekleme süresinin üst sınırı Hazine Müsteşarlığınca
+
+veya Müsteşarlığın uygun göreceği bir kurum tarafından belirlenir.
+
+VI - Yeni doğan bebeğin ve evlat edinilenin
+
+sigorta kapsamında olması
+
+MADDE 1517 - (1) Doğum
+
+sırasında, ana babadan biri için yaptırılmış bir hastalık veya sağlık sigortasının
+
+bulunması hâlinde, aksi kararlaştırılmamışsa, doğumun tamamlanmasından itibaren
+
+bebek, ek prim olmaksızın sigortanın kapsamına girer. Ancak, bunun için doğumun
+
+en geç iki ay içinde sigortacıya bildirilmesi gerekir.
+
+(2) Evlat edinilen küçükler hakkında da birinci
+
+fıkra hükmü uygulanır.
+
+VII - Bilgi isteme hakkı
+
+MADDE 1518 - (1) Sigortacı, ifa yükümlülüğünü
+
+incelerken, ilgili kişinin veya onun kanuni temsilcisinin istemesi hâlinde, bunlar
+
+tarafından belirlenen doktora, teminat kapsamındaki hastalığın gerçekleşip gerçekleşmediği
+
+ve tıbbi tedavi uygulanmasının gerekliliği konusunda aldığı rapor hakkında bilgi
+
+ve rapor üzerinde inceleme imkânı vermek zorundadır.
+
+VIII - Hastalık ve sağlık sigortasına
+
+uygulanacak diğer hükümler
+
+MADDE 1519 - (1) Hayat sigortalarına ilişkin
+
+hükümler 1497 ve 1504 üncü madde hükümleri dışında hastalık sigortasına da uygulanır.
+
+Ancak hastalık sigortasına 1503 üncü maddenin uygulanabilmesi, sözleşmede öngörülen
+
+rizikonun intihara teşebbüs nedeniyle gerçekleşmiş olmasına bağlıdır.
+
+(2) Sigortalının uğradığı hastalık, ilaç ve tedavi
+
+giderleri için harcama yapılması gibi gerçek zararların sigortacı tarafından karşılanması
+
+öngörülen sağlık sigortalarında ise, genel hükümler dışında, zarar sigortalarına
+
+ilişkin hükümler ile 1500 ilâ 1502 nci madde hükümleri sağlık sigortası hakkında
+
+da uygulanır.
+
+IX - Koruyucu hükümler
+
+MADDE 1520 - (1) 1487 nci maddenin
+
+ikinci fıkrası, 1490 ıncı maddenin ikinci fıkrasının ilk cümlesi ile dördüncü fıkrası,
+
+1504 üncü madde ve 1515 inci maddenin birinci fıkrasının birinci cümlesi hükümlerine
+
+aykırı sözleşmeler geçersizdir.
+
+(2) 1490 ıncı maddenin üçüncü fıkrası, 1491 inci
+
+maddenin ikinci fıkrası, 1496 ncı maddenin birinci fıkrası, 1506 ncı madde, 1507
+
+nci maddenin birinci fıkrası, 1510 uncu madde, 1511 inci madde, 1514 üncü maddenin
+
+ikinci fıkrası, 1515 inci maddenin birinci fıkrasının ikinci cümlesi ile ikinci
+
+fıkrası, 1518 inci madde ve 1519 uncu madde hükümlerine aykırı sözleşme şartları
+
+geçersizdir.
+
+(3) 1489 uncu madde, 1490 ıncı maddenin ikinci fıkrasının
+
+ikinci ve üçüncü cümleleri, 1492 nci madde, 1497 ilâ 1503 üncü maddeler, 1515 inci
+
+maddenin birinci fıkrasının dördüncü cümlesi ve 1517 nci madde hükümleri sigorta
+
+ettiren, sigortalı ve lehtar aleyhine değiştirilemez; değiştirilirse bu Kanun hükümleri
+
+uygulanır.

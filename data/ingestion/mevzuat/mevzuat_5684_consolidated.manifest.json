@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "document_id": "mevzuat-5684_consolidated",
+  "source_id": "mevzuat_5684_consolidated",
+  "title": "5684 sayılı Sigortacılık Kanunu — güncel konsolide metin",
+  "domain": "regulation_reporting",
+  "kind": "official",
+  "input_path": "data/official/mevzuat/mevzuat_5684_consolidated.txt",
+  "input_sha256": "7869a6eb111ec7793ab31d9d8149815cda4b9e5636219e89172b56b8520c2bbb",
+  "version": "mevzuat.gov.tr konsolide metin, erişim 2026-10-18 (html sha256 c38022893abc5f1d)",
+  "effective_from": "2026-10-18",
+  "effective_until": null,
+  "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5684&MevzuatTur=1&MevzuatTertip=5",
+  "chunk_chars": 2000,
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "afsharid",
+    "reviewed_at": "2026-10-18T12:23:17+03:00",
+    "evidence_path": "artifacts/reviews/evidence/mevzuat-material-review-001.json",
+    "evidence_sha256": "5ad31ada54ef6a41fa289d6c6112ed19cdfa1200a93016064225f6944df3a71a",
+    "no_personal_data": true
+  }
+}
