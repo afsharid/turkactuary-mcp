@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-920837400",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2021/23459 E., 2022/12272 K. (13.10.2022)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_920837400.txt",
+  "input_sha256": "aad9ee1c3a95cf8f92b1a47b4e5d680243c26b0b585a091497ceb5f6b4d55f83",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2022-10-13",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:33:14Z",
+    "karar_id": "920837400",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2021/23459",
+    "karar": "2022/12272",
+    "tarih": "13.10.2022",
+    "secim_konusu": "evlenme_ihtimali",
+    "secim_sorgusu": "\"evlenme ihtimali\" \"destekten yoksun kalma\" \"AYİM\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

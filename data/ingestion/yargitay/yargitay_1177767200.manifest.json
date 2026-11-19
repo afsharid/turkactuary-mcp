@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-1177767200",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2024/750 E., 2025/8898 K. (29.05.2025)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_1177767200.txt",
+  "input_sha256": "7da3875321055eea8a53e4a7ce64096195696cf820a53b819a6ba0fc48e99c39",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2025-05-29",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:36:31Z",
+    "karar_id": "1177767200",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2024/750",
+    "karar": "2025/8898",
+    "tarih": "29.05.2025",
+    "secim_konusu": "bilinen_bilinmeyen",
+    "secim_sorgusu": "\"bilinen dönem\" \"bilinmeyen dönem\" \"iş göremezlik\" \"asgari ücret\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

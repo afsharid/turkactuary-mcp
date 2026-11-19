@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-798843000",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2021/9301 E., 2021/7025 K. (19.10.2021)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_798843000.txt",
+  "input_sha256": "e067464a3a37ad6c740436b9229007f1a578dce97827dcc8afedd8edeaa8b8e4",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2021-10-19",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:28:39Z",
+    "karar_id": "798843000",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2021/9301",
+    "karar": "2021/7025",
+    "tarih": "19.10.2021",
+    "secim_konusu": "aym_genel_sartlar",
+    "secim_sorgusu": "\"Anayasa Mahkemesi\" \"genel şartlar\" \"iptal\" \"destekten yoksun kalma\" \"TRH 2010\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

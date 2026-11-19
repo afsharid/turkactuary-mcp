@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-1176815100",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2025/5909 E., 2025/9409 K. (16.06.2025)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_1176815100.txt",
+  "input_sha256": "34ea80dd46d368cf7588c33dc8c7025eef5074e855b070148bf9d4d8cf37ad55",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2025-06-16",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:37:23Z",
+    "karar_id": "1176815100",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2025/5909",
+    "karar": "2025/9409",
+    "tarih": "16.06.2025",
+    "secim_konusu": "muterafik_kusur",
+    "secim_sorgusu": "\"müterafik kusur\" \"iş göremezlik\" \"maluliyet\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

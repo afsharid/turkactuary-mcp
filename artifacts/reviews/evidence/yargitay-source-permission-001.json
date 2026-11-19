@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "report_kind": "source_permission_decision",
+  "recorded_at": "2026-11-18T11:20:56Z",
+  "source_id": "yargitay_karar",
+  "reviewer": {
+    "handle": "afsharid",
+    "role": "proje sahibi",
+    "identity_authenticated": false
+  },
+  "question": "Yargıtay kararları için kaynak izni kaydı: karararama.yargitay.gov.tr'den seçilen 30–50 karar; dayanak FSEK md. 31; sitede kullanım şartı yayımlanmamış; her karar kişisel veri taramasından geçer. RAG, araç tasarımı ve açık depoda yayın için onaylanacak. Onaylıyor musunuz?",
+  "user_answer": "Onaylıyorum (RAG + yayın)",
+  "agent_findings_2026_11_18": [
+    "karararama.yargitay.gov.tr: yayımlanmış kullanım şartı veya telif bildirimi yok; robots.txt yok (sunucu hata döndürüyor); sayfada '2022 © Yargıtay Bilgi İşlem Müdürlüğü'.",
+    "yargitay.gov.tr: yalnız KVKK aydınlatma metinleri ve çerez politikası; karar metinlerinin yeniden kullanımına kısıt görülmedi.",
+    "FSEK md. 31: kamuya duyurulmuş mahkeme kararları fikir ve sanat eseri korumasının dışında (ajan değerlendirmesi; hukuki görüş değildir).",
+    "Kararlar sitede anonimleştirilmiş yayımlanıyor; her metin ingestion öncesi kişisel veri taramasından geçer."
+  ],
+  "scope": {
+    "rag": "approved",
+    "publication": "approved",
+    "training": "blocked (gerek yok; karar verilmedi)"
+  },
+  "collection_method": "Tarayıcıyla düşük hızda, seçilmiş 30–50 karar; toplu indirme yok; künye ve erişim tarihi kaydedilir."
+}

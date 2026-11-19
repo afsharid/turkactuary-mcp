@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-941385200",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2022/1557 E., 2022/18057 K. (29.12.2022)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_941385200.txt",
+  "input_sha256": "a32277e84f5976bd9ae3e126ba1e23e7f7d22e4535af7d426597dbb3e92c6710",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2022-12-29",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:28:18Z",
+    "karar_id": "941385200",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2022/1557",
+    "karar": "2022/18057",
+    "tarih": "29.12.2022",
+    "secim_konusu": "dyk_progresif_trh",
+    "secim_sorgusu": "\"destekten yoksun kalma\" \"progresif rant\" \"TRH 2010\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

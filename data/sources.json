@@ -438,5 +438,16 @@
     "training_permission": "approved",
     "publication_permission": "approved",
     "notes": "Öneri 003 (ajan değerlendirmesi; izin kararı değildir; onay afsharid'in gerçek yanıtıyla kaydedilir). Tür: yönetmelik. MevzuatNo=39939, MevzuatTur=7, MevzuatTertip=5. İlk yayım: RG 31.12.2022, sayı 32060 (5. Mükerrer) (mevzuat.gov.tr üst veri sayfası, accessed_at=2026-10-23; sayfa sha256 öneki 16493f4c93351740). Yürürlük: MBS güncel listesinde mevcut; metindeki son işlenmiş değişiklik ingestion sırasında doğrulanacak. consolidated_as_of=null (ingestion anında). Başlık mevzuat.gov.tr arama listesinden. Gerekçe: 2026-10-12 kararı (mevzuat.gov.tr güncel konsolide metin; yazılı izin istenmez) ve 2026-10-18 kararı (mevcut 16 mevzuat kaynağında üç izin onaylı; artifacts/reviews/evidence/mevzuat-permission-001.json), FSEK m.31. Uygulama: 2026-10-23 afsharid 'Üçü de onay, indir (Önerilen)'; kanıt artifacts/reviews/evidence/mevzuat-permission-002.json."
+  },
+  {
+    "id": "yargitay_karar",
+    "name": "Yargıtay Karar Arama — seçilmiş tazminat kararları (destekten yoksun kalma, iş göremezlik)",
+    "url": "https://karararama.yargitay.gov.tr/",
+    "source_type": "official_court_decisions",
+    "license_status": "fsek_m31_court_decisions_no_site_terms_found_2026-11-18",
+    "rag_permission": "approved",
+    "training_permission": "blocked",
+    "publication_permission": "approved",
+    "notes": "Proje sahibi kararı 2026-11-18: 'Onaylıyorum (RAG + yayın)'; kanıt artifacts/reviews/evidence/yargitay-source-permission-001.json. Dayanak FSEK m.31; sitede kullanım şartı yayımlanmamış. Kararlar anonimleştirilmiş yayımlanır; her metin ingestion öncesi kişisel veri taramasından geçer. Yalnız MCP sunucusunun ayrı korpusunda (data/caselaw/) kullanılır; pilot korpusuna (data/corpus/) girmez. Eğitim izni verilmedi."
   }
 ]

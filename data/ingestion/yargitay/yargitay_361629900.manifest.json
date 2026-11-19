@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-361629900",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 17. HD 2014/24673 E., 2017/4344 K. (20.04.2017)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_361629900.txt",
+  "input_sha256": "f92a0655c9b3b687f307f6bf88c502c862b39b09f1ae95953805ca5391db40fd",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2017-04-20",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:36:21Z",
+    "karar_id": "361629900",
+    "daire": "17. Hukuk Dairesi",
+    "esas": "2014/24673",
+    "karar": "2017/4344",
+    "tarih": "20.04.2017",
+    "secim_konusu": "bilinen_bilinmeyen",
+    "secim_sorgusu": "\"bilinen dönem\" \"bilinmeyen dönem\" \"iş göremezlik\" \"asgari ücret\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

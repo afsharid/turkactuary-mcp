@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-1157790600",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2022/14147 E., 2024/12558 K. (10.12.2024)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_1157790600.txt",
+  "input_sha256": "f69e701e7b13307f94f4d605ad43522154e799c347dcb05e2e0f35f5e892de67",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2024-12-10",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:38:57Z",
+    "karar_id": "1157790600",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2022/14147",
+    "karar": "2024/12558",
+    "tarih": "10.12.2024",
+    "secim_konusu": "hgk_dyk",
+    "secim_sorgusu": "\"Hukuk Genel Kurulu\" \"destekten yoksun kalma\" \"progresif rant\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

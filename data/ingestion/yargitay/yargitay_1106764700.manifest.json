@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-1106764700",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2022/7883 E., 2024/3048 K. (25.03.2024)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_1106764700.txt",
+  "input_sha256": "951e1049daa2b79609ba3f5e08e66a96ef28cfbce3c3789c0a96d064c80b37c7",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2024-03-25",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:28:22Z",
+    "karar_id": "1106764700",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2022/7883",
+    "karar": "2024/3048",
+    "tarih": "25.03.2024",
+    "secim_konusu": "ig_pasif_donem",
+    "secim_sorgusu": "\"iş göremezlik\" \"pasif dönem\" \"TRH 2010\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

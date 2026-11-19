@@ -1,0 +1,31 @@
+{
+ "reviewer": "yz:eu.anthropic.claude-opus-4-6-v1",
+ "kind": "YZ incelemesi (insan uzman değil)",
+ "files_reviewed": 49,
+ "files_with_verified_names": [
+  "1177743500",
+  "149785000",
+  "391671100",
+  "445271500",
+  "510794500",
+  "895421400",
+  "941385200"
+ ],
+ "names_masked_total": 17,
+ "plates_masked_total": 4,
+ "raw_outputs": "git dışında: ~/.local/state/actuaryllm/caselaw-privacy-evidence/ (alıntılar ad içerir)",
+ "raw_outputs_sha256": {
+  "batch-00.txt": "8b9110120ed9b9ab278e8b854d9b2aee60a24664db69b84939eabec252e0cf75",
+  "batch-01.txt": "c9d50d565c99c9104d5d5c3b864ce87ab4f9b6e401fc231d3e2650fe5681eb60",
+  "batch-02.txt": "97e7db0a701ba475b991b9e1cdc26a1c8f8e800b4590a1450f85babc3cd2057d",
+  "batch-03.txt": "50bfeecf6eafda3497e481698f1c42acc91cd49faac748d851a3e766c69aba8e",
+  "batch-04.txt": "d174727645deb04d694ce2514b6773ea4eeca72d086f647c32efd9928a946693",
+  "batch-05.txt": "6670c966d6b85d29b607fe209708454302376a2735cc33ab78fa525fb3238600",
+  "batch-06.txt": "571a94e5a9e715d336174611c47bfafc321a1df9bec37c9e13a2509c6ecff5b3",
+  "batch-m00.txt": "de49197f9777523e88f1796103bade2ce9882cc26bd9ab0efabd30817fe3f69a",
+  "batch-m01.txt": "a0a5d8e8da9efb6aba5ff5841b7c7b014feae8b56d2f4946c4a9c7710a67a634",
+  "batch-m02.txt": "d7f5d364d238100ee16bd811bb3043a8c2ee9a396244f5e49397107ce1aa2c38",
+  "batch-m03.txt": "9dea67c3ab805c303592cc3925659ad144d6e40c278ed1866aafb8644b2d369a",
+  "batch-m04.txt": "978c9bf91e792a780de71d65e82a16164972fe3713b3ff8f0a3bd604fc8000e4"
+ }
+}

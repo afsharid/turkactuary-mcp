@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-333878900",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 17. HD 2014/12098 E., 2016/5178 K. (26.04.2016)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_333878900.txt",
+  "input_sha256": "f93ad6f30b989aa7cb1cfe8044d002acb5e9f6fa1a610a2d3e25d865eaee0e35",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2016-04-26",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:33:24Z",
+    "karar_id": "333878900",
+    "daire": "17. Hukuk Dairesi",
+    "esas": "2014/12098",
+    "karar": "2016/5178",
+    "tarih": "26.04.2016",
+    "secim_konusu": "evlenme_ihtimali",
+    "secim_sorgusu": "\"evlenme ihtimali\" \"destekten yoksun kalma\" \"AYİM\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

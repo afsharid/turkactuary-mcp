@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-226926800",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 17. HD 2015/3477 E., 2016/1022 K. (27.01.2016)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_226926800.txt",
+  "input_sha256": "7ed0aa4d61ff6a7b85684e385df9cdfb42a373915ccb7438947b885763d2c1eb",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2016-01-27",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:33:34Z",
+    "karar_id": "226926800",
+    "daire": "17. Hukuk Dairesi",
+    "esas": "2015/3477",
+    "karar": "2016/1022",
+    "tarih": "27.01.2016",
+    "secim_konusu": "evlenme_ihtimali",
+    "secim_sorgusu": "\"evlenme ihtimali\" \"destekten yoksun kalma\" \"AYİM\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

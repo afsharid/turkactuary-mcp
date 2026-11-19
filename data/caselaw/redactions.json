@@ -1,0 +1,22 @@
+{
+ "plates": {
+  "rule": "araç plakası → [plaka]",
+  "counts": {
+   "1172658100": 2,
+   "515150300": 1,
+   "798843000": 1
+  }
+ },
+ "names": {
+  "rule": "Uzman A'nın bulduğu ve metinde doğrulanan gerçek kişi adları → '...' (sitedeki maskeleme biçimi)",
+  "counts": {
+   "1177743500": 1,
+   "391671100": 1,
+   "445271500": 8,
+   "510794500": 1,
+   "895421400": 1,
+   "941385200": 1,
+   "149785000": 4
+  }
+ }
+}

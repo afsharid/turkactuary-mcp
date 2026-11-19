@@ -47,7 +47,7 @@ class McpServerTest(unittest.TestCase):
         self.assertEqual(len(r), 6)  # bildirime cevap yok
         names = {t["name"] for t in r[2]["result"]["tools"]}
         self.assertTrue({"mevzuat_ara", "belge_getir", "chain_ladder", "bornhuetter_ferguson", "poisson_glm"} <= names)
-        self.assertEqual(len(names), 16)
+        self.assertEqual(len(names), 18)
         hits = json.loads(r[3]["result"]["content"][0]["text"])["parcalar"]
         self.assertEqual(len(hits), 3)
         self.assertTrue(all(h["id"] and h["excerpt"] for h in hits))
@@ -124,6 +124,30 @@ class FakeEmbeddings(BaseHTTPRequestHandler):
         self.wfile.write(payload)
 
 
+def poll_search(env_extra, done, timeout=60):
+    """Sunucuyu başlatır, `done(sonuç)` doğru olana kadar her saniye arar (ısınma zamanlamasına bağımlı olmamak için)."""
+    env = {**os.environ, "PYTHONPATH": str(ROOT / "src"), **env_extra}
+    proc = subprocess.Popen([sys.executable, "-m", "actuaryllm_mcp"], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE, text=True, env=env, cwd=ROOT)
+    try:
+        deadline, i, out = time.time() + timeout, 0, None
+        while time.time() < deadline:
+            i += 1
+            proc.stdin.write(json.dumps({"jsonrpc": "2.0", "id": i, "method": "tools/call", "params": {
+                "name": "mevzuat_ara", "arguments": {"sorgu": "zorunlu deprem sigortası", "adet": 3}}}) + "\n")
+            proc.stdin.flush()
+            out = json.loads(json.loads(proc.stdout.readline())["result"]["content"][0]["text"])
+            if done(out):
+                break
+            time.sleep(1)
+        return out
+    finally:
+        proc.stdin.close()
+        proc.wait(timeout=30)
+        proc.stdout.close()
+        proc.stderr.close()
+
+
 class McpV5Test(unittest.TestCase):
     SEARCH = {"jsonrpc": "2.0", "id": 2, "method": "tools/call",
               "params": {"name": "mevzuat_ara", "arguments": {"sorgu": "zorunlu deprem sigortası", "adet": 3}}}
@@ -136,26 +160,24 @@ class McpV5Test(unittest.TestCase):
             with tempfile.TemporaryDirectory() as cache:
                 env = {"ACTUARYLLM_SEARCH": "auto", "ACTUARYLLM_CACHE": cache, "ACTUARYLLM_EMBED_MODEL": "fake-embed",
                        "ACTUARYLLM_EMBED_URL": f"http://127.0.0.1:{server.server_port}/v1"}
-                r = session(self.INIT, self.SEARCH, env_extra=env, delay=8)
-                out = json.loads(r[2]["result"]["content"][0]["text"])
+                out = poll_search(env, lambda o: o["profil"] == "v5")
                 self.assertEqual(out["profil"], "v5", out["v5_durumu"])
                 self.assertEqual(len(out["parcalar"]), 3)
                 self.assertEqual(len(list(Path(cache).glob("vectors-*.json"))), 1)
                 before = FakeEmbeddings.calls
-                r = session(self.INIT, self.SEARCH, env_extra=env, delay=3)  # önbellekten: belge vektörü yeniden hesaplanmaz
-                self.assertEqual(json.loads(r[2]["result"]["content"][0]["text"])["profil"], "v5")
-                self.assertEqual(FakeEmbeddings.calls - before, 1)  # yalnız sorgu vektörü
+                out = poll_search(env, lambda o: o["profil"] == "v5")  # önbellekten: belge vektörü yeniden hesaplanmaz
+                self.assertEqual(out["profil"], "v5")
+                self.assertLessEqual(FakeEmbeddings.calls - before, 3)  # yalnız sorgu vektörleri (yoklama sayısı kadar)
         finally:
             server.shutdown()
+            server.server_close()
 
     def test_auto_falls_back_to_v2_without_embedding_server(self):
         with tempfile.TemporaryDirectory() as cache:
             env = {"ACTUARYLLM_SEARCH": "auto", "ACTUARYLLM_CACHE": cache, "ACTUARYLLM_EMBED_URL": "http://127.0.0.1:9/v1"}
-            r = session(self.INIT, self.SEARCH, env_extra=env, delay=2)
-            out = json.loads(r[2]["result"]["content"][0]["text"])
+            out = poll_search(env, lambda o: "kullanılamıyor" in o["v5_durumu"])
             self.assertEqual(out["profil"], "v2")
             self.assertIn("kullanılamıyor", out["v5_durumu"])
-
 
 if __name__ == "__main__":
     unittest.main()

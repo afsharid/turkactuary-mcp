@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "report_kind": "material_review_decision",
+  "recorded_at": "2026-11-18T11:43:56Z",
+  "reviewer": {
+    "handle": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "kind": "YZ incelemesi (insan uzman değil)",
+    "roles": "AGENTS.md 'YZ rolleri'"
+  },
+  "scope": "karararama.yargitay.gov.tr'den seçilen 49 tazminat kararının maskelenmiş metni; RAG ve yayın (kaynak izni: proje sahibi).",
+  "checks": {
+    "source_permission": {
+      "path": "artifacts/reviews/evidence/yargitay-source-permission-001.json",
+      "sha256": "90449ecf5464822f53229fc139823fb1b5201c495236372ab9d6a62b69d8ae22"
+    },
+    "code_privacy_scan": "scripts/privacy_scan_caselaw.py: T.C. kimlik, telefon, IBAN, e-posta, plaka; maskelenmiş kopyada bulgu yok",
+    "ai_privacy_review": {
+      "path": "evidence/caselaw-privacy-2026-11-18/summary.json",
+      "sha256": "7d1bcf142850f32e2a03a4b1db7923bd1bc731ae398f992ec7e9ce8458473718"
+    },
+    "redactions": {
+      "path": "data/caselaw/redactions.json",
+      "sha256": "3ac8f0a66bebf2ce801dfbf7ae471d026bc77d119dcbe6901b298598c67b9fb0"
+    }
+  },
+  "decision": "approved",
+  "no_personal_data": true,
+  "documents": [
+    {
+      "id": "895421400",
+      "kunye": "4. Hukuk Dairesi 2021/7678 E., 2021/11220 K., 28.12.2021"
+    },
+    {
+      "id": "920453300",
+      "kunye": "4. Hukuk Dairesi 2021/25367 E., 2022/13547 K., 01.11.2022"
+    },
+    {
+      "id": "787092100",
+      "kunye": "17. Hukuk Dairesi 2011/1056 E., 2012/1632 K., 15.02.2012"
+    },
+    {
+      "id": "1006657700",
+      "kunye": "4. Hukuk Dairesi 2023/4333 E., 2023/8464 K., 03.07.2023"
+    },
+    {
+      "id": "907010400",
+      "kunye": "4. Hukuk Dairesi 2021/18454 E., 2022/14907 K., 17.11.2022"
+    },
+    {
+      "id": "1108808300",
+      "kunye": "4. Hukuk Dairesi 2023/1346 E., 2023/4672 K., 30.03.2023"
+    },
+    {
+      "id": "1229028600",
+      "kunye": "4. Hukuk Dairesi 2025/673 E., 2026/6049 K., 18.05.2026"
+    },
+    {
+      "id": "1203227700",
+      "kunye": "4. Hukuk Dairesi 2025/10818 E., 2025/16778 K., 15.12.2025"
+    },
+    {
+      "id": "798843000",
+      "kunye": "4. Hukuk Dairesi 2021/9301 E., 2021/7025 K., 19.10.2021"
+    },
+    {
+      "id": "526451500",
+      "kunye": "17. Hukuk Dairesi 2016/8590 E., 2019/3686 K., 27.03.2019"
+    },
+    {
+      "id": "892520900",
+      "kunye": "4. Hukuk Dairesi 2021/15812 E., 2022/12002 K., 12.10.2022"
+    },
+    {
+      "id": "770027300",
+      "kunye": "4. Hukuk Dairesi 2021/8172 E., 2022/1849 K., 08.02.2022"
+    },
+    {
+      "id": "957691200",
+      "kunye": "4. Hukuk Dairesi 2021/20617 E., 2022/17462 K., 21.12.2022"
+    },
+    {
+      "id": "87059700",
+      "kunye": "17. Hukuk Dairesi 2013/11459 E., 2013/12767 K., 24.09.2013"
+    },
+    {
+      "id": "1106451400",
+      "kunye": "4. Hukuk Dairesi 2023/10414 E., 2024/1645 K., 15.02.2024"
+    },
+    {
+      "id": "1172658100",
+      "kunye": "4. Hukuk Dairesi 2023/3806 E., 2025/244 K., 08.01.2025"
+    },
+    {
+      "id": "747378800",
+      "kunye": "4. Hukuk Dairesi 2021/8464 E., 2022/1565 K., 03.02.2022"
+    },
+    {
+      "id": "1106764700",
+      "kunye": "4. Hukuk Dairesi 2022/7883 E., 2024/3048 K., 25.03.2024"
+    },
+    {
+      "id": "941385200",
+      "kunye": "4. Hukuk Dairesi 2022/1557 E., 2022/18057 K., 29.12.2022"
+    },
+    {
+      "id": "461930600",
+      "kunye": "17. Hukuk Dairesi 2015/16188 E., 2018/8985 K., 11.10.2018"
+    },
+    {
+      "id": "920837400",
+      "kunye": "4. Hukuk Dairesi 2021/23459 E., 2022/12272 K., 13.10.2022"
+    },
+    {
+      "id": "333878900",
+      "kunye": "17. Hukuk Dairesi 2014/12098 E., 2016/5178 K., 26.04.2016"
+    },
+    {
+      "id": "226926800",
+      "kunye": "17. Hukuk Dairesi 2015/3477 E., 2016/1022 K., 27.01.2016"
+    },
+    {
+      "id": "453879800",
+      "kunye": "17. Hukuk Dairesi 2016/9846 E., 2018/3188 K., 22.03.2018"
+    },
+    {
+      "id": "470876100",
+      "kunye": "17. Hukuk Dairesi 2015/16456 E., 2018/9000 K., 11.10.2018"
+    },
+    {
+      "id": "787723800",
+      "kunye": "17. Hukuk Dairesi 2012/3323 E., 2012/4475 K., 10.04.2012"
+    },
+    {
+      "id": "276377500",
+      "kunye": "17. Hukuk Dairesi 2015/1956 E., 2016/8657 K., 06.10.2016"
+    },
+    {
+      "id": "333219900",
+      "kunye": "17. Hukuk Dairesi 2014/8191 E., 2016/4782 K., 14.04.2016"
+    },
+    {
+      "id": "510794500",
+      "kunye": "17. Hukuk Dairesi 2009/10779 E., 2010/384 K., 26.01.2010"
+    },
+    {
+      "id": "584394700",
+      "kunye": "17. Hukuk Dairesi 2018/147 E., 2020/29 K., 27.01.2020"
+    },
+    {
+      "id": "391671100",
+      "kunye": "17. Hukuk Dairesi 2015/6102 E., 2017/11872 K., 20.12.2017"
+    },
+    {
+      "id": "445271500",
+      "kunye": "17. Hukuk Dairesi 2015/16309 E., 2018/8424 K., 01.10.2018"
+    },
+    {
+      "id": "360402500",
+      "kunye": "17. Hukuk Dairesi 2014/18401 E., 2017/2564 K., 09.03.2017"
+    },
+    {
+      "id": "515150300",
+      "kunye": "17. Hukuk Dairesi 2016/9181 E., 2019/3995 K., 02.04.2019"
+    },
+    {
+      "id": "462102600",
+      "kunye": "17. Hukuk Dairesi 2018/959 E., 2018/11263 K., 26.11.2018"
+    },
+    {
+      "id": "361629900",
+      "kunye": "17. Hukuk Dairesi 2014/24673 E., 2017/4344 K., 20.04.2017"
+    },
+    {
+      "id": "1177767200",
+      "kunye": "4. Hukuk Dairesi 2024/750 E., 2025/8898 K., 29.05.2025"
+    },
+    {
+      "id": "149785000",
+      "kunye": "21. Hukuk Dairesi 2014/9893 E., 2015/783 K., 22.01.2015"
+    },
+    {
+      "id": "1139546000",
+      "kunye": "4. Hukuk Dairesi 2022/15571 E., 2024/13013 K., 16.12.2024"
+    },
+    {
+      "id": "833349900",
+      "kunye": "21. Hukuk Dairesi 2010/7794 E., 2011/12742 K., 08.12.2011"
+    },
+    {
+      "id": "1176815100",
+      "kunye": "4. Hukuk Dairesi 2025/5909 E., 2025/9409 K., 16.06.2025"
+    },
+    {
+      "id": "1013694600",
+      "kunye": "4. Hukuk Dairesi 2022/8265 E., 2023/7919 K., 13.06.2023"
+    },
+    {
+      "id": "1228566100",
+      "kunye": "4. Hukuk Dairesi 2025/311 E., 2026/5845 K., 13.05.2026"
+    },
+    {
+      "id": "1075464600",
+      "kunye": "4. Hukuk Dairesi 2024/637 E., 2024/5299 K., 27.05.2024"
+    },
+    {
+      "id": "684025300",
+      "kunye": "4. Hukuk Dairesi 2021/2602 E., 2021/2651 K., 09.06.2021"
+    },
+    {
+      "id": "1177743500",
+      "kunye": "4. Hukuk Dairesi 2022/15704 E., 2025/8792 K., 29.05.2025"
+    },
+    {
+      "id": "982952100",
+      "kunye": "4. Hukuk Dairesi 2022/16795 E., 2023/1957 K., 16.02.2023"
+    },
+    {
+      "id": "1000324600",
+      "kunye": "4. Hukuk Dairesi 2023/3566 E., 2023/6769 K., 22.05.2023"
+    },
+    {
+      "id": "1157790600",
+      "kunye": "4. Hukuk Dairesi 2022/14147 E., 2024/12558 K., 10.12.2024"
+    }
+  ]
+}

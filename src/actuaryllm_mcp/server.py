@@ -113,6 +113,62 @@ def with_articles(hit: dict[str, Any], articles: dict[str, list[str]]) -> dict[s
     return {**hit, "maddeler": labels, "excerpt": f"(Bu parça: {', '.join(labels)})\n" + hit["excerpt"]}
 
 
+_DATE = {"type": "string", "description": "YYYY-AA-GG"}
+_RATE = {"type": ["number", "string"], "description": "0–1 arası oran (0.10 = %10)"}
+_MONEY = {"type": ["number", "string"], "description": "TL"}
+_INCOME = {"type": "array", "description": "Bilinen dönem net aylık gelirleri; kaza/ölüm tarihinden hesap tarihine boşluksuz.",
+           "items": {"type": "object", "required": ["baslangic", "bitis", "aylik_net"],
+                     "properties": {"baslangic": _DATE, "bitis": _DATE, "aylik_net": _MONEY}}}
+_COMMON = {"hesap_tarihi": _DATE, "gelir_donemleri": _INCOME,
+           "son_aylik_net": {**_MONEY, "description": "Bilinmeyen dönem (aktif) için bilinen son net aylık gelir"},
+           "pasif_aylik_net": {**_MONEY, "description": "Pasif dönem net aylık geliri (çoğunlukla net asgari ücret)"},
+           "artis_orani": {**_RATE, "description": "Progresif rant artış oranı; varsayılan 0.10"},
+           "iskonto_orani": {**_RATE, "description": "Progresif rant iskonto oranı; varsayılan 0.10"},
+           "aktif_donem_sonu_yasi": {"type": "integer", "description": "Varsayılan 60"},
+           "sorumlu_kusur_orani": {**_RATE, "description": "Sorumlu tarafın (sigortalının) kusur oranı; varsayılan 1"},
+           "hatir_indirimi": {**_RATE, "description": "Hatır taşıması indirimi; somut olaya göre (ör. 0.10–0.20)"},
+           "muterafik_kusur_indirimi": {**_RATE, "description": "Müterafik kusur indirimi (ör. kask/kemer: 0.20)"},
+           "bakiye_omur_yil": {"type": ["number", "string"], "description": "Elle bakiye ömür (ör. davacı PMF 1931 talep ettiyse); verilmezse TRH 2010"}}
+COMPENSATION_TOOLS = [
+    {"name": "is_goremezlik",
+     "description": "Sürekli/geçici iş göremezlik tazminatı (Yargıtay uygulaması: TRH 2010 bakiye ömür kaza tarihindeki yaşa göre, "
+                    "bilinen dönem iskontosuz, bilinmeyen dönem %10 artış/%10 iskonto progresif rant, 60 yaşa kadar aktif sonra pasif; "
+                    "indirim sırası kusur → hatır → müterafik → SGK → önceki ödemeler). Dönem tablosu, varsayımlar ve karar "
+                    "kimlikleri döner. Bilirkişi raporu yerine geçmez.",
+     "inputSchema": {"type": "object", "additionalProperties": False,
+                     "required": ["cinsiyet", "dogum_tarihi", "kaza_tarihi", "hesap_tarihi", "surekli_maluliyet_orani",
+                                  "gelir_donemleri", "son_aylik_net", "pasif_aylik_net"],
+                     "properties": {"cinsiyet": {"type": "string", "enum": ["erkek", "kadin"]}, "dogum_tarihi": _DATE,
+                                    "kaza_tarihi": _DATE, "surekli_maluliyet_orani": _RATE,
+                                    "gecici_is_goremezlik_gun": {"type": "integer", "description": "Kazadan itibaren %100 iş göremezlik günü"},
+                                    "sgk_pesin_sermaye_degeri": {**_MONEY, "description": "Yalnız rücuya tabi SGK gelirinin ilk peşin sermaye değeri"},
+                                    "sgk_mahsup_orani": {**_RATE, "description": "PSD'nin düşülecek oranı; varsayılan 1 (5510 m.21/4 iş kazasında 0.5)"},
+                                    "kaza_tarihinde_calisiyor": {"type": "boolean", "description": "18 yaş altında geçici iş göremezlik için gerekli"},
+                                    "onceki_odemeler_guncel": {**_MONEY, "description": "Güncellenmiş önceki ödemeler"}, **_COMMON}}},
+    {"name": "destekten_yoksun_kalma",
+     "description": "Destekten yoksun kalma tazminatı, hak sahibi başına (Yargıtay uygulaması: TRH 2010, progresif rant, pay sistemi "
+                    "destek 2/eş 2/çocuk 1/ana-baba 1; çocuk desteği erkek 18, kız 22, yüksek öğrenim 25; eşin evlenme ihtimali "
+                    "indirimi). pasif_donem_destegi zorunludur (kararlarda açık kural yok). Bilirkişi raporu yerine geçmez.",
+     "inputSchema": {"type": "object", "additionalProperties": False,
+                     "required": ["destek_cinsiyet", "destek_dogum_tarihi", "olum_tarihi", "hesap_tarihi", "gelir_donemleri",
+                                  "son_aylik_net", "pasif_donem_destegi", "hak_sahipleri"],
+                     "properties": {"destek_cinsiyet": {"type": "string", "enum": ["erkek", "kadin"]}, "destek_dogum_tarihi": _DATE,
+                                    "olum_tarihi": _DATE, "pasif_donem_destegi": {"type": "boolean"},
+                                    "hak_sahipleri": {"type": "array", "items": {"type": "object", "required": ["tip", "cinsiyet", "dogum_tarihi"],
+                                        "properties": {"etiket": {"type": "string"}, "tip": {"type": "string", "enum": ["es", "cocuk", "anne", "baba"]},
+                                                       "cinsiyet": {"type": "string", "enum": ["erkek", "kadin"]}, "dogum_tarihi": _DATE,
+                                                       "yuksek_ogrenim": {"type": "boolean"}, "destek_bitis_yasi": {"type": "integer"},
+                                                       "evlenme_ihtimali_orani": {**_RATE, "description": "Eş için AYİM tablosundan"},
+                                                       "varsayimsal": {"type": "boolean", "description": "İleride doğacak/evlenecek (tazminat almaz, paylara girer)"},
+                                                       "baslangic_tarihi": {**_DATE, "description": "Varsayımsal hak sahibinin katılma tarihi"}}}},
+                                    "destek_gelir_baslangic_yasi": {"type": "integer", "description": "Destek 18 yaşından küçükse zorunlu (kural 18)"},
+                                    "yetistirme_gideri_indirimi": {**_RATE, "description": "Küçük destekte ana-baba için (4. HD %5)"},
+                                    "sgk_pesin_sermaye_degeri": {"type": "object", "description": "{etiket: tutar}"},
+                                    "onceki_odemeler_guncel": {"type": "object", "description": "{etiket: tutar}"}, **_COMMON}}},
+]
+COMPENSATION = {t["name"] for t in COMPENSATION_TOOLS}
+
+
 class Server:
     def __init__(self, root: Path | None = None):
         self.root = project_root(root or os.environ.get("ACTUARYLLM_ROOT") or None)
@@ -198,10 +254,15 @@ class Server:
         hits = search_with_profile(self.index, query, {**self.profile, "limit": limit}, as_of=as_of)
         return FALLBACK_PROFILE, hits, status
 
+    def corpus_files(self) -> list[str]:
+        """Mevzuat korpusu (data/corpus) + Yargıtay kararları (data/caselaw; yalnız MCP, pilot korpusuna girmez)."""
+        files = [p.relative_to(self.root).as_posix() for p in sorted((self.root / "data/corpus").glob("*.jsonl"))]
+        return files + [p.relative_to(self.root).as_posix() for p in sorted((self.root / "data/caselaw").glob("*.jsonl"))]
+
     @property
     def index(self) -> BM25Index:
         if self._index is None:
-            self._index = BM25Index(load_corpus(self.root), stem_prefix=self.profile["stem_prefix"])
+            self._index = BM25Index(load_corpus(self.root, files=self.corpus_files()), stem_prefix=self.profile["stem_prefix"])
         return self._index
 
     # --- araç tanımları ---
@@ -214,8 +275,8 @@ class Server:
     def tools(self) -> list[dict[str, Any]]:
         out = [
             {"name": "mevzuat_ara",
-             "description": "Türkiye sigortacılık mevzuatı (5684 sayılı Kanun ve 15 yönetmelik, konsolide, erişim 2026-10-18) ve "
-                            "öğretici notlarda arama (embedding sunucusu varsa BM25 + anlamsal karma v5, yoksa BM25 v2). "
+             "description": "Türkiye sigortacılık mevzuatı (5684 sayılı Kanun, yönetmelikler, tebliğler; konsolide, erişim 2026-10-18), "
+                            "seçilmiş Yargıtay tazminat kararları (destekten yoksun kalma, iş göremezlik; künyeli) ve öğretici notlarda arama (embedding sunucusu varsa BM25 + anlamsal karma v5, yoksa BM25 v2). "
                             "Parça kimliği, başlık, kaynak, kapsanan madde numaraları (maddeler) ve metin döner. "
                             "Atıfta madde numarasını yalnız 'maddeler' alanından al; tahmin etme.",
              "inputSchema": {"type": "object", "additionalProperties": False, "required": ["sorgu"], "properties": {
@@ -227,6 +288,7 @@ class Server:
              "inputSchema": {"type": "object", "additionalProperties": False, "required": ["kimlik"],
                              "properties": {"kimlik": {"type": "string"}}}},
         ]
+        out += COMPENSATION_TOOLS
         for tool in ALL_TOOLS.values():
             schema = tool.api_schema()["function"]
             desc = schema["description"] + HINTS.get(tool.name, "")
@@ -248,6 +310,9 @@ class Server:
                 if key in (doc.cite_id, doc.id):
                     return with_articles(doc.evidence(0.0, "", full_text=True), self.articles)
             raise InputError(f"Parça bulunamadı: {key}")
+        if name in COMPENSATION:
+            from actuaryllm_mcp import tazminat
+            return getattr(tazminat, name)(**arguments)
         return invoke_tool(name, arguments, include_extended=True)
 
     # --- JSON-RPC ---

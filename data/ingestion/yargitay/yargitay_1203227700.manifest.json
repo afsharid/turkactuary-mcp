@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-1203227700",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2025/10818 E., 2025/16778 K. (15.12.2025)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_1203227700.txt",
+  "input_sha256": "329e03d4546580784107dad3e626177abe4c4b893df1319f24609a7d74a51b08",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2025-12-15",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:28:13Z",
+    "karar_id": "1203227700",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2025/10818",
+    "karar": "2025/16778",
+    "tarih": "15.12.2025",
+    "secim_konusu": "dyk_progresif_trh",
+    "secim_sorgusu": "\"destekten yoksun kalma\" \"progresif rant\" \"TRH 2010\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

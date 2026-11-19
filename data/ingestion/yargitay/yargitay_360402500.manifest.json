@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-360402500",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 17. HD 2014/18401 E., 2017/2564 K. (09.03.2017)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_360402500.txt",
+  "input_sha256": "13c8ae2cf99d38e9600de3234a6c057e055a58490302bfd2f7d9fb650da49cf0",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2017-03-09",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:35:40Z",
+    "karar_id": "360402500",
+    "daire": "17. Hukuk Dairesi",
+    "esas": "2014/18401",
+    "karar": "2017/2564",
+    "tarih": "09.03.2017",
+    "secim_konusu": "paylastirma_cocuk",
+    "secim_sorgusu": "\"destekten yoksun kalma\" \"pay\" \"çocuk\" \"18 yaş\" \"22 yaş\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

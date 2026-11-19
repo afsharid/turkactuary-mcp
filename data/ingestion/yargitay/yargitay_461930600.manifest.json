@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-461930600",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 17. HD 2015/16188 E., 2018/8985 K. (11.10.2018)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_461930600.txt",
+  "input_sha256": "c1f462e7ae816c64257f5e40d0ded221d5881327d99ba6a6a64f1ce692658005",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2018-10-11",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:32:53Z",
+    "karar_id": "461930600",
+    "daire": "17. Hukuk Dairesi",
+    "esas": "2015/16188",
+    "karar": "2018/8985",
+    "tarih": "11.10.2018",
+    "secim_konusu": "hatir_tasimasi",
+    "secim_sorgusu": "\"hatır taşıması\" \"indirim\" \"destekten yoksun kalma\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}

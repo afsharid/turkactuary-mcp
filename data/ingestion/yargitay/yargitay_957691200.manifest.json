@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "document_id": "yargitay-957691200",
+  "source_id": "yargitay_karar",
+  "title": "Yargıtay 4. HD 2021/20617 E., 2022/17462 K. (21.12.2022)",
+  "domain": "non_life",
+  "kind": "official",
+  "input_path": "data/official/yargitay/yargitay_957691200.txt",
+  "input_sha256": "635127b45ccc5df1f3cdfd832852dfd2851633db95de2e4dea5d652647de322c",
+  "version": "karararama.yargitay.gov.tr, erişim 2026-11-18; kişisel veri maskelendi (data/caselaw/redactions.json)",
+  "effective_from": "2022-12-21",
+  "effective_until": null,
+  "url": "https://karararama.yargitay.gov.tr/",
+  "chunk_chars": 2000,
+  "provenance_note": {
+    "accessed_at": "2026-11-18T11:28:50Z",
+    "karar_id": "957691200",
+    "daire": "4. Hukuk Dairesi",
+    "esas": "2021/20617",
+    "karar": "2022/17462",
+    "tarih": "21.12.2022",
+    "secim_konusu": "hatir_tasimasi",
+    "secim_sorgusu": "\"hatır taşıması\" \"indirim\" \"destekten yoksun kalma\""
+  },
+  "material_review": {
+    "status": "approved",
+    "reviewed_by": "yz:eu.anthropic.claude-opus-4-6-v1",
+    "reviewed_at": "2026-11-18T11:43:56Z",
+    "evidence_path": "artifacts/reviews/evidence/yargitay-material-review-001.json",
+    "evidence_sha256": "797cf55b7c91d16cccb357c8f0bba1bd14acc893b1c1b494c26e00bb3fe92a83",
+    "no_personal_data": true
+  }
+}
