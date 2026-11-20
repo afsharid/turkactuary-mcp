@@ -53,7 +53,28 @@ TRH 2010 tablosu `data/tables/` altındadır; bir Yargıtay kararındaki bilirki
 
 ## Kurulum
 
-Python 3.11+ yeterli; ek bağımlılık yok.
+Python 3.11+ yeterli; ek bağımlılık yok. Paket korpusu ve tabloları içinde taşır. Üç yoldan birini seçin.
+
+**1. `uvx` ile kurmadan çalıştırma (önerilen).** [uv](https://docs.astral.sh/uv/) kuruluysa istemciye şu komutu verin:
+
+```bash
+uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp
+```
+
+İstemci yapılandırmasında: `"command": "uvx"`,
+`"args": ["--from", "git+https://github.com/afsharid/turkactuary-mcp", "turkactuary-mcp"]`, `env` gerekmez. Claude Code:
+`claude mcp add turkactuary -- uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp`.
+uvx paketi önbelleğe alır; yeni sürüm için komuta bir kez `--refresh` ekleyin.
+
+**2. `pip` ile kurma.** Bir sanal ortama kurun; komut `turkactuary-mcp` olur:
+
+```bash
+python3 -m venv ~/.venvs/turkactuary && ~/.venvs/turkactuary/bin/pip install git+https://github.com/afsharid/turkactuary-mcp
+```
+
+İstemci yapılandırmasında: `"command": "/Users/<siz>/.venvs/turkactuary/bin/turkactuary-mcp"`, `args` ve `env` gerekmez.
+
+**3. `git clone` (kodu değiştirecekseniz).** Aşağıdaki istemci örnekleri bu yolu kullanır:
 
 ```bash
 git clone https://github.com/afsharid/turkactuary-mcp.git
@@ -196,7 +217,10 @@ any other MCP client.
 used the tools correctly, while Qwen3-8B passed a wrong parameter and then made up the result. Prefer larger models that
 are good at tool use.
 
-**Setup:** Python 3.11+, no dependencies. `git clone` the repo and add the `mcpServers` block shown above to your client
+**Setup:** Python 3.11+, no dependencies; the package ships its corpus and tables. Easiest: point your client at
+`uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp` (no env needed; add `--refresh` once to
+update). Or `pip install git+https://github.com/afsharid/turkactuary-mcp` into a virtualenv and run `turkactuary-mcp`.
+To change the code, `git clone` the repo and add the `mcpServers` block shown above to your client
 (paths: `PYTHONPATH=<repo>/src`, `ACTUARYLLM_ROOT=<repo>`). For hybrid search, load `text-embedding-qwen3-embedding-4b` in
 LM Studio; the server checks compatibility with the bundled vectors on 3 chunks and switches to hybrid within seconds.
 
