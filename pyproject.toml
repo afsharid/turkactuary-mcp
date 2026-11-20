@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "turkactuary-mcp"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Türkiye sigortacılık mevzuatı araması ve aktüeryal hesap araçları için MCP sunucusu"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -15,5 +15,15 @@ dependencies = []
 [project.scripts]
 turkactuary-mcp = "actuaryllm_mcp.server:main"
 
+[tool.hatch.version]
+path = "src/actuaryllm_mcp/__init__.py"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/actuaryllm", "src/actuaryllm_mcp"]
+
+# Korpus yüklenirken ingestion manifestleri, ham resmî metinler ve inceleme kanıtları sha256 ile doğrulanır;
+# üçü de depodaki göreli düzenle pakete girer (actuaryllm_mcp.default_root).
+[tool.hatch.build.targets.wheel.force-include]
+"data" = "actuaryllm_mcp/_bundle/data"
+"artifacts" = "actuaryllm_mcp/_bundle/artifacts"
+"evidence" = "actuaryllm_mcp/_bundle/evidence"

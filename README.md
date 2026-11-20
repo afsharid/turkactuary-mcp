@@ -12,7 +12,7 @@ Türkiye sigortacılık mevzuatı araması ve aktüeryal hesap araçları için 
 
 | Araç | Ne yapar |
 |---|---|
-| `mevzuat_ara` | Sigortacılık mevzuatında (5684 sayılı Kanun, yönetmelikler ve tebliğler; konsolide) ve 16 öğretici notta arama, toplam 624 parça. Projede ölçülen **v5** karma arama (BM25 + Qwen3-Embedding-4B); embedding modeli yoksa BM25. Parça kimliği, başlık, kaynak ve metin döner. |
+| `mevzuat_ara` | Sigortacılık mevzuatında (5684 sayılı Kanun, yönetmelikler ve tebliğler; konsolide), 16 öğretici notta ve 49 seçilmiş Yargıtay kararında arama, toplam 827 parça. Projede ölçülen **v5** karma arama (BM25 + Qwen3-Embedding-4B); embedding modeli yoksa BM25. Parça kimliği, başlık, kaynak ve metin döner. |
 | `belge_getir` | Parça kimliğiyle tam metni getirir. |
 | `present_value`, `annuity`, `life_insurance_pv` | Bugünkü değer, annüite, süreli hayat sigortası. |
 | `chain_ladder`, `bornhuetter_ferguson` | Hasar rezervi (kümülatif üçgen, paid/incurred açık). |
@@ -65,8 +65,8 @@ python3 -m unittest discover -s tests   # isteğe bağlı: sunucu testleri
 
 En iyi sonuç için yerel bir embedding modeli açın. LM Studio'da **Qwen3-Embedding-4B** modelini indirip yükleyin
 (`text-embedding-qwen3-embedding-4b`) ve yerel sunucuyu başlatın (varsayılan `http://127.0.0.1:1234`). Sunucu açılışta
-modelinizi 3 parçada hazır vektörlerle karşılaştırır: uyumluysa birkaç saniyede v5'e geçer, değilse 624 parçayı kendi
-modelinizle hesaplar (bu Mac'te ~20 dk; bir kez, `~/.cache/actuaryllm-mcp/` altına yazılır). Embedding modeli yoksa BM25
+modelinizi 3 parçada hazır vektörlerle karşılaştırır: uyumluysa birkaç saniyede v5'e geçer, değilse bütün parçaları kendi
+modelinizle hesaplar (624 parçalık korpusta bu Mac'te ~20 dk sürdü; bir kez, `~/.cache/actuaryllm-mcp/` altına yazılır). Embedding modeli yoksa BM25
 (v2) ile çalışır; her arama sonucunda `profil` ve `v5_durumu` alanları hangisinin kullanıldığını söyler.
 
 Ayarlar (isteğe bağlı): `ACTUARYLLM_SEARCH=auto|v5|v2`, `ACTUARYLLM_EMBED_URL` (yalnız 127.0.0.1/localhost),
@@ -155,7 +155,7 @@ Projede ölçülen kurulumla birebir aynı değildir:
 | | Projede ölçülen (Qwen3.8-27B, ince ayarsız) | Bu MCP sunucusu |
 |---|---|---|
 | Arama | v5: BM25 + Qwen3-Embedding-4B anlamsal arama (karma) | Aynı v5 (embedding modeli açıksa; 6 deneme sorgusunda ilk 4 parça birebir aynı). Model yoksa v2: yalnız BM25 |
-| Hesap araçları | 6 araç, soru başına en çok 2 çağrı | 14 araç, çağrı sınırı yok |
+| Hesap araçları | 6 araç, soru başına en çok 2 çağrı | 16 araç, çağrı sınırı yok |
 | Sistem talimatı | aynı metin | `turkactuary` prompt'u (aynı metin + araç rehberi) |
 
 Ölçümler (projenin kendi altın etiketli vakaları; otomatik ölçüm, uzman puanı değildir): kuralın modele giden bağlamda
@@ -177,8 +177,8 @@ any other MCP client.
 
 **Tools**
 
-- `mevzuat_ara` (search): 624 chunks of Turkish insurance law (Insurance Law No. 5684, regulations and communiqués,
-  consolidated) and 16 teaching notes. Hybrid search (BM25 + Qwen3-Embedding-4B) as measured in the project when a local
+- `mevzuat_ara` (search): 827 chunks of Turkish insurance law (Insurance Law No. 5684, regulations and communiqués,
+  consolidated), 16 teaching notes and 49 selected, anonymised Yargıtay decisions. Hybrid search (BM25 + Qwen3-Embedding-4B) as measured in the project when a local
   embedding model is available; BM25 otherwise. Returns chunk id, title, source and text for citation.
 - `belge_getir` (get document): full text of a chunk by id.
 - 14 calculators (exact `Decimal` arithmetic, unit-tested): present value, annuity, term life insurance PV, chain ladder,

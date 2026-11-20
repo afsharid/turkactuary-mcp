@@ -179,5 +179,83 @@ class McpV5Test(unittest.TestCase):
             self.assertEqual(out["profil"], "v2")
             self.assertIn("kullanılamıyor", out["v5_durumu"])
 
+
+def _public_pyproject() -> Path | None:
+    """Açık paketin pyproject'i: özel depoda şablon, açık depoda kökteki dosya."""
+    for p in (ROOT / "scripts/mcp_public_pyproject.toml", ROOT / "pyproject.toml"):
+        if p.is_file() and 'name = "turkactuary-mcp"' in p.read_text(encoding="utf-8"):
+            return p
+    return None
+
+
+def _public_readme() -> Path:
+    p = ROOT / "scripts/mcp_public_README.md"
+    return p if p.is_file() else ROOT / "README.md"
+
+
+class PackagingTest(unittest.TestCase):
+    """Kurulu tekerlek (wheel) düzeni: veri paket içinde, depo yok. Sürüm ve README sayıları tek kaynaktan."""
+
+    @classmethod
+    def setUpClass(cls):
+        if str(ROOT / "src") not in sys.path:
+            sys.path.insert(0, str(ROOT / "src"))
+
+    def test_version_has_single_source(self):
+        import re
+        from actuaryllm_mcp import __version__
+        from actuaryllm_mcp.server import SERVER_VERSION
+        self.assertEqual(SERVER_VERSION, __version__)
+        pyproject = _public_pyproject().read_text(encoding="utf-8")
+        self.assertIn('dynamic = ["version"]', pyproject)
+        self.assertIn('path = "src/actuaryllm_mcp/__init__.py"', pyproject)
+        self.assertIsNone(re.search(r"(?m)^version\s*=", pyproject))
+
+    def test_readme_counts_match_corpus_and_tools(self):
+        from actuaryllm.retrieval import load_corpus
+        from actuaryllm_mcp.server import ALL_TOOLS, COMPENSATION_TOOLS, Server
+        n = len(load_corpus(ROOT, files=Server(ROOT).corpus_files()).documents)
+        text = _public_readme().read_text(encoding="utf-8")
+        self.assertIn(f"toplam {n} parça", text)
+        self.assertIn(f"{n} chunks", text)
+        self.assertIn(f"{len(ALL_TOOLS) + len(COMPENSATION_TOOLS)} araç, çağrı sınırı yok", text)
+
+    def test_installed_wheel_layout_runs_search_and_compensation(self):
+        import shutil
+        import tomllib
+        pyproject = _public_pyproject()
+        if pyproject is None or pyproject.parent != ROOT:
+            self.skipTest("yalnız açık depoda (özel depoda artifacts/ çok büyük; dışa aktarılan kopyada koşar)")
+        conf = tomllib.loads(pyproject.read_text(encoding="utf-8"))["tool"]["hatch"]["build"]["targets"]["wheel"]
+        with tempfile.TemporaryDirectory() as tmp:
+            site = Path(tmp) / "site-packages"
+            for pkg in conf["packages"]:  # hatchling: src/<paket> → <paket>
+                shutil.copytree(ROOT / pkg, site / Path(pkg).name, ignore=shutil.ignore_patterns("__pycache__"))
+            for src, dest in conf["force-include"].items():
+                shutil.copytree(ROOT / src, site / dest)
+            msgs = [
+                {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2025-06-18", "capabilities": {}}},
+                {"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {"name": "mevzuat_ara", "arguments": {"sorgu": "zorunlu deprem sigortası", "adet": 2}}},
+                {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "is_goremezlik", "arguments": dict(
+                    cinsiyet="erkek", dogum_tarihi="1990-01-01", kaza_tarihi="2024-01-01", hesap_tarihi="2026-01-01",
+                    surekli_maluliyet_orani="0.10", son_aylik_net="22000", pasif_aylik_net="22000",
+                    gelir_donemleri=[{"baslangic": "2024-01-01", "bitis": "2026-01-01", "aylik_net": "20000"}])}},
+                {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "destekten_yoksun_kalma", "arguments": dict(
+                    destek_cinsiyet="erkek", destek_dogum_tarihi="1990-01-01", olum_tarihi="2024-01-01", hesap_tarihi="2025-01-01",
+                    gelir_donemleri=[{"baslangic": "2024-01-01", "bitis": "2025-01-01", "aylik_net": "20000"}],
+                    son_aylik_net="20000", pasif_donem_destegi=False,
+                    hak_sahipleri=[{"etiket": "es", "tip": "es", "cinsiyet": "kadin", "dogum_tarihi": "1992-01-01"}])}},
+            ]
+            env = {k: v for k, v in os.environ.items() if k not in ("ACTUARYLLM_ROOT", "PYTHONPATH")}
+            env.update(PYTHONPATH=str(site), ACTUARYLLM_SEARCH="v2", ACTUARYLLM_CACHE=str(Path(tmp) / "cache"))
+            out = subprocess.run([sys.executable, "-m", "actuaryllm_mcp"], input="\n".join(map(json.dumps, msgs)) + "\n",
+                                 capture_output=True, text=True, env=env, cwd=tmp, timeout=120)
+            self.assertEqual(out.returncode, 0, out.stderr)
+            r = {x["id"]: x for x in map(json.loads, out.stdout.splitlines())}
+            for i in (2, 3, 4):
+                self.assertFalse(r[i]["result"].get("isError"), r[i]["result"]["content"][0]["text"][:300])
+            self.assertEqual(len(json.loads(r[2]["result"]["content"][0]["text"])["parcalar"]), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -4,10 +4,11 @@ Her model ya da ajan (LM Studio, Claude Desktop, Cursor, …) bu araçları MCP 
 model indirmez, dosya yazmaz. Belgeler güvenilmeyen veridir; içlerindeki talimatlar uygulanmaz.
 
     python -m actuaryllm_mcp          # stdio; istemci yapılandırması README'de
-    ACTUARYLLM_ROOT=/yol/actuaryllm   # korpusun bulunduğu proje kökü (varsayılan: paketin bulunduğu depo)
+    ACTUARYLLM_ROOT=/yol/actuaryllm   # korpusun bulunduğu proje kökü (varsayılan: kurulu pakette gömülü veri,
+                                      # git kopyasında paketin bulunduğu depo)
 
 Arama: projede ölçülen v5 (BM25 + Qwen3-Embedding-4B karma). Yerel bir OpenAI uyumlu embedding sunucusu (ör. LM Studio)
-açıksa sunucu açılışta 624 parçanın vektörünü o modelle hesaplar ve önbelleğe yazar; hazır olana kadar ve sunucu yoksa
+açıksa sunucu açılışta korpusun bütün parçalarının vektörlerini o modelle hesaplar ve önbelleğe yazar; hazır olana kadar ve sunucu yoksa
 v2 (yalnız BM25) kullanılır, yanıtta hangi profilin kullanıldığı yazar.
     ACTUARYLLM_SEARCH=auto|v5|v2                     (varsayılan auto)
     ACTUARYLLM_EMBED_URL=http://127.0.0.1:1234/v1    (yalnız loopback)
@@ -31,9 +32,10 @@ from actuaryllm.policy import POLICY
 from actuaryllm.retrieval import BM25Index, MAX_QUESTION_CHARS, load_corpus, retrieval_profile, search_with_profile
 from actuaryllm.storage import InputError, json_text, project_root
 from actuaryllm.tools import ALL_TOOLS, invoke_tool
+from actuaryllm_mcp import __version__, default_root
 
 SERVER_NAME = "turkactuary"
-SERVER_VERSION = "0.1.0"
+SERVER_VERSION = __version__
 PROTOCOL_VERSIONS = ("2025-06-18", "2025-03-26", "2024-11-05")
 FALLBACK_PROFILE = "v2"  # BM25 (ilk 7 harf, tam parça); embedding sunucusu gerektirmez
 BATCH = 16
@@ -171,7 +173,7 @@ COMPENSATION = {t["name"] for t in COMPENSATION_TOOLS}
 
 class Server:
     def __init__(self, root: Path | None = None):
-        self.root = project_root(root or os.environ.get("ACTUARYLLM_ROOT") or None)
+        self.root = project_root(root or os.environ.get("ACTUARYLLM_ROOT") or default_root())
         self.profile = retrieval_profile(FALLBACK_PROFILE)
         self._index: BM25Index | None = None
         self._articles: dict[str, list[str]] | None = None

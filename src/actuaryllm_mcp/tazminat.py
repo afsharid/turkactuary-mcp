@@ -42,7 +42,8 @@ _TABLE: dict[str, dict[int, Decimal]] | None = None
 def _table(root: Path | None = None) -> dict[str, dict[int, Decimal]]:
     global _TABLE
     if _TABLE is None:
-        base = root or Path(__file__).resolve().parents[2]
+        from actuaryllm_mcp import default_root
+        base = root or default_root() or Path(__file__).resolve().parents[2]
         data = json.loads((base / "data/tables/trh2010_bakiye_omur.json").read_text(encoding="utf-8"))
         _TABLE = {sex: {int(a): Decimal(v) for a, v in data[sex].items()} for sex in ("erkek", "kadin")}
     return _TABLE
