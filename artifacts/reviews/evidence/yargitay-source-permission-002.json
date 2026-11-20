@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "report_kind": "source_permission_decision",
+  "recorded_at": "2026-11-20T10:40:00Z",
+  "source_id": "yargitay_karar",
+  "reviewer": {
+    "handle": "afsharid",
+    "role": "proje sahibi",
+    "identity_authenticated": false
+  },
+  "question": "TurkActuary MCP paketini PyPI'de ve MCP Registry'de yayınlama. Pakette maskelenmiş 49 Yargıtay kararı (data/caselaw/) de bulunur; PyPI bu veri için yeni bir dağıtım kanalıdır ve yüklenen sürüm fiilen kalıcıdır. Önceki izin (yargitay-source-permission-001: RAG + yayın) bu kanalı kapsıyor mu?",
+  "user_answer": "onaylıyorum ne lazımsa yap",
+  "scope": {
+    "pypi_distribution": "approved",
+    "mcp_registry_listing": "approved",
+    "training": "blocked (değişmedi)"
+  },
+  "preceding_permission": "artifacts/reviews/evidence/yargitay-source-permission-001.json",
+  "notes": "Kapsam yalnız açık depodaki aynı içeriğin paket olarak dağıtımıdır; yeni karar eklenmez, maskeleme ve kişisel veri taraması değişmez."
+}

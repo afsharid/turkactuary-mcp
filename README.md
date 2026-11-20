@@ -2,6 +2,8 @@
 
 **Türkçe** · [English](#english)
 
+<!-- mcp-name: io.github.afsharid/turkactuary -->
+
 Türkiye sigortacılık mevzuatı araması ve aktüeryal hesap araçları için bir **MCP sunucusu**.
 İstediğiniz modeli ya da ajanı kullanın: LM Studio, Claude Code, Codex, VS Code, Claude Desktop, Cursor ve MCP destekleyen her istemci bu araçlara erişir.
 
@@ -55,21 +57,21 @@ TRH 2010 tablosu `data/tables/` altındadır; bir Yargıtay kararındaki bilirki
 
 Python 3.11+ yeterli; ek bağımlılık yok. Paket korpusu ve tabloları içinde taşır. Üç yoldan birini seçin.
 
-**1. `uvx` ile kurmadan çalıştırma (önerilen).** [uv](https://docs.astral.sh/uv/) kuruluysa istemciye şu komutu verin:
+**1. `uvx` ile kurmadan çalıştırma (önerilen).** [uv](https://docs.astral.sh/uv/) kuruluysa istemciye şu komutu verin
+(paket [PyPI](https://pypi.org/p/turkactuary-mcp)'de):
 
 ```bash
-uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp
+uvx turkactuary-mcp
 ```
 
-İstemci yapılandırmasında: `"command": "uvx"`,
-`"args": ["--from", "git+https://github.com/afsharid/turkactuary-mcp", "turkactuary-mcp"]`, `env` gerekmez. Claude Code:
-`claude mcp add turkactuary -- uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp`.
-uvx paketi önbelleğe alır; yeni sürüm için komuta bir kez `--refresh` ekleyin.
+İstemci yapılandırmasında: `"command": "uvx"`, `"args": ["turkactuary-mcp"]`, `env` gerekmez. Claude Code:
+`claude mcp add turkactuary -- uvx turkactuary-mcp`. uvx paketi önbelleğe alır; yeni sürüm için komuta bir kez
+`--refresh` ekleyin. Henüz sürümlenmemiş en son kod için: `uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp`.
 
 **2. `pip` ile kurma.** Bir sanal ortama kurun; komut `turkactuary-mcp` olur:
 
 ```bash
-python3 -m venv ~/.venvs/turkactuary && ~/.venvs/turkactuary/bin/pip install git+https://github.com/afsharid/turkactuary-mcp
+python3 -m venv ~/.venvs/turkactuary && ~/.venvs/turkactuary/bin/pip install turkactuary-mcp
 ```
 
 İstemci yapılandırmasında: `"command": "/Users/<siz>/.venvs/turkactuary/bin/turkactuary-mcp"`, `args` ve `env` gerekmez.
@@ -220,8 +222,8 @@ used the tools correctly, while Qwen3-8B passed a wrong parameter and then made 
 are good at tool use.
 
 **Setup:** Python 3.11+, no dependencies; the package ships its corpus and tables. Easiest: point your client at
-`uvx --from git+https://github.com/afsharid/turkactuary-mcp turkactuary-mcp` (no env needed; add `--refresh` once to
-update). Or `pip install git+https://github.com/afsharid/turkactuary-mcp` into a virtualenv and run `turkactuary-mcp`.
+`uvx turkactuary-mcp` (no env needed; add `--refresh` once to update). Or `pip install turkactuary-mcp` into a
+virtualenv and run `turkactuary-mcp`.
 To change the code, `git clone` the repo and add the `mcpServers` block shown above to your client
 (paths: `PYTHONPATH=<repo>/src`, `ACTUARYLLM_ROOT=<repo>`). For hybrid search, load `text-embedding-qwen3-embedding-4b` in
 LM Studio; the server checks compatibility with the bundled vectors on 3 chunks and switches to hybrid within seconds.

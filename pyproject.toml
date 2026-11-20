@@ -11,6 +11,18 @@ requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE", "LICENSE-DATA"]
 dependencies = []
+keywords = ["mcp", "model-context-protocol", "insurance", "actuarial", "turkey", "sigorta", "aktuerya"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Natural Language :: Turkish",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.urls]
+Homepage = "https://github.com/afsharid/turkactuary-mcp"
+Repository = "https://github.com/afsharid/turkactuary-mcp"
+Issues = "https://github.com/afsharid/turkactuary-mcp/issues"
 
 [project.scripts]
 turkactuary-mcp = "actuaryllm_mcp.server:main"

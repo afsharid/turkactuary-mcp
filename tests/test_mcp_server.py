@@ -267,6 +267,15 @@ class PackagingTest(unittest.TestCase):
         self.assertIn('path = "src/actuaryllm_mcp/__init__.py"', pyproject)
         self.assertIsNone(re.search(r"(?m)^version\s*=", pyproject))
 
+    def test_registry_metadata_matches_package(self):
+        from actuaryllm_mcp import __version__
+        path = next(p for p in (ROOT / "scripts/mcp_public_server.json", ROOT / "server.json") if p.is_file())
+        server = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual({server["version"], *(p["version"] for p in server["packages"])}, {__version__})
+        self.assertEqual([(p["registryType"], p["identifier"]) for p in server["packages"]], [("pypi", "turkactuary-mcp")])
+        self.assertLessEqual(len(server["description"]), 100)  # MCP Registry sınırı
+        self.assertIn(f"<!-- mcp-name: {server['name']} -->", _public_readme().read_text(encoding="utf-8"))
+
     def test_readme_counts_match_corpus_and_tools(self):
         from actuaryllm.retrieval import load_corpus
         from actuaryllm_mcp.server import ALL_TOOLS, COMPENSATION_TOOLS, Server
