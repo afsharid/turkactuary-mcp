@@ -160,12 +160,20 @@ class McpV5Test(unittest.TestCase):
             with tempfile.TemporaryDirectory() as cache:
                 env = {"ACTUARYLLM_SEARCH": "auto", "ACTUARYLLM_CACHE": cache, "ACTUARYLLM_EMBED_MODEL": "fake-embed",
                        "ACTUARYLLM_EMBED_URL": f"http://127.0.0.1:{server.server_port}/v1"}
-                out = poll_search(env, lambda o: o["profil"] == "v5")
-                self.assertEqual(out["profil"], "v5", out["v5_durumu"])
+                # auto: hazır vektörlerle uyumsuz model (ya da hazır vektör yok) → tam hesap yok, v2 ve nedeni
+                before = FakeEmbeddings.calls
+                out = poll_search(env, lambda o: o["v5_durumu"].startswith("kapalı"))
+                self.assertEqual(out["profil"], "v2")
+                self.assertIn("ACTUARYLLM_SEARCH=v5", out["v5_durumu"])
+                self.assertLessEqual(FakeEmbeddings.calls - before, 1)  # yalnız 3 parçalık uyum yoklaması
+                self.assertEqual(list(Path(cache).glob("vectors-*.json")), [])
+                # v5 açıkça istenince bütün parçalar hesaplanır ve önbelleğe yazılır
+                out = poll_search({**env, "ACTUARYLLM_SEARCH": "v5"}, lambda o: o.get("profil") == "v5")
+                self.assertEqual(out["profil"], "v5", out)
                 self.assertEqual(len(out["parcalar"]), 3)
                 self.assertEqual(len(list(Path(cache).glob("vectors-*.json"))), 1)
                 before = FakeEmbeddings.calls
-                out = poll_search(env, lambda o: o["profil"] == "v5")  # önbellekten: belge vektörü yeniden hesaplanmaz
+                out = poll_search(env, lambda o: o["profil"] == "v5")  # auto önbelleği kullanır, yeniden hesaplamaz
                 self.assertEqual(out["profil"], "v5")
                 self.assertLessEqual(FakeEmbeddings.calls - before, 3)  # yalnız sorgu vektörleri (yoklama sayısı kadar)
         finally:
@@ -178,6 +186,54 @@ class McpV5Test(unittest.TestCase):
             out = poll_search(env, lambda o: "kullanılamıyor" in o["v5_durumu"])
             self.assertEqual(out["profil"], "v2")
             self.assertIn("kullanılamıyor", out["v5_durumu"])
+
+
+class SurfaceTest(unittest.TestCase):
+    def test_all_tools_are_annotated_read_only(self):
+        r = session({"jsonrpc": "2.0", "id": 1, "method": "tools/list"})
+        tools = r[1]["result"]["tools"]
+        self.assertEqual(len(tools), 18)
+        for t in tools:
+            self.assertEqual(t["annotations"], {"readOnlyHint": True, "destructiveHint": False,
+                                                "idempotentHint": True, "openWorldHint": False}, t["name"])
+
+    def test_no_annotations_for_2024_11_05_clients(self):
+        r = session({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2024-11-05"}},
+                    {"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
+        self.assertEqual(r[1]["result"]["protocolVersion"], "2024-11-05")
+        self.assertFalse(any("annotations" in t for t in r[2]["result"]["tools"]))
+
+    def test_seed_from_other_corpus_is_reported_not_crashing(self):
+        import gzip
+        sys.path.insert(0, str(ROOT / "src"))
+        from actuaryllm_mcp.server import SEED_VECTORS, Server
+
+        class Client:
+            calls = 0
+
+            def embed(self, texts):
+                Client.calls += 1
+                return [[1.0, 0.0] for _ in texts]
+        s = Server(ROOT)
+        docs = s.index.corpus.documents
+        with tempfile.TemporaryDirectory() as tmp:
+            seed = Path(tmp) / SEED_VECTORS
+            seed.parent.mkdir(parents=True)
+            seed.write_bytes(gzip.compress(json.dumps({"model": "m", "vectors": {"baska": [1.0, 0.0]}}).encode()))
+            s.root = Path(tmp)
+            vectors, note = s._seed(Client(), docs, "m")
+        self.assertEqual((vectors, note), ({}, ": hazır vektörler bu korpusla eşleşmiyor"))
+        self.assertEqual(Client.calls, 1)  # yalnız erişim yoklaması
+
+    def test_turkish_case_folding_in_search(self):
+        sys.path.insert(0, str(ROOT / "src"))
+        from actuaryllm.retrieval import tokens
+        self.assertEqual(tokens("İSTANBUL IĞDIR SİGORTA ısı"), ["istanbul", "ığdır", "sigorta", "ısı"])
+        ask = lambda i, q: {"jsonrpc": "2.0", "id": i, "method": "tools/call",
+                            "params": {"name": "mevzuat_ara", "arguments": {"sorgu": q, "adet": 3}}}
+        r = session(ask(1, "zorunlu deprem sigortası"), ask(2, "ZORUNLU DEPREM SİGORTASI"))
+        ids = [[h["id"] for h in json.loads(r[i]["result"]["content"][0]["text"])["parcalar"]] for i in (1, 2)]
+        self.assertEqual(ids[0], ids[1])
 
 
 def _public_pyproject() -> Path | None:

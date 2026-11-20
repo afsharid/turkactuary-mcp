@@ -1,0 +1,55 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Build the wheel
+        run: |
+          python -m pip install --quiet build
+          python -m build --wheel --outdir dist
+      - name: Check wheel contents
+        run: |
+          python - <<'EOF'
+          import glob, zipfile
+          names = zipfile.ZipFile(glob.glob("dist/*.whl")[0]).namelist()
+          need = ["actuaryllm_mcp/_bundle/data/sources.json",
+                  "actuaryllm_mcp/_bundle/data/tables/trh2010_bakiye_omur.json",
+                  "actuaryllm_mcp/_bundle/data/vectors/qwen3-embedding-4b.json.gz",
+                  "actuaryllm_mcp/_bundle/artifacts/reviews/evidence/mevzuat-material-review-001.json"]
+          missing = [n for n in need if n not in names]
+          assert not missing, missing
+          print(sum(n.startswith("actuaryllm_mcp/_bundle/") for n in names), "bundled files")
+          EOF
+      - name: Smoke-test the installed wheel outside the repository
+        run: |
+          python -m venv /tmp/venv
+          /tmp/venv/bin/pip install --quiet dist/*.whl
+          cd /tmp
+          printf '%s\n' \
+            '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{}}}' \
+            '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"mevzuat_ara","arguments":{"sorgu":"zorunlu deprem sigortası","adet":2}}}' \
+            '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"is_goremezlik","arguments":{"cinsiyet":"erkek","dogum_tarihi":"1990-01-01","kaza_tarihi":"2024-01-01","hesap_tarihi":"2026-01-01","surekli_maluliyet_orani":"0.10","son_aylik_net":"22000","pasif_aylik_net":"22000","gelir_donemleri":[{"baslangic":"2024-01-01","bitis":"2026-01-01","aylik_net":"20000"}]}}}' \
+            | ACTUARYLLM_SEARCH=v2 /tmp/venv/bin/turkactuary-mcp > out.jsonl
+          python - <<'EOF'
+          import json
+          rows = {r["id"]: r["result"] for r in map(json.loads, open("/tmp/out.jsonl"))}
+          assert set(rows) == {1, 2, 3}, rows
+          for i in (2, 3):
+              assert not rows[i].get("isError"), rows[i]
+          print("server", rows[1]["serverInfo"])
+          EOF

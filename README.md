@@ -86,9 +86,11 @@ python3 -m unittest discover -s tests   # isteğe bağlı: sunucu testleri
 
 En iyi sonuç için yerel bir embedding modeli açın. LM Studio'da **Qwen3-Embedding-4B** modelini indirip yükleyin
 (`text-embedding-qwen3-embedding-4b`) ve yerel sunucuyu başlatın (varsayılan `http://127.0.0.1:1234`). Sunucu açılışta
-modelinizi 3 parçada hazır vektörlerle karşılaştırır: uyumluysa birkaç saniyede v5'e geçer, değilse bütün parçaları kendi
-modelinizle hesaplar (624 parçalık korpusta bu Mac'te ~20 dk sürdü; bir kez, `~/.cache/actuaryllm-mcp/` altına yazılır). Embedding modeli yoksa BM25
-(v2) ile çalışır; her arama sonucunda `profil` ve `v5_durumu` alanları hangisinin kullanıldığını söyler.
+modelinizi 3 parçada hazır vektörlerle karşılaştırır: uyumluysa birkaç saniyede v5'e geçer. Uyumsuzsa beklemeden v2
+(BM25) ile çalışır ve nedenini `v5_durumu` alanında yazar. Başka bir embedding modeliyle v5 istiyorsanız sunucuyu bir kez
+`ACTUARYLLM_SEARCH=v5` ile başlatın: bütün parçalar o modelle hesaplanır (624 parçalık korpusta bu Mac'te ~20 dk sürdü) ve
+`~/.cache/actuaryllm-mcp/` altına yazılır; sonra varsayılan `auto` kip bu önbelleği kullanır. Embedding modeli yoksa v2 ile
+çalışır; her arama sonucunda `profil` ve `v5_durumu` alanları hangisinin kullanıldığını söyler.
 
 Ayarlar (isteğe bağlı): `ACTUARYLLM_SEARCH=auto|v5|v2`, `ACTUARYLLM_EMBED_URL` (yalnız 127.0.0.1/localhost),
 `ACTUARYLLM_EMBED_MODEL`, `ACTUARYLLM_CACHE`.
@@ -223,6 +225,8 @@ update). Or `pip install git+https://github.com/afsharid/turkactuary-mcp` into a
 To change the code, `git clone` the repo and add the `mcpServers` block shown above to your client
 (paths: `PYTHONPATH=<repo>/src`, `ACTUARYLLM_ROOT=<repo>`). For hybrid search, load `text-embedding-qwen3-embedding-4b` in
 LM Studio; the server checks compatibility with the bundled vectors on 3 chunks and switches to hybrid within seconds.
+With an incompatible model it stays on BM25 and says why in `v5_durumu`; start once with `ACTUARYLLM_SEARCH=v5` to embed
+all chunks with your model (cached; `auto` reuses the cache afterwards).
 
 **Licence:** code Apache-2.0, project data CC BY 4.0; regulation texts from mevzuat.gov.tr (official texts; source records in
 `data/sources.json`). Derived from the ActuaryLLM pilot; the measured setup and its differences are listed above.

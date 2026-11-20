@@ -57,6 +57,8 @@ HINTS = {
     "bornhuetter_ferguson": " tail_factor isteğe bağlıdır; kullanıcı vermediyse gönderme (varsayılan 1, en az 1). Sonucun adını "
                             "reserve_interpretation alanından al: paid bazında toplam ödenmemiş rezervdir, IBNR diye adlandırma.",
 }
+# Bütün araçlar salt okur: dosya yazmaz (önbellek hariç), dış ağa çıkmaz (embedding yalnız loopback), aynı girdiye aynı sonuç.
+ANNOTATIONS = {"readOnlyHint": True, "destructiveHint": False, "idempotentHint": True, "openWorldHint": False}
 ERROR_HINT = " Hata alırsan sonucu kendin hesaplama; girdiyi düzeltip aracı yeniden çağır ya da kullanıcıya sor."
 
 
@@ -189,6 +191,7 @@ class Server:
         self._store = None
         self._embedder = None
         self.v5_status = "kapalı (ACTUARYLLM_SEARCH=v2)" if self.mode == "v2" else "hazırlanıyor"
+        self.protocol = PROTOCOL_VERSIONS[0]
 
     def start_warmup(self) -> None:
         if self.mode != "v2":
@@ -208,6 +211,14 @@ class Server:
             seed_note = ""
             if not vectors:
                 vectors, seed_note = self._seed(client, docs, model)
+                if not vectors and self.mode == "auto":  # bütün parçaları hesaplamak uzun sürer; açıkça istenmeli
+                    with self._lock:
+                        self.v5_status = (f"kapalı{seed_note}; v2 kullanılıyor. Kendi modelinizle v5 için sunucuyu bir kez "
+                                          "ACTUARYLLM_SEARCH=v5 ile başlatın (bütün parçalar hesaplanıp önbelleğe yazılır; "
+                                          "uzun sürer), sonra auto önbelleği kullanır.")
+                    return
+                if not vectors:
+                    seed_note += ", kendi modelinizle hesaplandı"
             missing = [d for d in docs if text_key(document_text(d), model) not in vectors]
             for i in range(0, len(missing), BATCH):
                 chunk = missing[i:i + BATCH]
@@ -226,19 +237,23 @@ class Server:
                 self.v5_status = f"kullanılamıyor: {exc}"
 
     def _seed(self, client: Any, docs: list[Any], model: str) -> tuple[dict[str, list[float]], str]:
-        """Hazır vektörleri kullanıcının modeliyle 3 parçada karşılaştırır; uyumluysa kullanır (ilk açılış ~20 dk yerine saniyeler)."""
+        """Hazır vektörleri kullanıcının modeliyle 3 parçada karşılaştırır; uyumluysa kullanır (tam hesap yerine saniyeler)."""
         from actuaryllm.dense import document_text, text_key
         file = self.root / SEED_VECTORS
         if not file.is_file():
-            return {}, ""
+            client.embed([document_text(docs[0])])  # sunucuya erişilemiyorsa burada hata ("kullanılamıyor")
+            return {}, ": hazır vektör yok"
         seed = json.loads(gzip.decompress(file.read_bytes()).decode("utf-8"))
         old = {d.cite_id: seed["vectors"].get(text_key(document_text(d), seed["model"])) for d in docs}
         probe = [d for d in docs if old[d.cite_id]][:3]
+        if not probe:  # hazır vektörler başka bir korpus sürümünden
+            client.embed([document_text(docs[0])])  # sunucuya erişilemiyorsa burada hata ("kullanılamıyor")
+            return {}, ": hazır vektörler bu korpusla eşleşmiyor"
         got = client.embed([document_text(d) for d in probe])
         cos = min(sum(a * b for a, b in zip(u, old[d.cite_id])) / (math.sqrt(sum(a * a for a in u)) * math.sqrt(sum(b * b for b in old[d.cite_id])))
                   for d, u in zip(probe, got))
         if cos < SEED_MIN_COSINE:
-            return {}, f"; hazır vektörler uyumsuz (kosinüs {cos:.4f}), yeniden hesaplandı"
+            return {}, f": hazır vektörler bu modelle uyumsuz (kosinüs {cos:.4f})"
         return ({text_key(document_text(d), model): v for d in docs if (v := old[d.cite_id])},
                 f"; hazır vektörler kullanıldı (uyum kosinüs {cos:.4f})")
 
@@ -295,7 +310,9 @@ class Server:
             schema = tool.api_schema()["function"]
             desc = schema["description"] + HINTS.get(tool.name, "")
             out.append({"name": tool.name, "description": desc, "inputSchema": schema["parameters"]})
-        return out
+        if self.protocol == "2024-11-05":  # annotations 2025-03-26 sürümüyle geldi
+            return out
+        return [{**t, "annotations": ANNOTATIONS} for t in out]
 
     def call(self, name: str, arguments: dict[str, Any]) -> Any:
         if name == "mevzuat_ara":
@@ -325,7 +342,8 @@ class Server:
         try:
             if method == "initialize":
                 asked = params.get("protocolVersion")
-                result = {"protocolVersion": asked if asked in PROTOCOL_VERSIONS else PROTOCOL_VERSIONS[0],
+                self.protocol = asked if asked in PROTOCOL_VERSIONS else PROTOCOL_VERSIONS[0]
+                result = {"protocolVersion": self.protocol,
                           "capabilities": {"tools": {}, "prompts": {}},
                           "serverInfo": {"name": SERVER_NAME, "version": SERVER_VERSION},
                           "instructions": GUIDE}
