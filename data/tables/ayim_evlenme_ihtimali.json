@@ -1,0 +1,101 @@
+{
+ "name": "AYİM evlenme ihtimali tablosu — dul kadının yeniden evlenme ihtimali (%)",
+ "unit": "yüzde puan",
+ "accessed": "2026-11-20",
+ "kadin": [
+  {
+   "yas_alt": 17,
+   "yas_ust": 20,
+   "oran": 52
+  },
+  {
+   "yas_alt": 21,
+   "yas_ust": 25,
+   "oran": 40
+  },
+  {
+   "yas_alt": 26,
+   "yas_ust": 30,
+   "oran": 27
+  },
+  {
+   "yas_alt": 31,
+   "yas_ust": 35,
+   "oran": 17
+  },
+  {
+   "yas_alt": 36,
+   "yas_ust": 40,
+   "oran": 9
+  },
+  {
+   "yas_alt": 41,
+   "yas_ust": 50,
+   "oran": 2
+  },
+  {
+   "yas_alt": 51,
+   "yas_ust": 55,
+   "oran": 1
+  }
+ ],
+ "cocuk_indirimi_puan": 5,
+ "rules": [
+  "18 yaşından küçük her çocuk için tablo oranından 5 puan düşülür; sonuç sıfırın altına inmez (Yargıtay 4. HD: 920837400; 17. HD: 453879800, 470876100).",
+  "Yaş: 4. HD ve HGK 01.10.2019 2017/17-2038 E. 2019/979 K. rapor (hesap) tarihindeki yaşı esas alır (920837400); eski 17. HD kararları olay tarihini (453879800, 470876100, 333878900).",
+  "Tablo 55 yaşta biter; 55 yaş üstü uygulamada sıfır kabul edilir (ikincil kaynak). 17 yaş altı için tablo yoktur.",
+  "Yöresel örf ve adet, sağlık, ekonomik durum mahkeme takdiridir; tablo sonucu takdire açıktır."
+ ],
+ "verification": [
+  "İki bağımsız araştırma 7 satırın tamamında aynı değerleri buldu; şüpheci doğrulayıcı iki kaynağı açıp 14 satırı karşılaştırdı (YZ incelemesi, insan uzman değil).",
+  "Kararlarla tutarlılık: 31 yaş + 1 çocuk → %12 (470876100), 31/34 yaş + 2 çocuk → %7 (453879800); tabloda 31–35 = %17.",
+  "Sınır: bütün kaynaklar ikincildir (hukuk bürosu siteleri, gazete); AYİM'in özgün metnine ulaşılamadı.",
+  "Erkek sütunu (90/70/48/30/15/4/2) yalnız iki ikincil sitede 'kadın tablosunun erkeklere uyarlanması' olarak geçiyor; pakete alınmadı."
+ ],
+ "kaynaklar": [
+  {
+   "url": "https://saricahukuk.tr/dul-kadinin-yeniden-evlenme-olasiligi-ayim-tablosu",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.arikanavukatlik.com/blog/olumlu-trafik-kazasi-sonrasi-kadin-ve-erkegin-evlenme-olasiliklari",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.aktuerhesapla.com/bilgi-bankasi/aktuerya-ve-yasam-tablolari/dul-esin-yeniden-evlenme-ihtimali-ayim-tablosu",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://uzmanraporu.org/eslerin-yeniden-evlenme-olasiliklari-ayim-askeri-yuksek-idare-mahkemesi-tablosu/",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.haberturk.com/yazarlar/yasemin-guneri/2064124-iste-dullarin-yeniden-evlenme-olasiligi-tablosu",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.lexishukuk.com/category/blog/destekten-yoksun-kalma-tazminatinda-yeniden-evlenme-olasiligi-ayim-tablosu/",
+   "tur": "karar"
+  },
+  {
+   "url": "https://www.hukukegitim.com/makale-destekten_yoksun_kalma_tazminatnda_dul_ein_yeniden_evlenme_olasln_belirleme_tarihi-32",
+   "tur": "karar"
+  },
+  {
+   "url": "https://www.memurlar.net/haber/207608/yargitay-40-li-yaslarinda-dul-kalan-kadinin-evlenme-ihtimali-yuzde-2.html?amp=1",
+   "tur": "karar"
+  },
+  {
+   "url": "https://mogulkochukuk.com/blog/DESTEKTEN-YOKSUN-KALMA-TAZMINATI-DAVALARINDA-SAG-KALAN-ESIN-EVLENME-IHTIMALI-INDIRIMI/45",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.memurlar.net/haber/207608/yargitay-40-li-yaslarinda-dul-kalan-kadinin-evlenme-ihtimali-yuzde-2.html",
+   "tur": "ikincil"
+  },
+  {
+   "url": "https://www.selimunal.av.tr/destekten-yoksun-kalan-esin-tazminat-hesabi-yapilirken-evlenme-ihtimali-tazminat-hesabini-nasil-etkiler/",
+   "tur": "karar"
+  }
+ ]
+}

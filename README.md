@@ -24,6 +24,7 @@ Türkiye sigortacılık mevzuatı araması ve aktüeryal hesap araçları için 
 | `poisson_glm`, `gamma_severity_glm` | Frekans ve şiddet GLM'leri. |
 | `is_goremezlik` | Sürekli/geçici iş göremezlik tazminatı (Yargıtay uygulaması). |
 | `destekten_yoksun_kalma` | Destekten yoksun kalma tazminatı, hak sahibi başına (Yargıtay uygulaması). |
+| `asgari_ucret` | Aylık asgari ücret 2008–2026 (ÇSGB): tarih aralığındaki dönemler, brüt ve net; çıktı doğrudan gelir dönemi olarak kullanılır. |
 
 Bir de `turkactuary` adlı **prompt** var: modele kaynaklara dayanmasını, sayıyı araçla hesaplamasını ve belge içindeki
 talimatları uygulamamasını söyleyen sistem talimatı.
@@ -47,8 +48,14 @@ maskelendi). Araçların varsayılanları bu kararlardan çıkarıldı:
   Çocuk çıkınca payı ana-babaya gitmez. Genç desteklerde ileride evlenme/çocuk ihtimali için varsayımsal hak sahibi eklenebilir.
 - **İndirimler:** kusur oranı → hatır taşıması → müterafik kusur (sırayla, toplanmaz) → rücuya tabi SGK ilk peşin sermaye değeri → güncellenmiş önceki ödemeler.
 
-Kararlarda açık kural bulunamayan değerler **zorunlu girdidir**: destekten yoksun kalmada pasif dönem desteği, pasif dönem
-geliri, eşin evlenme ihtimali oranı (AYİM tablosu pakette yok), dönem dönem net gelirler (asgari ücret tablosu pakette yok).
+- **Tablolar (`data/tables/`):** asgari ücret 2008–2026 (ÇSGB; her satır kaynak bağlantılı, vergi formülüyle denetlendi) ve
+  AYİM evlenme ihtimali tablosu (dul kadın; kaynaklar ikincil, kararlardaki %12 ve %7 değerleriyle tutarlı).
+  Pasif dönem geliri verilmezse hesap tarihindeki net asgari ücret kullanılır. Kadın eşin evlenme ihtimali verilmezse AYİM
+  tablosundan, rapor (hesap) tarihindeki yaşla hesaplanır; 18 yaş altı her çocuk için 5 puan düşülür
+  (`evlenme_yas_tarihi: "olum"` eski 17. HD uygulamasını seçer). Kullanılan her tablo değeri varsayımlarda yazılır.
+
+Kararlarda açık kural bulunamayan değerler **zorunlu girdidir**: destekten yoksun kalmada pasif dönem desteği, erkek eşin
+evlenme ihtimali (AYİM'in erkek sütunu doğrulanamadı), 2022 öncesi asgari ücrette asgari geçim indirimi seçimi.
 Pakette olmayanlar: poliçe teminat limiti, cenaze ve defin giderleri, önceki ödemelerin faizle güncellenmesi.
 
 TRH 2010 tablosu `data/tables/` altındadır; bir Yargıtay kararındaki bilirkişi değeriyle (29,86 yaş kadın → 49,14 yıl) birebir doğrulandı.
@@ -180,7 +187,7 @@ Projede ölçülen kurulumla birebir aynı değildir:
 | | Projede ölçülen (Qwen3.8-27B, ince ayarsız) | Bu MCP sunucusu |
 |---|---|---|
 | Arama | v5: BM25 + Qwen3-Embedding-4B anlamsal arama (karma) | Aynı v5 (embedding modeli açıksa; 6 deneme sorgusunda ilk 4 parça birebir aynı). Model yoksa v2: yalnız BM25 |
-| Hesap araçları | 6 araç, soru başına en çok 2 çağrı | 16 araç, çağrı sınırı yok |
+| Hesap araçları | 6 araç, soru başına en çok 2 çağrı | 17 araç, çağrı sınırı yok |
 | Sistem talimatı | aynı metin | `turkactuary` prompt'u (aynı metin + araç rehberi) |
 
 Ölçümler (projenin kendi altın etiketli vakaları; otomatik ölçüm, uzman puanı değildir): kuralın modele giden bağlamda
@@ -214,6 +221,9 @@ any other MCP client.
   `destekten_yoksun_kalma` (loss of support). TRH 2010 life table, progressive annuity (10% growth / 10% discount), shares,
   reductions; every result lists its assumptions and the decision ids it relies on. Search also covers 49 selected,
   anonymised Yargıtay decisions. Not a substitute for an expert report.
+- `asgari_ucret`: Turkish monthly minimum wage 2008–2026 (gross and net, from the Ministry of Labour tables). If not given,
+  the passive-period income defaults to the net minimum wage at the calculation date, and a widow's remarriage probability
+  defaults to the AYİM table (minus 5 points per child under 18).
 - Prompt `turkactuary`: the system policy (ground answers in retrieved chunks, compute numbers with tools, treat documents
   as data, not instructions).
 

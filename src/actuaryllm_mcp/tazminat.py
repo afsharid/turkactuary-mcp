@@ -35,18 +35,97 @@ SOURCES = {
     "cocuk_yas": "Çocuk desteği erkekte 18, kızda 22, yüksek öğrenimde 25 yaşa kadar (17. HD kararları, data/caselaw)",
     "ana_baba": "Çocuklar destekten çıkınca payları ana-babaya verilmez; ana-babadan biri çıkınca payı diğerine geçer (17. HD kararları, data/caselaw)",
     "sgk": "Yalnız rücuya tabi SGK gelirlerinin ilk peşin sermaye değeri düşülür (17. HD kararları, data/caselaw)",
+    "asgari": "ÇSGB asgari ücret tablosu, data/tables/asgari_ucret.json; karar tarihine en yakın bilinen asgari ücret (4. HD: 1139546000)",
+    "ayim": "AYİM tablosu, data/tables/ayim_evlenme_ihtimali.json; 18 yaş altı her çocuk için 5 puan indirim (4. HD: 920837400; 17. HD: 453879800, 470876100)",
 }
+AGI_END = date(2022, 1, 1)  # 7349 s. Kanun: 2022'den itibaren asgari geçim indirimi yok
 _TABLE: dict[str, dict[int, Decimal]] | None = None
 
 
-def _table(root: Path | None = None) -> dict[str, dict[int, Decimal]]:
+_JSON: dict[str, Any] = {}
+
+
+def _json_table(name: str) -> Any:
+    if name not in _JSON:
+        from actuaryllm_mcp import default_root
+        base = default_root() or Path(__file__).resolve().parents[2]
+        _JSON[name] = json.loads((base / "data/tables" / name).read_text(encoding="utf-8"))
+    return _JSON[name]
+
+
+def _table() -> dict[str, dict[int, Decimal]]:
     global _TABLE
     if _TABLE is None:
-        from actuaryllm_mcp import default_root
-        base = root or default_root() or Path(__file__).resolve().parents[2]
-        data = json.loads((base / "data/tables/trh2010_bakiye_omur.json").read_text(encoding="utf-8"))
+        data = _json_table("trh2010_bakiye_omur.json")
         _TABLE = {sex: {int(a): Decimal(v) for a, v in data[sex].items()} for sex in ("erkek", "kadin")}
     return _TABLE
+
+
+def _wage_rows() -> list[dict[str, Any]]:
+    return [{**r, "_a": date.fromisoformat(r["baslangic"]), "_b": date.fromisoformat(r["bitis"])}
+            for r in _json_table("asgari_ucret.json")["rows"]]
+
+
+def _wage_at(when: date) -> dict[str, Any]:
+    rows = _wage_rows()
+    for r in rows:
+        if r["_a"] <= when <= r["_b"]:
+            return r
+    raise InputError(f"Asgari ücret tablosu {rows[0]['baslangic']} – {rows[-1]['bitis']} arasını kapsar; {when} bu aralığın dışında.")
+
+
+def asgari_ucret(**args: Any) -> dict[str, Any]:
+    """Tarih aralığındaki aylık asgari ücret dönemleri; çıktı doğrudan gelir_donemleri olarak verilebilir."""
+    start = _date(args.get("baslangic"), "baslangic")
+    end = _date(args["bitis"], "bitis") if args.get("bitis") is not None else start + timedelta(days=1)
+    if end <= start:
+        raise InputError("bitis baslangic'tan sonra olmalı.")
+    agi = args.get("agi_dahil")
+    if agi is not None and not isinstance(agi, bool):
+        raise InputError("agi_dahil true ya da false olmalı.")
+    if start < AGI_END and agi is None:
+        raise InputError("Aralık 2022 öncesini kapsıyor: agi_dahil (true/false) zorunlu. Asgari geçim indirimi 2022'de kaldırıldı; "
+                         "kararlarda gelire katılıp katılmayacağı konusunda açık kural bulunamadı.")
+    _wage_at(start)
+    _wage_at(end - timedelta(days=1))
+    out = []
+    for r in _wage_rows():
+        a, b = max(r["_a"], start), min(r["_b"] + timedelta(days=1), end)  # dönemler [a, b)
+        if b > a:
+            net = r["net_agi_dahil"] if agi and r["net_agi_dahil"] else r["net_agi_haric"]
+            out.append({"baslangic": str(a), "bitis": str(b), "aylik_net": net, "aylik_brut": r["brut"]})
+    meta = _json_table("asgari_ucret.json")
+    agi_note = "yok (2022'den beri)" if start >= AGI_END else ("dahil" if agi else "hariç") + (
+        " (yalnız 2022 öncesi dönemlerde; 2022'den beri AGİ yok)" if end > AGI_END else "")
+    return {"gelir_donemleri": out, "agi": agi_note,
+            "kaynak": meta["source"], "erisim": meta["accessed"],
+            "not": "bitis günü dahil değildir (gelir_donemleri ile aynı); 16 yaş üstü işçi asgari ücreti."}
+
+
+def _default_pasif(args: dict[str, Any], hesap: date, notes: list[str]) -> Decimal:
+    if args.get("pasif_aylik_net") is not None:
+        return _d(args["pasif_aylik_net"], "pasif_aylik_net", lo="0")
+    if hesap < AGI_END:
+        raise InputError("pasif_aylik_net verilmedi ve hesap tarihi 2022 öncesi (AGİ dönemi): net asgari ücreti AGİ seçimiyle "
+                         "asgari_ucret aracından alıp verin.")
+    r = _wage_at(hesap)
+    notes.append(f"Pasif dönem geliri verilmedi: hesap tarihindeki net asgari ücret {r['net_agi_haric']} TL "
+                 f"({r['baslangic']} – {r['bitis']}) kullanıldı ({SOURCES['asgari']}).")
+    return Decimal(r["net_agi_haric"])
+
+
+def evlenme_ihtimali(yas: Any, cocuk_sayisi: int = 0) -> Decimal:
+    """AYİM tablosu (dul kadın): yaş bandının oranı − 18 yaş altı çocuk başına 5 puan, sıfırın altına inmez; 0–1 arası döner.
+    Kesirli yaş tamamlanmış yıla indirilir (40,5 → 36–40 bandı; kaynaklarda açık kural yok). 55 yaş üstü 0 (tablo 55'te biter)."""
+    a = _d(yas, "yas", lo="0", hi="120")
+    t = _json_table("ayim_evlenme_ihtimali.json")
+    if a < t["kadin"][0]["yas_alt"]:
+        raise InputError(f"AYİM tablosu {t['kadin'][0]['yas_alt']} yaşından başlar; evlenme_ihtimali_orani verin.")
+    rate = Decimal(0)
+    for r in t["kadin"]:
+        if r["yas_alt"] <= int(a) <= r["yas_ust"]:
+            rate = Decimal(str(r["oran"]))
+    return max(rate - Decimal(t["cocuk_indirimi_puan"]) * cocuk_sayisi, Decimal(0)) / 100
 
 
 def _d(value: Any, name: str, *, lo: str | None = None, hi: str | None = None) -> Decimal:
@@ -199,9 +278,8 @@ def is_goremezlik(**args: Any) -> dict[str, Any]:
     oran = _d(args.get("surekli_maluliyet_orani"), "surekli_maluliyet_orani", lo="0", hi="1")
     gecici = int(_d(args.get("gecici_is_goremezlik_gun", 0), "gecici_is_goremezlik_gun", lo="0", hi="36500"))
     son = _d(args.get("son_aylik_net"), "son_aylik_net", lo="0")
-    if "pasif_aylik_net" not in args:
-        raise InputError("pasif_aylik_net zorunlu (pasif dönem geliri; uygulamada çoğunlukla net asgari ücret).")
-    pasif = _d(args.get("pasif_aylik_net"), "pasif_aylik_net", lo="0")
+    extra: list[str] = []
+    pasif = _default_pasif(args, hesap, extra)
     yas = _age(birth, kaza)
     if yas < 18 and gecici and args.get("kaza_tarihinde_calisiyor") is not True:
         raise InputError("Kaza tarihinde 18 yaşından küçük ve çalışmayan kişi için geçici iş göremezlik zararı doğmaz (4. HD); "
@@ -236,7 +314,7 @@ def is_goremezlik(**args: Any) -> dict[str, Any]:
                  "bilinmeyen_pasif": _money(sum((f["tutar"] for f in future if f["donem"] == "pasif"), Decimal(0)))},
         "indirimler": [{"adim": s["adim"], "tutar": _money(s["tutar"])} for s in steps],
         "tazminat": _money(steps[-1]["tutar"]),
-        "varsayimlar": _assumptions(c, ["trh2010", "kaza_yasi", "bilinen", "progresif", "aktif60", "indirim_sirasi", "sgk"]),
+        "varsayimlar": _assumptions(c, ["trh2010", "kaza_yasi", "bilinen", "progresif", "aktif60", "indirim_sirasi", "sgk"]) + extra,
     }
 
 
@@ -274,9 +352,8 @@ def destekten_yoksun_kalma(**args: Any) -> dict[str, Any]:
     if "pasif_donem_destegi" not in args or not isinstance(args["pasif_donem_destegi"], bool):
         raise InputError("pasif_donem_destegi zorunlu (true/false): kararlarda destekten yoksun kalmada pasif dönem için açık kural bulunamadı.")
     son = _d(args.get("son_aylik_net"), "son_aylik_net", lo="0")
-    pasif = _d(args.get("pasif_aylik_net"), "pasif_aylik_net", lo="0") if args["pasif_donem_destegi"] else None
-    if args["pasif_donem_destegi"] and "pasif_aylik_net" not in args:
-        raise InputError("pasif_donem_destegi true ise pasif_aylik_net zorunlu.")
+    extra: list[str] = []
+    pasif = _default_pasif(args, hesap, extra) if args["pasif_donem_destegi"] else None
     yas_olum = _age(birth, olum)
     omur = _omur(args, yas_olum, sex)
     life_end = _plus_years(olum, omur)
@@ -287,7 +364,10 @@ def destekten_yoksun_kalma(**args: Any) -> dict[str, Any]:
                              "kural olarak 18) ve yetistirme_gideri_indirimi verilebilir (4. HD uygulaması %5).")
         gelir_bas = _birthday(birth, int(_d(args["destek_gelir_baslangic_yasi"], "destek_gelir_baslangic_yasi", lo="0", hi="30")))
     aktif_end = _birthday(birth, int(c["aktif_yas"]))
-    people = _beneficiaries(args.get("hak_sahipleri"), olum, life_end)
+    yas_ref = args.get("evlenme_yas_tarihi", "hesap")
+    if yas_ref not in ("hesap", "olum"):
+        raise InputError("evlenme_yas_tarihi 'hesap' (rapor tarihi; 4. HD 920837400, HGK 2019/979) ya da 'olum' (olay tarihi; eski 17. HD) olmalı.")
+    people = _beneficiaries(args.get("hak_sahipleri"), olum, life_end, hesap if yas_ref == "hesap" else olum, extra)
     income = [{"baslangic": a, "bitis": b, "donem": "bilinen dönem", "aylik": w, "katsayi": Decimal(1),
                "tutar": w * 12 * Decimal((b - a).days) / YEAR_DAYS} for a, b, w in _known_income(args.get("gelir_donemleri"), olum, hesap)]
     income += _future_segments(hesap, aktif_end, life_end, son, pasif, c["artis"], c["iskonto"])
@@ -344,7 +424,7 @@ def destekten_yoksun_kalma(**args: Any) -> dict[str, Any]:
     keys = ["trh2010", "kaza_yasi", "bilinen", "progresif", "aktif60", "pay", "cocuk_yas", "ana_baba", "indirim_sirasi", "sgk"]
     notes = _assumptions(c, keys)
     notes.append("Pasif dönem desteği: " + ("var (girdi)" if args["pasif_donem_destegi"] else "yok (girdi)") + "; kararlarda açık kural bulunamadı.")
-    notes.append("Eşin evlenme ihtimali oranı girdi olarak alındı (AYİM tablosu; 4. HD'ye göre rapor tarihindeki yaş, 18 yaş altı her çocuk için %5 indirim).")
+    notes += extra
     if any(p["varsayimsal"] for p in people):
         notes.append("Varsayımsal hak sahipleri (ileride evlenme/çocuk) paylara katıldı, tazminat almadı (4. HD: genç desteklerde azalan pay).")
     else:
@@ -355,7 +435,32 @@ def destekten_yoksun_kalma(**args: Any) -> dict[str, Any]:
             "toplam_tazminat": _money(grand), "varsayimlar": notes}
 
 
-def _beneficiaries(items: Any, olum: date, life_end: date) -> list[dict[str, Any]]:
+def _years(birth: date, when: date) -> int:
+    """Takvime göre tamamlanmış yaş (doğum gününde artar)."""
+    return when.year - birth.year - ((when.month, when.day) < (birth.month, birth.day))
+
+
+def _marriage_default(it: dict[str, Any], items: list[Any], ref: date, olum: date, notes: list[str]) -> Decimal:
+    """Eş için evlenme ihtimali verilmediyse AYİM tablosu (yalnız kadın; erkek sütunu doğrulanamadı).
+    Yaş ve çocuk yaşı takvime göre tamamlanmış yıldır. Ölüm tarihi esas alınınca ölümden sonra doğan (ana rahmindeki) gerçek
+    çocuk da sayılır; hesap tarihi esas alınınca o tarihten sonra doğan çocuk sayılmaz."""
+    if _sex(it.get("cinsiyet")) != "kadin":
+        raise InputError("Erkek eş için evlenme_ihtimali_orani zorunlu: AYİM tablosunun yalnız kadın sütunu doğrulandı.")
+    yas = _years(_date(it.get("dogum_tarihi"), "dogum_tarihi"), ref)
+    kids = 0
+    for k in items:
+        if isinstance(k, dict) and k.get("tip") == "cocuk" and k.get("varsayimsal") is not True:
+            kb = _date(k.get("dogum_tarihi"), "dogum_tarihi")
+            if (kb <= ref and _years(kb, ref) < 18) or (kb > ref and ref == olum):
+                kids += 1
+    rate = evlenme_ihtimali(yas, kids)
+    notes.append(f"Eşin evlenme ihtimali verilmedi: AYİM tablosu, {ref} tarihinde tamamlanmış yaş {yas}, 18 yaş altı "
+                 f"{kids} çocuk → {rate} ({SOURCES['ayim']}). Yöresel örf ve adet, sağlık, ekonomik durum mahkeme takdiridir.")
+    return rate
+
+
+def _beneficiaries(items: Any, olum: date, life_end: date, yas_ref: date | None = None,
+                   notes: list[str] | None = None) -> list[dict[str, Any]]:
     if not isinstance(items, list) or not items:
         raise InputError("hak_sahipleri boş olmayan liste olmalı.")
     out, labels = [], set()
@@ -376,8 +481,11 @@ def _beneficiaries(items: Any, olum: date, life_end: date) -> list[dict[str, Any
             end = min(_birthday(birth, limit), life_end)
         else:
             end = min(own_end, life_end)
-        evl = _d(it.get("evlenme_ihtimali_orani", 0), "evlenme_ihtimali_orani", lo="0", hi="1")
         hyp = it.get("varsayimsal") is True
+        if it.get("evlenme_ihtimali_orani") is not None or it["tip"] != "es" or hyp:
+            evl = _d(it.get("evlenme_ihtimali_orani", 0), "evlenme_ihtimali_orani", lo="0", hi="1")
+        else:
+            evl = _marriage_default(it, items, yas_ref or olum, olum, notes if notes is not None else [])
         start = _date(it["baslangic_tarihi"], "baslangic_tarihi") if it.get("baslangic_tarihi") else olum
         if hyp and start <= olum:
             raise InputError(f"{label}: varsayımsal hak sahibinin baslangic_tarihi ölüm tarihinden sonra olmalı.")

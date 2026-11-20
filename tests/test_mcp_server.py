@@ -47,7 +47,7 @@ class McpServerTest(unittest.TestCase):
         self.assertEqual(len(r), 6)  # bildirime cevap yok
         names = {t["name"] for t in r[2]["result"]["tools"]}
         self.assertTrue({"mevzuat_ara", "belge_getir", "chain_ladder", "bornhuetter_ferguson", "poisson_glm"} <= names)
-        self.assertEqual(len(names), 18)
+        self.assertEqual(len(names), 19)
         hits = json.loads(r[3]["result"]["content"][0]["text"])["parcalar"]
         self.assertEqual(len(hits), 3)
         self.assertTrue(all(h["id"] and h["excerpt"] for h in hits))
@@ -192,10 +192,21 @@ class SurfaceTest(unittest.TestCase):
     def test_all_tools_are_annotated_read_only(self):
         r = session({"jsonrpc": "2.0", "id": 1, "method": "tools/list"})
         tools = r[1]["result"]["tools"]
-        self.assertEqual(len(tools), 18)
+        self.assertEqual(len(tools), 19)
         for t in tools:
             self.assertEqual(t["annotations"], {"readOnlyHint": True, "destructiveHint": False,
                                                 "idempotentHint": True, "openWorldHint": False}, t["name"])
+
+    def test_asgari_ucret_tool_feeds_compensation(self):
+        call = lambda i, name, args: {"jsonrpc": "2.0", "id": i, "method": "tools/call", "params": {"name": name, "arguments": args}}
+        r = session(call(1, "asgari_ucret", {"baslangic": "2024-01-01", "bitis": "2026-01-01"}))
+        out = json.loads(r[1]["result"]["content"][0]["text"])
+        self.assertEqual([p["aylik_net"] for p in out["gelir_donemleri"]], ["17002.12", "22104.67"])
+        r = session(call(2, "is_goremezlik", dict(cinsiyet="erkek", dogum_tarihi="1990-01-01", kaza_tarihi="2024-01-01",
+                                                   hesap_tarihi="2026-01-01", surekli_maluliyet_orani="0.10", son_aylik_net="28075.50",
+                                                   gelir_donemleri=[{k: p[k] for k in ("baslangic", "bitis", "aylik_net")}
+                                                                    for p in out["gelir_donemleri"]])))
+        self.assertFalse(r[2]["result"]["isError"], r[2]["result"]["content"][0]["text"][:300])
 
     def test_no_annotations_for_2024_11_05_clients(self):
         r = session({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2024-11-05"}},

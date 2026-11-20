@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 # Tekerlekte (wheel) veri bu klasöre gömülür: data/, artifacts/, evidence/ depodaki göreli düzenle.
 BUNDLE = Path(__file__).resolve().parent / "_bundle"

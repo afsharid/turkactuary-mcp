@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "report_kind": "source_permission_decision",
+  "recorded_at": "2026-11-20T11:40:00Z",
+  "source_ids": ["asgari_ucret", "ayim_evlenme_ihtimali"],
+  "reviewer": {
+    "handle": "afsharid",
+    "role": "proje sahibi",
+    "identity_authenticated": false
+  },
+  "question": "Tazminat araçlarına iki tablo eklenmesi: (1) yıllara göre aylık brüt ve net asgari ücret (ÇSGB / Resmî Gazete), (2) AYİM evlenme ihtimali tablosu (Yargıtay uygulamasında dul eşin yeniden evlenme ihtimali). Tablolar açık depoya, PyPI paketine ve MCP Registry kaydına girer.",
+  "user_answer": "asgari ücret ve AYİM tabloları için izin veriyorum",
+  "scope": {
+    "rag": "kapsam dışı (tablolar arama korpusuna girmez; hesap aracı verisidir)",
+    "tool_data": "approved",
+    "publication": "approved (açık depo, PyPI, MCP Registry)",
+    "training": "blocked (karar verilmedi)"
+  },
+  "notes": "Her tablo satırı kaynak URL'si ve erişim tarihiyle tutulur. Değerler iki bağımsız araştırma, satır satır karşılaştırma ve kararlardaki veri noktalarıyla doğrulanır; YZ incelemesi (insan uzman değil)."
+}

@@ -125,7 +125,8 @@ _INCOME = {"type": "array", "description": "Bilinen dönem net aylık gelirleri;
                      "properties": {"baslangic": _DATE, "bitis": _DATE, "aylik_net": _MONEY}}}
 _COMMON = {"hesap_tarihi": _DATE, "gelir_donemleri": _INCOME,
            "son_aylik_net": {**_MONEY, "description": "Bilinmeyen dönem (aktif) için bilinen son net aylık gelir"},
-           "pasif_aylik_net": {**_MONEY, "description": "Pasif dönem net aylık geliri (çoğunlukla net asgari ücret)"},
+           "pasif_aylik_net": {**_MONEY, "description": "Pasif dönem net aylık geliri; verilmezse hesap tarihindeki net asgari ücret "
+                                                          "(tablodan; hesap tarihi 2022 öncesiyse zorunlu)"},
            "artis_orani": {**_RATE, "description": "Progresif rant artış oranı; varsayılan 0.10"},
            "iskonto_orani": {**_RATE, "description": "Progresif rant iskonto oranı; varsayılan 0.10"},
            "aktif_donem_sonu_yasi": {"type": "integer", "description": "Varsayılan 60"},
@@ -141,7 +142,7 @@ COMPENSATION_TOOLS = [
                     "kimlikleri döner. Bilirkişi raporu yerine geçmez.",
      "inputSchema": {"type": "object", "additionalProperties": False,
                      "required": ["cinsiyet", "dogum_tarihi", "kaza_tarihi", "hesap_tarihi", "surekli_maluliyet_orani",
-                                  "gelir_donemleri", "son_aylik_net", "pasif_aylik_net"],
+                                  "gelir_donemleri", "son_aylik_net"],
                      "properties": {"cinsiyet": {"type": "string", "enum": ["erkek", "kadin"]}, "dogum_tarihi": _DATE,
                                     "kaza_tarihi": _DATE, "surekli_maluliyet_orani": _RATE,
                                     "gecici_is_goremezlik_gun": {"type": "integer", "description": "Kazadan itibaren %100 iş göremezlik günü"},
@@ -152,7 +153,8 @@ COMPENSATION_TOOLS = [
     {"name": "destekten_yoksun_kalma",
      "description": "Destekten yoksun kalma tazminatı, hak sahibi başına (Yargıtay uygulaması: TRH 2010, progresif rant, pay sistemi "
                     "destek 2/eş 2/çocuk 1/ana-baba 1; çocuk desteği erkek 18, kız 22, yüksek öğrenim 25; eşin evlenme ihtimali "
-                    "indirimi). pasif_donem_destegi zorunludur (kararlarda açık kural yok). Bilirkişi raporu yerine geçmez.",
+                    "indirimi: verilmezse kadın eş için AYİM tablosu, 18 yaş altı çocuk başına 5 puan). pasif_donem_destegi "
+                    "zorunludur (kararlarda açık kural yok). Bilirkişi raporu yerine geçmez.",
      "inputSchema": {"type": "object", "additionalProperties": False,
                      "required": ["destek_cinsiyet", "destek_dogum_tarihi", "olum_tarihi", "hesap_tarihi", "gelir_donemleri",
                                   "son_aylik_net", "pasif_donem_destegi", "hak_sahipleri"],
@@ -162,13 +164,23 @@ COMPENSATION_TOOLS = [
                                         "properties": {"etiket": {"type": "string"}, "tip": {"type": "string", "enum": ["es", "cocuk", "anne", "baba"]},
                                                        "cinsiyet": {"type": "string", "enum": ["erkek", "kadin"]}, "dogum_tarihi": _DATE,
                                                        "yuksek_ogrenim": {"type": "boolean"}, "destek_bitis_yasi": {"type": "integer"},
-                                                       "evlenme_ihtimali_orani": {**_RATE, "description": "Eş için AYİM tablosundan"},
+                                                       "evlenme_ihtimali_orani": {**_RATE, "description": "Eş için; verilmezse kadın eşte AYİM "
+                                                                                  "tablosundan hesaplanır, erkek eşte zorunlu"},
                                                        "varsayimsal": {"type": "boolean", "description": "İleride doğacak/evlenecek (tazminat almaz, paylara girer)"},
                                                        "baslangic_tarihi": {**_DATE, "description": "Varsayımsal hak sahibinin katılma tarihi"}}}},
                                     "destek_gelir_baslangic_yasi": {"type": "integer", "description": "Destek 18 yaşından küçükse zorunlu (kural 18)"},
                                     "yetistirme_gideri_indirimi": {**_RATE, "description": "Küçük destekte ana-baba için (4. HD %5)"},
+                                    "evlenme_yas_tarihi": {"type": "string", "enum": ["hesap", "olum"],
+                                                           "description": "AYİM yaşı hangi tarihte: hesap (rapor; 4. HD, HGK 2019/979; varsayılan) ya da olum (eski 17. HD)"},
                                     "sgk_pesin_sermaye_degeri": {"type": "object", "description": "{etiket: tutar}"},
                                     "onceki_odemeler_guncel": {"type": "object", "description": "{etiket: tutar}"}, **_COMMON}}},
+    {"name": "asgari_ucret",
+     "description": "Türkiye aylık asgari ücreti (16 yaş üstü; ÇSGB tabloları, 2008–2026): tarih aralığındaki dönemler, brüt ve net. "
+                    "Çıktıdaki gelir_donemleri tazminat araçlarına doğrudan verilebilir. 2022 öncesi için agi_dahil seçilmelidir "
+                    "(asgari geçim indirimi; kararlarda açık kural yok).",
+     "inputSchema": {"type": "object", "additionalProperties": False, "required": ["baslangic"],
+                     "properties": {"baslangic": _DATE, "bitis": {**_DATE, "description": "YYYY-AA-GG, dahil değil; verilmezse tek gün"},
+                                    "agi_dahil": {"type": "boolean", "description": "2022 öncesi dönemlerde AGİ eklenmiş net mi"}}}},
 ]
 COMPENSATION = {t["name"] for t in COMPENSATION_TOOLS}
 

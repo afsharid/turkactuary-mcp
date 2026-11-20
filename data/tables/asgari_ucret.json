@@ -1,0 +1,258 @@
+{
+ "name": "Asgari ücret — 16 yaş üstü, aylık brüt ve net (TL), 2008–2026",
+ "unit": "TL/ay",
+ "source": "ÇSGB 'Yıllar İtibarıyla Net ve Brüt Asgari Ücretler' ve dönem PDF'leri (csgb.gov.tr); Asgari Ücret Tespit Komisyonu kararları (Resmî Gazete)",
+ "accessed": "2026-11-20",
+ "fields": {
+  "net_agi_haric": "brüt − SGK %14 − işsizlik %1 − gelir vergisi − damga vergisi (asgari geçim indirimi eklenmemiş)",
+  "net_agi_dahil": "bekar çocuksuz işçi için AGİ eklenmiş net (ÇSGB tablosundaki 'net'); 2022'den sonra AGİ yok (7349 s. Kanun), null"
+ },
+ "verification": [
+  "İki bağımsız araştırma (YZ incelemesi, insan uzman değil), satır satır karşılaştırma; 10 farklı satır resmî PDF'ten uzlaştırıldı.",
+  "Bütün 2008–2021 satırları vergi formülüyle yeniden hesaplandı: net_agi_haric = brüt − %14 − %1 − %15 GV − DV (DV binde 6: 2008–2009, binde 6,6: 2010–2012, binde 7,59: 2013–2021); AGİ = ocak brütü × %7,5. Hepsi kuruşuna tuttu.",
+  "2022–2026: net = brüt × 0,85 (kuruş aşağı yuvarlanır); dönemlerde boşluk/çakışma yok.",
+  "2026 satırı kayıt tarihi itibarıyla (2026-11-20) tek dönem; yıl içi değişiklik olursa güncellenmeli."
+ ],
+ "rows": [
+  {
+   "baslangic": "2008-01-01",
+   "bitis": "2008-06-30",
+   "brut": "608.40",
+   "net_agi_haric": "435.92",
+   "net_agi_dahil": "481.55",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2008-07-01",
+   "bitis": "2008-12-31",
+   "brut": "638.70",
+   "net_agi_haric": "457.63",
+   "net_agi_dahil": "503.26",
+   "kaynak_url": "https://csgb.gov.tr/Media/uzlgrf5y/2008_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2009-01-01",
+   "bitis": "2009-06-30",
+   "brut": "666.00",
+   "net_agi_haric": "477.18",
+   "net_agi_dahil": "527.13",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2009-07-01",
+   "bitis": "2009-12-31",
+   "brut": "693.00",
+   "net_agi_haric": "496.53",
+   "net_agi_dahil": "546.48",
+   "kaynak_url": "https://csgb.gov.tr/Media/m2vhodit/2009_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2010-01-01",
+   "bitis": "2010-06-30",
+   "brut": "729.00",
+   "net_agi_haric": "521.89",
+   "net_agi_dahil": "576.57",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2010-07-01",
+   "bitis": "2010-12-31",
+   "brut": "760.50",
+   "net_agi_haric": "544.44",
+   "net_agi_dahil": "599.12",
+   "kaynak_url": "https://csgb.gov.tr/Media/leieyqw5/2010_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2011-01-01",
+   "bitis": "2011-02-28",
+   "brut": "796.50",
+   "net_agi_haric": "570.22",
+   "net_agi_dahil": "629.96",
+   "kaynak_url": "https://csgb.gov.tr/Media/a2bp4yjf/2011_birincialtiay.pdf"
+  },
+  {
+   "baslangic": "2011-03-01",
+   "bitis": "2011-06-30",
+   "brut": "796.50",
+   "net_agi_haric": "570.22",
+   "net_agi_dahil": "629.96",
+   "kaynak_url": "https://csgb.gov.tr/Media/a2bp4yjf/2011_birincialtiay.pdf"
+  },
+  {
+   "baslangic": "2011-07-01",
+   "bitis": "2011-12-31",
+   "brut": "837.00",
+   "net_agi_haric": "599.21",
+   "net_agi_dahil": "658.95",
+   "kaynak_url": "https://csgb.gov.tr/Media/q1mlep4m/2011_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2012-01-01",
+   "bitis": "2012-06-30",
+   "brut": "886.50",
+   "net_agi_haric": "634.64",
+   "net_agi_dahil": "701.13",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2012-07-01",
+   "bitis": "2012-12-31",
+   "brut": "940.50",
+   "net_agi_haric": "673.30",
+   "net_agi_dahil": "739.79",
+   "kaynak_url": "https://csgb.gov.tr/Media/mzgj14zo/2012_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2013-01-01",
+   "bitis": "2013-06-30",
+   "brut": "978.60",
+   "net_agi_haric": "699.61",
+   "net_agi_dahil": "773.01",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2013-07-01",
+   "bitis": "2013-12-31",
+   "brut": "1021.50",
+   "net_agi_haric": "730.28",
+   "net_agi_dahil": "803.68",
+   "kaynak_url": "https://csgb.gov.tr/Media/czln2x0x/2013_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2014-01-01",
+   "bitis": "2014-06-30",
+   "brut": "1071.00",
+   "net_agi_haric": "765.67",
+   "net_agi_dahil": "846.00",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2014-07-01",
+   "bitis": "2014-12-31",
+   "brut": "1134.00",
+   "net_agi_haric": "810.70",
+   "net_agi_dahil": "891.03",
+   "kaynak_url": "https://csgb.gov.tr/Media/zccpn3sk/2014_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2015-01-01",
+   "bitis": "2015-06-30",
+   "brut": "1201.50",
+   "net_agi_haric": "858.96",
+   "net_agi_dahil": "949.07",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2015-07-01",
+   "bitis": "2015-12-31",
+   "brut": "1273.50",
+   "net_agi_haric": "910.43",
+   "net_agi_dahil": "1000.54",
+   "kaynak_url": "https://csgb.gov.tr/Media/xcwjehlq/2015_ikincialtiay.pdf"
+  },
+  {
+   "baslangic": "2016-01-01",
+   "bitis": "2016-12-31",
+   "brut": "1647.00",
+   "net_agi_haric": "1177.46",
+   "net_agi_dahil": "1300.99",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2017-01-01",
+   "bitis": "2017-12-31",
+   "brut": "1777.50",
+   "net_agi_haric": "1270.75",
+   "net_agi_dahil": "1404.06",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2018-01-01",
+   "bitis": "2018-12-31",
+   "brut": "2029.50",
+   "net_agi_haric": "1450.91",
+   "net_agi_dahil": "1603.12",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2019-01-01",
+   "bitis": "2019-12-31",
+   "brut": "2558.40",
+   "net_agi_haric": "1829.02",
+   "net_agi_dahil": "2020.90",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2020-01-01",
+   "bitis": "2020-12-31",
+   "brut": "2943.00",
+   "net_agi_haric": "2103.98",
+   "net_agi_dahil": "2324.71",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2021-01-01",
+   "bitis": "2021-12-31",
+   "brut": "3577.50",
+   "net_agi_haric": "2557.59",
+   "net_agi_dahil": "2825.90",
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2022-01-01",
+   "bitis": "2022-06-30",
+   "brut": "5004.00",
+   "net_agi_haric": "4253.40",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2022-07-01",
+   "bitis": "2022-12-31",
+   "brut": "6471.00",
+   "net_agi_haric": "5500.35",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2023-01-01",
+   "bitis": "2023-06-30",
+   "brut": "10008.00",
+   "net_agi_haric": "8506.80",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2023-07-01",
+   "bitis": "2023-12-31",
+   "brut": "13414.50",
+   "net_agi_haric": "11402.32",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2024-01-01",
+   "bitis": "2024-12-31",
+   "brut": "20002.50",
+   "net_agi_haric": "17002.12",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2025-01-01",
+   "bitis": "2025-12-31",
+   "brut": "26005.50",
+   "net_agi_haric": "22104.67",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/Media/t2qlvwrg/asgari-ücret-net-brüt-işverene-maliyet.pdf"
+  },
+  {
+   "baslangic": "2026-01-01",
+   "bitis": "2026-12-31",
+   "brut": "33030.00",
+   "net_agi_haric": "28075.50",
+   "net_agi_dahil": null,
+   "kaynak_url": "https://csgb.gov.tr/poco-pages/asgari-ucret/"
+  }
+ ]
+}

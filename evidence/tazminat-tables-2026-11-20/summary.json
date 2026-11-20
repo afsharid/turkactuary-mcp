@@ -1,0 +1,8 @@
+{
+ "recorded_at": "2026-11-20",
+ "method": "Claude Code iş akışı (claude-opus-5-5): asgari ücret ve AYİM için ikişer bağımsız web araştırması, kodla satır karşılaştırması, farklar için uzlaştırma ajanı, her tablo için şüpheci doğrulayıcı. Karar korpusu taraması ana ajan tarafından yapıldı.",
+ "label": "YZ incelemesi (insan uzman değil)",
+ "result_file": "workflow-result.json",
+ "result_sha256": "d61fa5bf1eda2a27513243e8af5fd06bedf979f5ea080f97e2529ea2c5053eb1",
+ "permission": "artifacts/reviews/evidence/tazminat-tables-permission-001.json"
+}
